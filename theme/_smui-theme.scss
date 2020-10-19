@@ -1,0 +1,30 @@
+@use "@material/elevation/mdc-elevation";
+@use "@material/typography/mdc-typography";
+
+@import "@material/theme/color-palette";
+
+$mdc-theme-primary: brown; /* IIT colors - f26f4b orange | 7e5a89 lilac | 241f55 blue */
+$mdc-theme-secondary: #676778;
+// Other Svelte color: #40b3ff
+
+$mdc-theme-background: #fff;
+$mdc-theme-surface: #fff;
+
+$mdc-theme-error: $material-color-red-900;
+  
+:root {
+    --primary-bg-color: #{$mdc-theme-primary};
+    --primary-fg-color: white;
+    --normal-bg-color: white;
+    --normal-fg-color: black;
+    --light-fg-color: #888;
+    --float-box-shadow: 1px 1px 8px 2px rgba(0, 0, 0, 0.25);
+    --float-border-radius: 4px;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,0.12);
+    margin: 0;
+    width: 100%;
+}
