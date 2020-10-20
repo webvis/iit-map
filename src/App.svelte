@@ -135,7 +135,7 @@
 
 <div class="wrapper">
 
-<View viewBox="1620 1400 5480 4770">
+<View viewBox="1620 1400 5480 4770" placemark_icon={ $selection && $selection.type == 'person' ? 'person' : 'meeting_room'}>
 	<SVGLayers
 		path="data/cnr_flat.svg"
 		names="T 1 2"
