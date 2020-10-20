@@ -7,7 +7,13 @@ export const people = readable(new Map(), function start(set) {
     fetch('https://www.iit.cnr.it/expPeople.php')
         .then(async function (response) {
             let data = await response.json()
-            set(new Map(data.map(d => [d.email, {...d, type: 'person'}])))
+            set( new Map(data.map(d => {
+                let person = {...d, type: 'person'}
+                if(get(room_positions).has(d.stanza)) { // WARNING possible timing issues
+                    person.position = get(room_positions).get(d.stanza)
+                }
+                return [d.email, person]
+            })) )
         })
 })
 

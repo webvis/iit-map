@@ -28,7 +28,7 @@
 		layers.forEach((layer, layer_id) => {
 			d3.select(layer).selectAll('.room').each(function () {
 				let id = d3.select(this).attr('id')
-				new_room_positions[id] = {...centroid(this), layers: new Set([layer_id])}
+				new_room_positions.set( id, {...centroid(this), layers: new Set([layer_id])} )
 			})
 			$room_positions = new_room_positions
 
