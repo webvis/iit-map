@@ -30,21 +30,35 @@ export const rooms = derived(
     }
 )
 
-export const search_index = derived(
-	[people, rooms],
-	([$people, $rooms]) => {
+function lunr_index_map(index, m) {
+    let docs = Array.from(m).map(d => d[1])
+    docs.forEach(function (doc) {
+        this.add(doc)
+    }, index)
+}
+
+export const people_index = derived(people,
+	($people) => {
         let index = lunr(function () {
             this.ref('email')
             this.field('email')
             this.field('nome')
             this.field('cognome')
 
-            let docs = Array.from($people).map(d => d[1])
-            docs.forEach(function (doc) {
-                this.add(doc)
-            }, this)
+            lunr_index_map(this, $people)
         })
-        
+        return index
+    }
+)
+
+export const rooms_index = derived(rooms,
+	($rooms) => {
+        let index = lunr(function () {
+            this.ref('id')
+            this.field('id')
+
+            lunr_index_map(this, $rooms)
+        })
         return index
     }
 )
@@ -53,8 +67,11 @@ export function search(query) {
     if(query == '') {
         return []
     }
+
+    let resulting_people = get(people_index).search(`${query}*`).map(d => get(people).get(d.ref))
+    let resulting_rooms = get(rooms_index).search(`${query}*`).map(d => get(rooms).get(d.ref))
     
-    return get(search_index).search(`${query}*`).map(d => get(people).get(d.ref))
+    return resulting_people.concat(resulting_rooms)
 }
 
 export function getQualifica(person) {
