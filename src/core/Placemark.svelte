@@ -33,7 +33,7 @@ text {
 }
 
 @media only screen and (max-width: 600px) {
-    .arrow, .circle {
+    .arrow, .circle, text {
         transform: scale(1.5);
     }
 }
