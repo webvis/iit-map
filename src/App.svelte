@@ -28,7 +28,7 @@
 		layers.forEach((layer, layer_id) => {
 			d3.select(layer).selectAll('.room').each(function () {
 				let id = d3.select(this).attr('id')
-				new_room_positions[id] = {...centroid(this), layers: new Set([layer_id])}
+				new_room_positions.set( id, {...centroid(this), layers: new Set([layer_id])} )
 			})
 			$room_positions = new_room_positions
 
@@ -135,7 +135,7 @@
 
 <div class="wrapper">
 
-<View viewBox="1620 1400 5480 4770">
+<View viewBox="1620 1400 5480 4770" placemark_icon={ $selection && $selection.type == 'person' ? 'person' : 'meeting_room'}>
 	<SVGLayers
 		path="data/cnr_flat.svg"
 		names="T 1 2"

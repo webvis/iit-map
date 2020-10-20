@@ -7,6 +7,7 @@
 	import Placemark from './Placemark.svelte'
 
 	export let viewBox
+	export let placemark_icon // FIXME expose Placemark component
 	
 	let svg
 	let zoomable_group
@@ -75,7 +76,7 @@
 	<g bind:this={zoomable_group}>
 		<slot></slot>
 		{#if $selection && $selection.position}
-			<Placemark on:ready={refreshZoom}/> <!-- the Placemark needs to be rescaled when placed -->
+			<Placemark on:ready={refreshZoom} icon={placemark_icon}/> <!-- the Placemark needs to be rescaled when placed -->
 		{/if}
 	</g>
 </svg>
