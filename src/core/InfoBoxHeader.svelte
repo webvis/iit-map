@@ -17,7 +17,7 @@
     }
 </style>
 
-<div style="position: absolute; top: 2px; right: -6px;">
+<div style="position: absolute; top: 2px; right: -4px;">
     <Actions>
         <ActionIcons>
             <IconButton class="material-icons" on:click={clearSelection} style="color: var(--primary-fg-color);" title="Close">close</IconButton>
