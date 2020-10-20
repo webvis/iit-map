@@ -2,7 +2,7 @@
     import { results } from './core/stores.js'
     import { getQualifica } from './storesCNR.js'
     
-    import List, {Item, Text, PrimaryText, SecondaryText} from '@smui/list'
+    import List, {Item, Text, Graphic} from '@smui/list'
 </script>
 
 <style>
@@ -10,21 +10,30 @@
         color: inherit;
         text-decoration: none;
     }
+    :global(.cnr-results .mdc-list-item__graphic) {
+        margin-right: 16px;
+    }
+    .secondary {
+        margin-left: 4px;
+        color: var(--light-fg-color);
+    }
 </style>
 
 
-<List singleSelection>
+<List singleSelection class="cnr-results">
     {#each $results as r}
         {#if r.type == 'person'}
             <a href="#{r.email}">    
                 <Item>
-                    <Text>{r.nome} {r.cognome} <span style="color: var(--light-fg-color);">{getQualifica(r)}</span></Text>
+                    <Graphic class="material-icons">person</Graphic>
+                    <Text>{r.nome} {r.cognome} <span class="secondary">{getQualifica(r)}</span></Text>
                 </Item>
             </a>
         {:else if r.type == 'room'}
             <a href="#{r.id}">    
                 <Item>
-                    <Text>{r.id} <span style="color: var(--light-fg-color);">Edificio {r.edificio} Piano {r.piano}</span></Text>
+                    <Graphic class="material-icons">meeting_room</Graphic>
+                    <Text>{r.id} <span class="secondary">Ufficio - Edificio {r.edificio}, Piano {r.piano}</span></Text>
                 </Item>
             </a>
         {/if}
