@@ -17,7 +17,7 @@ export const people = readable(new Map(), function start(set) {
         })
 })
 
-export const room_positions = writable({})
+export const room_positions = writable(new Map())
 
 export const rooms = derived(
 	[people, room_positions],
@@ -26,9 +26,9 @@ export const rooms = derived(
         let room_data = rollup($people.values(), v => ({id: v[0].stanza, stanza: v[0].stanza, piano: v[0].piano, edificio: v[0].edificio, ingresso: v[0].ingresso, people: v, type: 'room'}), d => d.stanza)
         
         // add a position property for each room, reading from
-        Object.keys($room_positions).forEach(id => {
+        $room_positions.forEach((d, id) => {
             if(room_data.has(id)) {
-                room_data.get(id).position = $room_positions[id]
+                room_data.get(id).position = d
             }
         })
 
