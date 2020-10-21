@@ -56,6 +56,9 @@
 			current_zoom_transform = d3.event.transform
 			refreshZoom()
 		}
+
+		// focus to enable keyboard interaction
+		svg.focus()
 	})
 
 	function refreshZoom() {
@@ -74,6 +77,11 @@
 	function scaleTo(k, duration) {
 		duration = duration === undefined ? 300 : duration
 		zoom_behavior.scaleTo(d3.select(svg).transition().duration(duration), k)
+	}
+
+	function translateBy(x, y, duration) {
+		duration = duration === undefined ? 300 : duration
+		zoom_behavior.translateBy(d3.select(svg).transition().duration(duration), x, y)
 	}
 
 	function translateTo(p, duration) {
@@ -95,6 +103,32 @@
 		// but since we update the zoom whenever there's a change of
 		// selection it is not needed anymore
 	}
+
+	function handleKeyUp(e) {
+		const delta = 500 / current_zoom_transform.k
+
+		// pan and zoom keyboard control
+		switch(e.key) {
+			case 'ArrowRight':
+				translateBy(-delta,0)
+				break
+			case 'ArrowLeft':
+				translateBy(delta,0)
+				break
+			case 'ArrowUp':
+				translateBy(0,delta)
+				break
+			case 'ArrowDown':
+				translateBy(0,-delta)
+				break
+			case '+':
+				scaleBy(1.5)
+				break
+			case '-':
+				scaleBy(0.66)
+				break
+		}
+	}
 </script>
 
 <style>
@@ -103,9 +137,12 @@
 		height: 100%;
 		position: fixed; /* needed to avoid jumping whenever the hash is changed */
 	}
+	.view:focus {
+		outline: none;
+	}
 </style>
 
-<svg class="view" bind:this={svg} {viewBox}>
+<svg class="view" bind:this={svg} {viewBox} tabindex="0" on:keyup={handleKeyUp}>
 	<g bind:this={zoomable_group}>
 		<slot></slot>
 		{#if $selection && $selection.position}
