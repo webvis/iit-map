@@ -11,6 +11,7 @@
 	
 	let svg
 	let zoomable_group
+	let zoom_behavior
 	let current_zoom_transform = d3.zoomIdentity
 	let current = false
 	
@@ -45,9 +46,11 @@
 		})
 
 		// enable d3 zoom
-		d3.select(svg).call(d3.zoom()
+		zoom_behavior = d3.zoom()
 			.scaleExtent([0, Infinity])
-			.on('zoom', handleZoom))
+			.on('zoom', handleZoom)
+
+		d3.select(svg).call(zoom_behavior)
 
 		function handleZoom() {
 			current_zoom_transform = d3.event.transform
@@ -61,6 +64,36 @@
 
 		d3.selectAll(zoomable_group.querySelectorAll('.noZoom'))
 			.attr('transform', `scale(${1/current_zoom_transform.k})`)
+	}
+
+	function scaleBy(k, duration) {
+		duration = duration === undefined ? 300 : duration
+		zoom_behavior.scaleBy(d3.select(svg).transition().duration(duration), k)
+	}
+
+	function scaleTo(k, duration) {
+		duration = duration === undefined ? 300 : duration
+		zoom_behavior.scaleTo(d3.select(svg).transition().duration(duration), k)
+	}
+
+	function translateTo(p, duration) {
+		duration = duration === undefined ? 1200 : duration
+		zoom_behavior.translateTo(d3.select(svg).transition().duration(duration), p.x, p.y)
+	}
+
+	// listen to selection changes
+	selection.subscribe(handleNewSelection)
+
+	function handleNewSelection(d) {
+		if(d && d.position) {
+			translateTo(d.position)
+		}
+	}
+
+	function handlePlacemarkReady() {
+		// this was used to scale the placemark to the current zoom,
+		// but since we update the zoom whenever there's a change of
+		// selection it is not needed anymore
 	}
 </script>
 
@@ -76,7 +109,7 @@
 	<g bind:this={zoomable_group}>
 		<slot></slot>
 		{#if $selection && $selection.position}
-			<Placemark on:ready={refreshZoom} icon={placemark_icon}/> <!-- the Placemark needs to be rescaled when placed -->
+			<Placemark on:ready={handlePlacemarkReady} icon={placemark_icon}/> <!-- the Placemark needs to be rescaled when placed -->
 		{/if}
 	</g>
 </svg>
