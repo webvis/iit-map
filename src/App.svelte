@@ -26,13 +26,13 @@
 	function postprocessLayers(layers) {
 		let new_room_positions = new Map()
 		layers.forEach((layer, layer_id) => {
-			d3.select(layer).selectAll('.room').each(function () {
+			d3.select(layer).selectAll('.selectable').each(function () {
 				let id = d3.select(this).attr('id')
 				new_room_positions.set( id, {...centroid(this), layers: new Set([layer_id])} )
 			})
 			$room_positions = new_room_positions
 
-			d3.select(layer).selectAll('.room').on('click', function () {
+			d3.select(layer).selectAll('.selectable').on('click', function () {
 				let id = d3.select(this).attr('id')
 				select(id)
 			})
@@ -109,9 +109,11 @@
 		background: #cedbb9;
 	}
 
+	:global(.selectable) {
+		cursor: pointer;
+	}
 
 	:global(.room) {
-		cursor: pointer;
 		fill: #ffd993;
 		stroke: #757575;
 		stroke-width: 3.2;
