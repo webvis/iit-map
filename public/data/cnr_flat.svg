@@ -98,7 +98,7 @@
      id="namedview3338"
      showgrid="false"
      inkscape:zoom="0.4874269"
-     inkscape:cx="3396.7692"
+     inkscape:cx="3156.7332"
      inkscape:cy="3915.393"
      inkscape:window-x="56"
      inkscape:window-y="27"
@@ -4955,7 +4955,8 @@
      class="layer"
      id="1"
      inkscape:label="1"
-     style="display:inline;opacity:1"><g
+     style="display:inline;opacity:1"
+     sodipodi:insensitive="true"><g
        inkscape:groupmode="layer"
        id="layer1"
        inkscape:label="1_iso"
@@ -7587,7 +7588,7 @@
          style="display:inline;opacity:1;mix-blend-mode:normal;fill:#edbd94;fill-opacity:1;fill-rule:nonzero;stroke:#757575;stroke-width:3.2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          d="m 3389.7202,3897.5526 0.022,47.4023 -69.0703,0.051 v -70.0152 h 39.8854 v 22.5619"
          sodipodi:nodetypes="cccccc" /></g></g><g
-     style="display:none;opacity:1"
+     style="display:inline;opacity:1"
      inkscape:groupmode="layer"
      class="layer"
      id="2"
