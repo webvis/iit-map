@@ -46,6 +46,9 @@ function lunr_index_map(index, m) {
 export const people_index = derived(people,
 	($people) => {
         let index = lunr(function () {
+            this.pipeline.remove(lunr.stemmer)
+            this.searchPipeline.remove(lunr.stemmer)
+
             this.ref('email')
             this.field('email')
             this.field('nome')
@@ -60,6 +63,9 @@ export const people_index = derived(people,
 export const rooms_index = derived(rooms,
 	($rooms) => {
         let index = lunr(function () {
+            this.pipeline.remove(lunr.stemmer)
+            this.searchPipeline.remove(lunr.stemmer)
+
             this.ref('id')
             this.field('id')
 
@@ -74,8 +80,10 @@ export function search(query) {
         return []
     }
 
-    let resulting_people = get(people_index).search(`${query}*`).map(d => get(people).get(d.ref))
-    let resulting_rooms = get(rooms_index).search(`${query}*`).map(d => get(rooms).get(d.ref))
+    let actual_query = query.trim().split(/\s+/).map(term => '+'+term+'*').join(' ')
+    
+    let resulting_people = get(people_index).search(`${actual_query}`).map(d => get(people).get(d.ref))
+    let resulting_rooms = get(rooms_index).search(`${actual_query}`).map(d => get(rooms).get(d.ref))
     
     return resulting_people.concat(resulting_rooms)
 }
