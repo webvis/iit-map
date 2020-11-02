@@ -130,6 +130,14 @@
 		pointer-events: none;
 		--logo-width: 60px;
 	}
+	footer {
+		position: fixed;
+		right: 0;
+		bottom: 0;
+		font-size: 10px;
+		background: rgba(255,255,255,0.6);
+		padding: 2px;
+	}
 
 	:global(:root) {
 		--infobox-header-height: 86px;
@@ -151,6 +159,8 @@
 <FloorLayersCtrl/>
 
 <img src="assets/IIT+CNR-RGB-logos.svg" alt="IIT-CNR logo" class="logo"/>
+
+<footer>Made with <a href="https://github.com/webvis/iit-map">Map</a>, by HCT@IIT-CNR</footer>
 
 <OmniBox on:search={handleSearch}>
 	<ResultsBox>
