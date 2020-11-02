@@ -125,8 +125,10 @@
 	.logo {
 		position: fixed;
 		bottom: 20px;
-		left: 20px;
-		width: 50px;
+		left: calc(50% - var(--logo-width)/2);
+		width: var(--logo-width);
+		pointer-events: none;
+		--logo-width: 60px;
 	}
 
 	:global(:root) {
@@ -137,7 +139,7 @@
 
 <div class="wrapper">
 
-<View viewBox="1620 1400 5480 4770" placemark_icon={ $selection && $selection.type == 'person' ? 'person' : 'meeting_room'}>
+<View viewBox="1950 1400 5480 4770" placemark_icon={ $selection && $selection.type == 'person' ? 'person' : 'meeting_room'}>
 	<SVGLayers
 		path="data/cnr_flat.svg"
 		names="T 1 2"
@@ -148,7 +150,7 @@
 
 <FloorLayersCtrl/>
 
-<img src="assets/iit-logo.png" alt="IIT" class="logo"/>
+<img src="assets/IIT+CNR-RGB-logos.svg" alt="IIT-CNR logo" class="logo"/>
 
 <OmniBox on:search={handleSearch}>
 	<ResultsBox>
