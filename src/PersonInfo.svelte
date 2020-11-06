@@ -4,19 +4,6 @@
     import { Content } from '@smui/card'
 </script>
 
-<style>
-    table {
-        border-spacing: 0;
-    }
-    td:first-child {
-        width: 80px;
-        font-weight: bold;
-    }
-    tr:not(:last-child) > td {
-        padding-bottom: 6px;
-    }
-</style>
-
 <Content>
     <table>
         <tr><td>e-mail</td><td><a href="mailto: {$selection.email}">{$selection.email}</a></td></tr>
