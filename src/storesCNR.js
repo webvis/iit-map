@@ -17,6 +17,14 @@ export const people = readable(new Map(), function start(set) {
         })
 })
 
+export const pois = readable([], function start(set) {
+    fetch('data/pois.json')
+        .then(async function (response) {
+            let data = await response.json()
+            set( data.map(d => ({...d, position: {...d.position, layers: new Set(d.position.layers)}})) )
+        })
+})
+
 export const room_positions = writable(new Map())
 
 export const rooms = derived(

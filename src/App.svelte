@@ -3,7 +3,7 @@
 
 	import * as d3 from 'd3'
 
-	import { selection, select, selected_id, results } from './core/stores.js'
+	import { selection, select, selected_id, results, current_layer } from './core/stores.js'
 
 	import View from './core/View.svelte'
 	import Layer from './core/Layer.svelte'
@@ -16,7 +16,7 @@
 	import ResultsBox from './core/ResultsBox.svelte'
 
 	// application-specific code
-	import { rooms, room_positions, people, search, getQualifica, getImmagine } from './storesCNR.js'
+	import { rooms, pois, room_positions, people, search, getQualifica, getImmagine } from './storesCNR.js'
 
 	import RoomInfo from './RoomInfo.svelte'
 	import PersonInfo from './PersonInfo.svelte'
@@ -156,6 +156,11 @@
 		mode="floor"
 		postprocess={postprocessLayers}
 	/>
+	<Layer name="pois">
+		{#each $pois.filter(d => d.position.layers.has($current_layer.name)) as poi}
+			<circle r="40" cx={poi.position.x} cy={poi.position.y}/>
+		{/each}
+	</Layer>
 </View>
 
 <FloorLayersCtrl/>
