@@ -61,6 +61,7 @@ export const people_index = derived(people,
             this.field('email')
             this.field('nome')
             this.field('cognome')
+            this.field('qualifica')
 
             lunr_index_map(this, $people)
         })
