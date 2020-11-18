@@ -63,6 +63,8 @@
 			$selection = $rooms.get($selected_id)
 		else if($people.has($selected_id))
 			$selection = $people.get($selected_id)
+		else if($pois.has($selected_id))
+			$selection = $pois.get($selected_id)
 		else
 			$selection = null
 	}
@@ -149,7 +151,7 @@
 
 <div class="wrapper">
 
-<View viewBox="1950 1400 5480 4770" placemark_icon={ $selection && $selection.type == 'person' ? 'person' : 'meeting_room'}>
+<View viewBox="1950 1400 5480 4770" placemark_icon={ $selection && $selection.icon ? $selection.icon : $selection && $selection.type == 'person' ? 'person' : 'meeting_room' }>
 	<SVGLayers
 		path="data/cnr_flat.svg"
 		names="T 1 2"
@@ -157,8 +159,14 @@
 		postprocess={postprocessLayers}
 	/>
 	<Layer name="pois">
-		{#each $pois.filter(d => d.position.layers.has($current_layer.name)) as poi}
-			<circle r="40" cx={poi.position.x} cy={poi.position.y}/>
+		{#each Array.from($pois.values()).filter(d => d.position.layers.has($current_layer.name)) as poi}
+			<g transform="translate({poi.position.x},{poi.position.y})">
+				<g class="noZoom selectable" on:click={() => select(poi.id) }>
+					<circle r="62" fill="#777" stroke="#777" stroke-width="5" cy="5"/>
+					<circle r="62" fill="#7b5b5b" stroke="white" stroke-width="7.5"/>
+					<text class="material-icons" fill="white" transform="scale(3.5)" text-anchor="middle" dy=".5em">{poi.icon}</text>
+				</g>
+			</g>
 		{/each}
 	</Layer>
 </View>

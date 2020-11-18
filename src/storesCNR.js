@@ -17,11 +17,11 @@ export const people = readable(new Map(), function start(set) {
         })
 })
 
-export const pois = readable([], function start(set) {
+export const pois = readable(new Map(), function start(set) {
     fetch('data/pois.json')
         .then(async function (response) {
             let data = await response.json()
-            set( data.map(d => ({...d, position: {...d.position, layers: new Set(d.position.layers)}})) )
+            set( new Map(data.map(d => [d.id, {...d, position: {...d.position, layers: new Set(d.position.layers)}}] )) )
         })
 })
 

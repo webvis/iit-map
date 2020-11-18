@@ -1,1 +1,831 @@
-[{"id": "Aula40@area.cnr.it", "position": {"x": 3985.175537109375, "y": 2825.37646484375, "layers": ["1"]}}, {"id": "parking_lot_4b@area.cnr.it", "position": {"x": 3884.780029296875, "y": 5700.25244140625, "layers": ["T"]}}, {"id": "Aula28@area.cnr.it", "position": {"x": 3816.4430247237024, "y": 3855.3427487120784, "layers": ["T"]}}, {"id": "distributori_IFC@area.cnr.it", "position": {"x": 5985.32763671875, "y": 4161.76123046875, "layers": ["1"]}}, {"id": "guardiania@area.cnr.it", "position": {"x": 4759.19775390625, "y": 1670.0845947265625, "layers": ["T"]}}, {"id": "auditorium@area.cnr.it", "position": {"x": 3500, "y": 3350, "layers": ["3"]}}, {"id": "stairs4@area.cnr.it", "position": {"x": 6011.53759765625, "y": 4131.369140625, "layers": ["T"]}}, {"id": "entrance10@area.cnr.it", "position": {"x": 5966.49267578125, "y": 4233.95361328125, "layers": ["T"]}}, {"id": "entrance21@area.cnr.it", "position": {"x": 4581.79833984375, "y": 4973.9638671875, "layers": ["T"]}}, {"id": "CED10-Aula_10@area.cnr.it", "position": {"x": 2957.38427734375, "y": 3753.9970703125, "layers": ["T"]}}, {"id": "entrance@area.cnr.it", "position": {"x": 4681.695736819824, "y": 1811.0129363814092, "layers": ["3"]}}, {"id": "aulafaedo@area.cnr.it", "position": {"x": 4257.1474609375, "y": 4148.03271484375, "layers": ["1"]}}, {"id": "asilo_eureka@area.cnr.it", "position": {"x": 2578.239278917705, "y": 3744.29514939897, "layers": ["T"]}}, {"id": "Aula29@area.cnr.it", "position": {"x": 4032.3130695477967, "y": 3855.3427487120784, "layers": ["T"]}}, {"id": "dae@area.cnr.it", "position": {"x": 4077.5908967460705, "y": 3477.0487290740175, "layers": ["T"]}}, {"id": "entrance6a@area.cnr.it", "position": {"x": 6077.47021484375, "y": 3913.654052734375, "layers": ["T"]}}, {"id": "stairs1@area.cnr.it", "position": {"x": 3372.359130859375, "y": 4127.4677734375, "layers": ["T"]}}, {"id": "stairsA@area.cnr.it", "position": {"x": 4543.8896484375, "y": 4471.296875, "layers": ["T"]}}, {"id": "entrance19@area.cnr.it", "position": {"x": 4581.79833984375, "y": 4399.5888671875, "layers": ["T"]}}, {"id": "stairsD@area.cnr.it", "position": {"x": 4840.59130859375, "y": 4908.12939453125, "layers": ["T"]}}, {"id": "entrance12@area.cnr.it", "position": {"x": 6776.42529296875, "y": 4973.9638671875, "layers": ["T"]}}, {"id": "totem_esterno@area.cnr.it", "position": {"x": 4563.908203125, "y": 3496.2685546875, "layers": ["T"]}}, {"id": "stairs16@area.cnr.it", "position": {"x": 4151.39990234375, "y": 3590.964599609375, "layers": ["T"]}}, {"id": "B76@area.cnr.it", "position": {"x": 3242.283935546875, "y": 4267.77490234375, "layers": ["1"]}}, {"id": "entrance14@area.cnr.it", "position": {"x": 5616.619140625, "y": 5136.7939453125, "layers": ["T"]}}, {"id": "bar_mensa@area.cnr.it", "position": {"x": 4075.761474609375, "y": 3081.060302734375, "layers": ["3"]}}, {"id": "entrance20@area.cnr.it", "position": {"x": 4804.2265625, "y": 4399.5888671875, "layers": ["T"]}}, {"id": "bus@area.cnr.it", "position": {"x": 1805.1623034212498, "y": 3888.596013341553, "layers": ["3"]}}, {"id": "stairs3@area.cnr.it", "position": {"x": 5521.9990234375, "y": 4085.3515625, "layers": ["1"]}}, {"id": "entrance16@area.cnr.it", "position": {"x": 3424.97802734375, "y": 5136.7939453125, "layers": ["T"]}}, {"id": "entrance22@area.cnr.it", "position": {"x": 4804.2265625, "y": 4973.9638671875, "layers": ["T"]}}, {"id": "entrance6@area.cnr.it", "position": {"x": 6055.3359375, "y": 2890.23876953125, "layers": ["T"]}}, {"id": "distributori_IIT@area.cnr.it", "position": {"x": 3344.6083984375, "y": 4100.62353515625, "layers": ["T"]}}, {"id": "ciclopi@area.cnr.it", "position": {"x": 4602.17333984375, "y": 1986.600830078125, "layers": ["T"]}}, {"id": "entrance15@area.cnr.it", "position": {"x": 3771.3623046875, "y": 5136.7939453125, "layers": ["T"]}}, {"id": "entrance5@area.cnr.it", "position": {"x": 5227.59326171875, "y": 3359.465576171875, "layers": ["T"]}}, {"id": "entrance4@area.cnr.it", "position": {"x": 3329.228271484375, "y": 3812.248291015625, "layers": ["T"]}}, {"id": "entrance7@area.cnr.it", "position": {"x": 3424.97802734375, "y": 4233.95361328125, "layers": ["T"]}}, {"id": "stairs10@area.cnr.it", "position": {"x": 3379.182861328125, "y": 5250.7724609375, "layers": ["T"]}}, {"id": "stairs2@area.cnr.it", "position": {"x": 3762.263427734375, "y": 4077.687744140625, "layers": ["1"]}}, {"id": "bnl@area.cnr.it", "position": {"x": 5003.11865234375, "y": 1625.0859375, "layers": ["T"]}}, {"id": "parking_lot_1c@area.cnr.it", "position": {"x": 5022.3759765625, "y": 2225.973876953125, "layers": ["3"]}}, {"id": "entrance17@area.cnr.it", "position": {"x": 2607.75390625, "y": 4973.9638671875, "layers": ["T"]}}, {"id": "tecip@area.cnr.it", "position": {"x": 6599.88623046875, "y": 2229.898681640625, "layers": ["3"]}}, {"id": "entrance2@area.cnr.it", "position": {"x": 3331.0244140625, "y": 2931.947265625, "layers": ["T"]}}, {"id": "stairs9@area.cnr.it", "position": {"x": 3765.73291015625, "y": 5204.95947265625, "layers": ["1"]}}, {"id": "stairs13@area.cnr.it", "position": {"x": 3325.959716796875, "y": 3885.729248046875, "layers": ["1"]}}, {"id": "distributori_IBF@area.cnr.it", "position": {"x": 5487.728515625, "y": 5109.7841796875, "layers": ["1"]}}, {"id": "entrance11@area.cnr.it", "position": {"x": 6776.42529296875, "y": 4399.5888671875, "layers": ["T"]}}, {"id": "C40@area.cnr.it", "position": {"x": 4476.82861328125, "y": 4269.453125, "layers": ["1"]}}, {"id": "bar_ifc@area.cnr.it", "position": {"x": 5413.8203125, "y": 3439.371826171875, "layers": ["3"]}}, {"id": "entrance3@area.cnr.it", "position": {"x": 2855.778564453125, "y": 3918.0947265625, "layers": ["T"]}}, {"id": "library@area.cnr.it", "position": {"x": 3838.9541015625, "y": 3760.861083984375, "layers": ["3"]}}, {"id": "A32@area.cnr.it", "position": {"x": 3508.15771484375, "y": 3702.011962890625, "layers": ["1"]}}, {"id": "biblioteca_ILC@area.cnr.it", "position": {"x": 3836.688720703125, "y": 5125.953125, "layers": ["1"]}}, {"id": "parking_lot_2a@area.cnr.it", "position": {"x": 3629.205322265625, "y": 2479.626953125, "layers": ["T"]}}, {"id": "stairsC@area.cnr.it", "position": {"x": 4792.26171875, "y": 4419.55615234375, "layers": ["1"]}}, {"id": "Aula30@area.cnr.it", "position": {"x": 4085.8232289639386, "y": 3752.227120778478, "layers": ["T"]}}, {"id": "HP_Color_Laserjet_CP6015dn@area.cnr.it", "position": {"x": 3453.73291015625, "y": 4159.9306640625, "layers": ["1"]}}, {"id": "rec_monasterio@area.cnr.it", "position": {"x": 5281.79833984375, "y": 3368.746826171875, "layers": ["3"]}}, {"id": "stairsB@area.cnr.it", "position": {"x": 4503.09814453125, "y": 4852.47265625, "layers": ["1"]}}, {"id": "stairs11@area.cnr.it", "position": {"x": 2595.16162109375, "y": 4912.47509765625, "layers": ["T"]}}, {"id": "edicola@area.cnr.it", "position": {"x": 5215.02490234375, "y": 3518.84423828125, "layers": ["T"]}}, {"id": "Aula27@area.cnr.it", "position": {"x": 3594.779857227775, "y": 3855.3427487120784, "layers": ["T"]}}, {"id": "atm_auditorium@area.cnr.it", "position": {"x": 4144.0595703125, "y": 3455.388427734375, "layers": ["T"]}}, {"id": "entrance1@area.cnr.it", "position": {"x": 4155.0283203125, "y": 3365.9169921875, "layers": ["T"]}}, {"id": "serra@area.cnr.it", "position": {"x": 2257.330810546875, "y": 4695.21630859375, "layers": ["T"]}}, {"id": "mensa@area.cnr.it", "position": {"x": 3924.350606028356, "y": 2937.9507688866634, "layers": ["3"]}}, {"id": "HP_Laserjet_9040dn@area.cnr.it", "position": {"x": 3470.197509765625, "y": 4171.5234375, "layers": ["1"]}}, {"id": "exit@area.cnr.it", "position": {"x": 5361.984375, "y": 1772.9947509765625, "layers": ["T"]}}, {"id": "atm_IFC@area.cnr.it", "position": {"x": 5235.91064453125, "y": 3285.918701171875, "layers": ["T"]}}, {"id": "parking_lot_5b@area.cnr.it", "position": {"x": 5791.021484375, "y": 5700.25244140625, "layers": ["T"]}}, {"id": "entrance8@area.cnr.it", "position": {"x": 3771.3623046875, "y": 4233.95361328125, "layers": ["T"]}}, {"id": "entrance18@area.cnr.it", "position": {"x": 2607.75390625, "y": 4399.5888671875, "layers": ["T"]}}, {"id": "entrance9@area.cnr.it", "position": {"x": 5616.619140625, "y": 4233.95361328125, "layers": ["T"]}}, {"id": "stairs12@area.cnr.it", "position": {"x": 2598.954345703125, "y": 4464.68603515625, "layers": ["T"]}}, {"id": "entrance13@area.cnr.it", "position": {"x": 5966.49267578125, "y": 5136.7939453125, "layers": ["T"]}}, {"id": "stairs14@area.cnr.it", "position": {"x": 3322.55224609375, "y": 2763.5400390625, "layers": ["1"]}}]
+[
+    {
+        "id": "Aula40@area.cnr.it",
+        "icon": "mic",
+        "position": {
+            "x": 3985.175537109375,
+            "y": 2825.37646484375,
+            "layers": [
+                "1"
+            ]
+        }
+    },
+    {
+        "id": "parking_lot_4b@area.cnr.it",
+        "position": {
+            "x": 3884.780029296875,
+            "y": 5700.25244140625,
+            "layers": [
+                "T"
+            ]
+        }
+    },
+    {
+        "id": "Aula28@area.cnr.it",
+        "icon": "mic",
+        "position": {
+            "x": 3816.4430247237024,
+            "y": 3855.3427487120784,
+            "layers": [
+                "T"
+            ]
+        }
+    },
+    {
+        "id": "distributori_IFC@area.cnr.it",
+        "icon": "coffee",
+        "position": {
+            "x": 5985.32763671875,
+            "y": 4161.76123046875,
+            "layers": [
+                "1"
+            ]
+        }
+    },
+    {
+        "id": "guardiania@area.cnr.it",
+        "icon": "security",
+        "position": {
+            "x": 4759.19775390625,
+            "y": 1670.0845947265625,
+            "layers": [
+                "T"
+            ]
+        }
+    },
+    {
+        "id": "auditorium@area.cnr.it",
+        "icon": "mic",
+        "position": {
+            "x": 3500,
+            "y": 3350,
+            "layers": [
+                "3"
+            ]
+        }
+    },
+    {
+        "id": "stairs4@area.cnr.it",
+        "icon": "stairs",
+        "position": {
+            "x": 6011.53759765625,
+            "y": 4131.369140625,
+            "layers": [
+                "T"
+            ]
+        }
+    },
+    {
+        "id": "entrance10@area.cnr.it",
+        "position": {
+            "x": 5966.49267578125,
+            "y": 4233.95361328125,
+            "layers": [
+                "T"
+            ]
+        }
+    },
+    {
+        "id": "entrance21@area.cnr.it",
+        "position": {
+            "x": 4581.79833984375,
+            "y": 4973.9638671875,
+            "layers": [
+                "T"
+            ]
+        }
+    },
+    {
+        "id": "CED10-Aula_10@area.cnr.it",
+        "icon": "school",
+        "position": {
+            "x": 2957.38427734375,
+            "y": 3753.9970703125,
+            "layers": [
+                "T"
+            ]
+        }
+    },
+    {
+        "id": "entrance@area.cnr.it",
+        "position": {
+            "x": 4681.695736819824,
+            "y": 1811.0129363814092,
+            "layers": [
+                "3"
+            ]
+        }
+    },
+    {
+        "id": "aulafaedo@area.cnr.it",
+        "icon": "mic",
+        "position": {
+            "x": 4257.1474609375,
+            "y": 4148.03271484375,
+            "layers": [
+                "1"
+            ]
+        }
+    },
+    {
+        "id": "asilo_eureka@area.cnr.it",
+        "icon": "child_care",
+        "position": {
+            "x": 2578.239278917705,
+            "y": 3744.29514939897,
+            "layers": [
+                "T"
+            ]
+        }
+    },
+    {
+        "id": "Aula29@area.cnr.it",
+        "icon": "mic",
+        "position": {
+            "x": 4032.3130695477967,
+            "y": 3855.3427487120784,
+            "layers": [
+                "T"
+            ]
+        }
+    },
+    {
+        "id": "dae@area.cnr.it",
+        "icon": "medical_services",
+        "position": {
+            "x": 4077.5908967460705,
+            "y": 3477.0487290740175,
+            "layers": [
+                "T"
+            ]
+        }
+    },
+    {
+        "id": "entrance6a@area.cnr.it",
+        "position": {
+            "x": 6077.47021484375,
+            "y": 3913.654052734375,
+            "layers": [
+                "T"
+            ]
+        }
+    },
+    {
+        "id": "stairs1@area.cnr.it",
+        "icon": "stairs",
+        "position": {
+            "x": 3372.359130859375,
+            "y": 4127.4677734375,
+            "layers": [
+                "T","1","2"
+            ]
+        }
+    },
+    {
+        "id": "stairsA@area.cnr.it",
+        "icon": "stairs",
+        "position": {
+            "x": 4543.8896484375,
+            "y": 4471.296875,
+            "layers": [
+                "T"
+            ]
+        }
+    },
+    {
+        "id": "entrance19@area.cnr.it",
+        "position": {
+            "x": 4581.79833984375,
+            "y": 4399.5888671875,
+            "layers": [
+                "T"
+            ]
+        }
+    },
+    {
+        "id": "stairsD@area.cnr.it",
+        "icon": "stairs",
+        "position": {
+            "x": 4840.59130859375,
+            "y": 4908.12939453125,
+            "layers": [
+                "T"
+            ]
+        }
+    },
+    {
+        "id": "entrance12@area.cnr.it",
+        "position": {
+            "x": 6776.42529296875,
+            "y": 4973.9638671875,
+            "layers": [
+                "T"
+            ]
+        }
+    },
+    {
+        "id": "totem_esterno@area.cnr.it",
+        "icon": "info",
+        "position": {
+            "x": 4563.908203125,
+            "y": 3496.2685546875,
+            "layers": [
+                "T"
+            ]
+        }
+    },
+    {
+        "id": "stairs16@area.cnr.it",
+        "icon": "stairs",
+        "position": {
+            "x": 4151.39990234375,
+            "y": 3590.964599609375,
+            "layers": [
+                "T"
+            ]
+        }
+    },
+    {
+        "id": "B76@area.cnr.it",
+        "icon": "mic",
+        "position": {
+            "x": 3242.283935546875,
+            "y": 4267.77490234375,
+            "layers": [
+                "1"
+            ]
+        }
+    },
+    {
+        "id": "entrance14@area.cnr.it",
+        "position": {
+            "x": 5616.619140625,
+            "y": 5136.7939453125,
+            "layers": [
+                "T"
+            ]
+        }
+    },
+    {
+        "id": "bar_mensa@area.cnr.it",
+        "icon": "local_cafe",
+        "position": {
+            "x": 4075.761474609375,
+            "y": 3081.060302734375,
+            "layers": [
+                "3"
+            ]
+        }
+    },
+    {
+        "id": "entrance20@area.cnr.it",
+        "position": {
+            "x": 4804.2265625,
+            "y": 4399.5888671875,
+            "layers": [
+                "T"
+            ]
+        }
+    },
+    {
+        "id": "bus@area.cnr.it",
+        "icon": "directions_bus",
+        "position": {
+            "x": 1805.1623034212498,
+            "y": 3888.596013341553,
+            "layers": [
+                "3"
+            ]
+        }
+    },
+    {
+        "id": "stairs3@area.cnr.it",
+        "icon": "stairs",
+        "position": {
+            "x": 5521.9990234375,
+            "y": 4085.3515625,
+            "layers": [
+                "1"
+            ]
+        }
+    },
+    {
+        "id": "entrance16@area.cnr.it",
+        "position": {
+            "x": 3424.97802734375,
+            "y": 5136.7939453125,
+            "layers": [
+                "T"
+            ]
+        }
+    },
+    {
+        "id": "entrance22@area.cnr.it",
+        "position": {
+            "x": 4804.2265625,
+            "y": 4973.9638671875,
+            "layers": [
+                "T"
+            ]
+        }
+    },
+    {
+        "id": "entrance6@area.cnr.it",
+        "position": {
+            "x": 6055.3359375,
+            "y": 2890.23876953125,
+            "layers": [
+                "T"
+            ]
+        }
+    },
+    {
+        "id": "distributori_IIT@area.cnr.it",
+        "icon": "local_cafe",
+        "position": {
+            "x": 3344.6083984375,
+            "y": 4100.62353515625,
+            "layers": [
+                "T"
+            ]
+        }
+    },
+    {
+        "id": "ciclopi@area.cnr.it",
+        "icon": "pedal_bike",
+        "position": {
+            "x": 4602.17333984375,
+            "y": 1986.600830078125,
+            "layers": [
+                "T"
+            ]
+        }
+    },
+    {
+        "id": "entrance15@area.cnr.it",
+        "position": {
+            "x": 3771.3623046875,
+            "y": 5136.7939453125,
+            "layers": [
+                "T"
+            ]
+        }
+    },
+    {
+        "id": "entrance5@area.cnr.it",
+        "position": {
+            "x": 5227.59326171875,
+            "y": 3359.465576171875,
+            "layers": [
+                "T"
+            ]
+        }
+    },
+    {
+        "id": "entrance4@area.cnr.it",
+        "position": {
+            "x": 3329.228271484375,
+            "y": 3812.248291015625,
+            "layers": [
+                "T"
+            ]
+        }
+    },
+    {
+        "id": "entrance7@area.cnr.it",
+        "position": {
+            "x": 3424.97802734375,
+            "y": 4233.95361328125,
+            "layers": [
+                "T"
+            ]
+        }
+    },
+    {
+        "id": "stairs10@area.cnr.it",
+        "icon": "stairs",
+        "position": {
+            "x": 3379.182861328125,
+            "y": 5250.7724609375,
+            "layers": [
+                "T"
+            ]
+        }
+    },
+    {
+        "id": "stairs2@area.cnr.it",
+        "icon": "stairs",
+        "position": {
+            "x": 3762.263427734375,
+            "y": 4077.687744140625,
+            "layers": [
+                "1"
+            ]
+        }
+    },
+    {
+        "id": "bnl@area.cnr.it",
+        "icon": "euro",
+        "position": {
+            "x": 5003.11865234375,
+            "y": 1625.0859375,
+            "layers": [
+                "T"
+            ]
+        }
+    },
+    {
+        "id": "parking_lot_1c@area.cnr.it",
+        "position": {
+            "x": 5022.3759765625,
+            "y": 2225.973876953125,
+            "layers": [
+                "3"
+            ]
+        }
+    },
+    {
+        "id": "entrance17@area.cnr.it",
+        "position": {
+            "x": 2607.75390625,
+            "y": 4973.9638671875,
+            "layers": [
+                "T"
+            ]
+        }
+    },
+    {
+        "id": "tecip@area.cnr.it",
+        "icon": "business",
+        "position": {
+            "x": 6599.88623046875,
+            "y": 2229.898681640625,
+            "layers": [
+                "3"
+            ]
+        }
+    },
+    {
+        "id": "entrance2@area.cnr.it",
+        "position": {
+            "x": 3331.0244140625,
+            "y": 2931.947265625,
+            "layers": [
+                "T"
+            ]
+        }
+    },
+    {
+        "id": "stairs9@area.cnr.it",
+        "icon": "stairs",
+        "position": {
+            "x": 3765.73291015625,
+            "y": 5204.95947265625,
+            "layers": [
+                "1"
+            ]
+        }
+    },
+    {
+        "id": "stairs13@area.cnr.it",
+        "icon": "stairs",
+        "position": {
+            "x": 3325.959716796875,
+            "y": 3885.729248046875,
+            "layers": [
+                "1"
+            ]
+        }
+    },
+    {
+        "id": "distributori_IBF@area.cnr.it",
+        "icon": "local_cafe",
+        "position": {
+            "x": 5487.728515625,
+            "y": 5109.7841796875,
+            "layers": [
+                "1"
+            ]
+        }
+    },
+    {
+        "id": "entrance11@area.cnr.it",
+        "position": {
+            "x": 6776.42529296875,
+            "y": 4399.5888671875,
+            "layers": [
+                "T"
+            ]
+        }
+    },
+    {
+        "id": "C40@area.cnr.it",
+        "icon": "mic",
+        "position": {
+            "x": 4476.82861328125,
+            "y": 4269.453125,
+            "layers": [
+                "1"
+            ]
+        }
+    },
+    {
+        "id": "bar_ifc@area.cnr.it",
+        "icon": "local_cafe",
+        "position": {
+            "x": 5413.8203125,
+            "y": 3439.371826171875,
+            "layers": [
+                "3"
+            ]
+        }
+    },
+    {
+        "id": "entrance3@area.cnr.it",
+        "position": {
+            "x": 2855.778564453125,
+            "y": 3918.0947265625,
+            "layers": [
+                "T"
+            ]
+        }
+    },
+    {
+        "id": "library@area.cnr.it",
+        "icon": "local_library",
+        "position": {
+            "x": 3838.9541015625,
+            "y": 3760.861083984375,
+            "layers": [
+                "3"
+            ]
+        }
+    },
+    {
+        "id": "A32@area.cnr.it",
+        "icon": "mic",
+        "position": {
+            "x": 3508.15771484375,
+            "y": 3702.011962890625,
+            "layers": [
+                "1"
+            ]
+        }
+    },
+    {
+        "id": "biblioteca_ILC@area.cnr.it",
+        "icon": "local_library",
+        "position": {
+            "x": 3836.688720703125,
+            "y": 5125.953125,
+            "layers": [
+                "1"
+            ]
+        }
+    },
+    {
+        "id": "parking_lot_2a@area.cnr.it",
+        "position": {
+            "x": 3629.205322265625,
+            "y": 2479.626953125,
+            "layers": [
+                "T"
+            ]
+        }
+    },
+    {
+        "id": "stairsC@area.cnr.it",
+        "icon": "stairs",
+        "position": {
+            "x": 4792.26171875,
+            "y": 4419.55615234375,
+            "layers": [
+                "1"
+            ]
+        }
+    },
+    {
+        "id": "Aula30@area.cnr.it",
+        "icon": "mic",
+        "position": {
+            "x": 4085.8232289639386,
+            "y": 3752.227120778478,
+            "layers": [
+                "T"
+            ]
+        }
+    },
+    {
+        "id": "HP_Color_Laserjet_CP6015dn@area.cnr.it",
+        "icon": "print",
+        "position": {
+            "x": 3453.73291015625,
+            "y": 4159.9306640625,
+            "layers": [
+                "1"
+            ]
+        }
+    },
+    {
+        "id": "rec_monasterio@area.cnr.it",
+        "icon": "local_hospital",
+        "position": {
+            "x": 5281.79833984375,
+            "y": 3368.746826171875,
+            "layers": [
+                "3"
+            ]
+        }
+    },
+    {
+        "id": "stairsB@area.cnr.it",
+        "icon": "stairs",
+        "position": {
+            "x": 4503.09814453125,
+            "y": 4852.47265625,
+            "layers": [
+                "1"
+            ]
+        }
+    },
+    {
+        "id": "stairs11@area.cnr.it",
+        "icon": "stairs",
+        "position": {
+            "x": 2595.16162109375,
+            "y": 4912.47509765625,
+            "layers": [
+                "T"
+            ]
+        }
+    },
+    {
+        "id": "edicola@area.cnr.it",
+        "icon": "menu_book",
+        "position": {
+            "x": 5215.02490234375,
+            "y": 3518.84423828125,
+            "layers": [
+                "T"
+            ]
+        }
+    },
+    {
+        "id": "Aula27@area.cnr.it",
+        "icon": "mic",
+        "position": {
+            "x": 3594.779857227775,
+            "y": 3855.3427487120784,
+            "layers": [
+                "T"
+            ]
+        }
+    },
+    {
+        "id": "atm_auditorium@area.cnr.it",
+        "icon": "credit_card",
+        "position": {
+            "x": 4144.0595703125,
+            "y": 3455.388427734375,
+            "layers": [
+                "T"
+            ]
+        }
+    },
+    {
+        "id": "entrance1@area.cnr.it",
+        "position": {
+            "x": 4155.0283203125,
+            "y": 3365.9169921875,
+            "layers": [
+                "T"
+            ]
+        }
+    },
+    {
+        "id": "serra@area.cnr.it",
+        "icon": "eco",
+        "position": {
+            "x": 2257.330810546875,
+            "y": 4695.21630859375,
+            "layers": [
+                "T"
+            ]
+        }
+    },
+    {
+        "id": "mensa@area.cnr.it",
+        "icon": "restaurant_menu",
+        "position": {
+            "x": 3924.350606028356,
+            "y": 2937.9507688866634,
+            "layers": [
+                "3"
+            ]
+        }
+    },
+    {
+        "id": "HP_Laserjet_9040dn@area.cnr.it",
+        "icon": "print",
+        "position": {
+            "x": 3470.197509765625,
+            "y": 4171.5234375,
+            "layers": [
+                "1"
+            ]
+        }
+    },
+    {
+        "id": "exit@area.cnr.it",
+        "position": {
+            "x": 5361.984375,
+            "y": 1772.9947509765625,
+            "layers": [
+                "T"
+            ]
+        }
+    },
+    {
+        "id": "atm_IFC@area.cnr.it",
+        "icon": "credit_card",
+        "position": {
+            "x": 5235.91064453125,
+            "y": 3285.918701171875,
+            "layers": [
+                "T"
+            ]
+        }
+    },
+    {
+        "id": "parking_lot_5b@area.cnr.it",
+        "position": {
+            "x": 5791.021484375,
+            "y": 5700.25244140625,
+            "layers": [
+                "T"
+            ]
+        }
+    },
+    {
+        "id": "entrance8@area.cnr.it",
+        "position": {
+            "x": 3771.3623046875,
+            "y": 4233.95361328125,
+            "layers": [
+                "T"
+            ]
+        }
+    },
+    {
+        "id": "entrance18@area.cnr.it",
+        "position": {
+            "x": 2607.75390625,
+            "y": 4399.5888671875,
+            "layers": [
+                "T"
+            ]
+        }
+    },
+    {
+        "id": "entrance9@area.cnr.it",
+        "position": {
+            "x": 5616.619140625,
+            "y": 4233.95361328125,
+            "layers": [
+                "T"
+            ]
+        }
+    },
+    {
+        "id": "stairs12@area.cnr.it",
+        "icon": "stairs",
+        "position": {
+            "x": 2598.954345703125,
+            "y": 4464.68603515625,
+            "layers": [
+                "T"
+            ]
+        }
+    },
+    {
+        "id": "entrance13@area.cnr.it",
+        "position": {
+            "x": 5966.49267578125,
+            "y": 5136.7939453125,
+            "layers": [
+                "T"
+            ]
+        }
+    },
+    {
+        "id": "stairs14@area.cnr.it",
+        "icon": "stairs",
+        "position": {
+            "x": 3322.55224609375,
+            "y": 2763.5400390625,
+            "layers": [
+                "1"
+            ]
+        }
+    }
+]
