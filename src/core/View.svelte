@@ -31,6 +31,11 @@
 				current = true
 			}
 
+			// overlays are visible by default
+			if (type == 'overlay') {
+				visible = true
+			}
+
 			let d = {
 				name: key,
 				type: type,

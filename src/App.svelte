@@ -3,7 +3,7 @@
 
 	import * as d3 from 'd3'
 
-	import { selection, select, selected_id, results } from './core/stores.js'
+	import { selection, select, selected_id, results, current_layer } from './core/stores.js'
 
 	import View from './core/View.svelte'
 	import Layer from './core/Layer.svelte'
@@ -14,9 +14,11 @@
 	import InlineSVG from './core/InlineSVG.svelte'
 	import SVGLayers from './core/SVGLayers.svelte'
 	import ResultsBox from './core/ResultsBox.svelte'
+	import Marker from './core/Marker.svelte'
+	import Mark from './core/Mark.svelte'
 
 	// application-specific code
-	import { rooms, room_positions, people, search, getQualifica, getImmagine } from './storesCNR.js'
+	import { rooms, pois, room_positions, people, search, getQualifica, getImmagine } from './storesCNR.js'
 
 	import RoomInfo from './RoomInfo.svelte'
 	import PersonInfo from './PersonInfo.svelte'
@@ -63,6 +65,8 @@
 			$selection = $rooms.get($selected_id)
 		else if($people.has($selected_id))
 			$selection = $people.get($selected_id)
+		else if($pois.has($selected_id))
+			$selection = $pois.get($selected_id)
 		else
 			$selection = null
 	}
@@ -72,6 +76,15 @@
 
 	function handleSearch(e) {
 		$results = search(e.detail.query)
+	}
+
+	const category_colors = {
+		'food_and_drinks': '#f57f17',
+		'mobility': '#00b0ff',
+		'emergency': '#db4437',
+		'services': '#6b7de3',
+		'commercial': '#5491f5',
+		'entrance': '#f5f5f5'
 	}
 </script>
 
@@ -149,13 +162,26 @@
 
 <div class="wrapper">
 
-<View viewBox="1950 1400 5480 4770" placemark_icon={ $selection && $selection.type == 'person' ? 'person' : 'meeting_room'}>
+<View viewBox="1950 1400 5480 4770" placemark_icon={ $selection && $selection.icon ? $selection.icon : $selection && $selection.type == 'person' ? 'person' : 'meeting_room' }>
 	<SVGLayers
 		path="data/cnr_flat.svg"
 		names="T 1 2"
 		mode="floor"
 		postprocess={postprocessLayers}
 	/>
+	<Layer name="pois">
+		{#each Array.from($pois.values()) as poi}
+			<Marker position={poi.position} on:click={() => select(poi.id) }>
+				<Mark
+					icon={poi.icon}
+					text={poi.text}
+					fg={poi.category == 'entrance' ? '#0d5784' : undefined}
+					bg={poi.category ? category_colors[poi.category] : undefined}
+					shape={poi.shape}
+				/>
+			</Marker>
+		{/each}
+	</Layer>
 </View>
 
 <FloorLayersCtrl/>

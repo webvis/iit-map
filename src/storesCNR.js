@@ -17,6 +17,14 @@ export const people = readable(new Map(), function start(set) {
         })
 })
 
+export const pois = readable(new Map(), function start(set) {
+    fetch('data/pois.json')
+        .then(async function (response) {
+            let data = await response.json()
+            set( new Map(data.map(d => [d.id, {...d, position: {...d.position, layers: new Set(d.position.layers)}}] )) )
+        })
+})
+
 export const room_positions = writable(new Map())
 
 export const rooms = derived(
@@ -53,6 +61,7 @@ export const people_index = derived(people,
             this.field('email')
             this.field('nome')
             this.field('cognome')
+            this.field('qualifica')
 
             lunr_index_map(this, $people)
         })
