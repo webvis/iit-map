@@ -13,6 +13,19 @@
 		pointer-events: auto;
 	}
 
+	:global(.infobox table) {
+        border-spacing: 0;
+    }
+
+    :global(.infobox td:first-child) {
+        width: 80px;
+        font-weight: bold;
+    }
+
+    :global(.infobox tr:not(:last-child) > td) {
+        padding-bottom: 6px;
+    }
+
 	@media only screen and (max-width: 600px) {
 		.infobox {
 			position: absolute;

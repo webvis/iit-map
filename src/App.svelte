@@ -22,6 +22,8 @@
 	import PersonInfo from './PersonInfo.svelte'
 	import RoomPeopleList from './RoomPeopleList.svelte'
 	import CNRResults from './CNRResults.svelte'
+
+	import { Content } from '@smui/card'
 	
 	function postprocessLayers(layers) {
 		let new_room_positions = new Map()
@@ -177,6 +179,16 @@
 	{:else if $selection.type == 'person'}
 		<InfoBoxHeader title="{$selection.nome} {$selection.cognome}" subtitle="{getQualifica($selection)}" depiction={getImmagine($selection)} depictionSize="contain"/>
 		<PersonInfo/>
+	
+		{#if $selection.sede}
+			<hr/>
+			<Content>
+				<table>
+					<tr><td>Sede</td><td>{$selection.sede == "pi" ? "Area della Ricerca di Pisa" : $selection.sede == "cs" ? "UOS Cosenza" : ""}</td></tr>
+				</table>
+			</Content>
+		{/if}
+		
 		{#if $selection.stanza}
 			<hr/>
 			<RoomInfo/>
