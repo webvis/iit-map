@@ -14,6 +14,7 @@
 	import InlineSVG from './core/InlineSVG.svelte'
 	import SVGLayers from './core/SVGLayers.svelte'
 	import ResultsBox from './core/ResultsBox.svelte'
+	import Marker from './core/Marker.svelte'
 
 	// application-specific code
 	import { rooms, pois, room_positions, people, search, getQualifica, getImmagine } from './storesCNR.js'
@@ -159,14 +160,8 @@
 		postprocess={postprocessLayers}
 	/>
 	<Layer name="pois">
-		{#each Array.from($pois.values()).filter(d => d.position.layers.has($current_layer.name)) as poi}
-			<g transform="translate({poi.position.x},{poi.position.y})">
-				<g class="noZoom selectable" on:click={() => select(poi.id) }>
-					<circle r="62" fill="#777" stroke="#777" stroke-width="5" cy="5"/>
-					<circle r="62" fill="#7b5b5b" stroke="white" stroke-width="7.5"/>
-					<text class="material-icons" fill="white" transform="scale(3.5)" text-anchor="middle" dy=".5em">{poi.icon}</text>
-				</g>
-			</g>
+		{#each Array.from($pois.values()) as poi}
+			<Marker data={poi}/>
 		{/each}
 	</Layer>
 </View>

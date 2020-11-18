@@ -34,6 +34,7 @@
     {
         "id": "distributori_IFC@area.cnr.it",
         "icon": "coffee",
+        "category": "food_and_drinks",
         "position": {
             "x": 5985.32763671875,
             "y": 4161.76123046875,
