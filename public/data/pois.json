@@ -12,6 +12,9 @@
     },
     {
         "id": "parking_lot_4b@area.cnr.it",
+        "icon": "local_parking",
+        "shape": "square",
+        "category": "mobility",
         "position": {
             "x": 3884.780029296875,
             "y": 5700.25244140625,
@@ -33,7 +36,7 @@
     },
     {
         "id": "distributori_IFC@area.cnr.it",
-        "icon": "coffee",
+        "icon": "local_cafe",
         "category": "food_and_drinks",
         "position": {
             "x": 5985.32763671875,
@@ -61,7 +64,7 @@
             "x": 3500,
             "y": 3350,
             "layers": [
-                "3"
+                "T"
             ]
         }
     },
@@ -78,6 +81,9 @@
     },
     {
         "id": "entrance10@area.cnr.it",
+        "text": "10",
+        "category": "entrance",
+        "shape": "square",
         "position": {
             "x": 5966.49267578125,
             "y": 4233.95361328125,
@@ -88,6 +94,9 @@
     },
     {
         "id": "entrance21@area.cnr.it",
+        "text": "21",
+        "category": "entrance",
+        "shape": "square",
         "position": {
             "x": 4581.79833984375,
             "y": 4973.9638671875,
@@ -109,11 +118,12 @@
     },
     {
         "id": "entrance@area.cnr.it",
+        "category": "mobility",
         "position": {
             "x": 4681.695736819824,
             "y": 1811.0129363814092,
             "layers": [
-                "3"
+                "T"
             ]
         }
     },
@@ -153,6 +163,7 @@
     {
         "id": "dae@area.cnr.it",
         "icon": "medical_services",
+        "category": "emergency",
         "position": {
             "x": 4077.5908967460705,
             "y": 3477.0487290740175,
@@ -163,6 +174,9 @@
     },
     {
         "id": "entrance6a@area.cnr.it",
+        "text": "6a",
+        "category": "entrance",
+        "shape": "square",
         "position": {
             "x": 6077.47021484375,
             "y": 3913.654052734375,
@@ -178,7 +192,9 @@
             "x": 3372.359130859375,
             "y": 4127.4677734375,
             "layers": [
-                "T","1","2"
+                "T",
+                "1",
+                "2"
             ]
         }
     },
@@ -195,6 +211,9 @@
     },
     {
         "id": "entrance19@area.cnr.it",
+        "text": "19",
+        "category": "entrance",
+        "shape": "square",
         "position": {
             "x": 4581.79833984375,
             "y": 4399.5888671875,
@@ -216,6 +235,9 @@
     },
     {
         "id": "entrance12@area.cnr.it",
+        "text": "12",
+        "category": "entrance",
+        "shape": "square",
         "position": {
             "x": 6776.42529296875,
             "y": 4973.9638671875,
@@ -259,6 +281,9 @@
     },
     {
         "id": "entrance14@area.cnr.it",
+        "text": "14",
+        "category": "entrance",
+        "shape": "square",
         "position": {
             "x": 5616.619140625,
             "y": 5136.7939453125,
@@ -270,16 +295,20 @@
     {
         "id": "bar_mensa@area.cnr.it",
         "icon": "local_cafe",
+        "category": "food_and_drinks",
         "position": {
             "x": 4075.761474609375,
             "y": 3081.060302734375,
             "layers": [
-                "3"
+                "T"
             ]
         }
     },
     {
         "id": "entrance20@area.cnr.it",
+        "text": "20",
+        "category": "entrance",
+        "shape": "square",
         "position": {
             "x": 4804.2265625,
             "y": 4399.5888671875,
@@ -291,11 +320,12 @@
     {
         "id": "bus@area.cnr.it",
         "icon": "directions_bus",
+        "category": "mobility",
         "position": {
             "x": 1805.1623034212498,
             "y": 3888.596013341553,
             "layers": [
-                "3"
+                "T"
             ]
         }
     },
@@ -312,6 +342,9 @@
     },
     {
         "id": "entrance16@area.cnr.it",
+        "text": "16",
+        "category": "entrance",
+        "shape": "square",
         "position": {
             "x": 3424.97802734375,
             "y": 5136.7939453125,
@@ -322,6 +355,9 @@
     },
     {
         "id": "entrance22@area.cnr.it",
+        "text": "22",
+        "category": "entrance",
+        "shape": "square",
         "position": {
             "x": 4804.2265625,
             "y": 4973.9638671875,
@@ -332,6 +368,9 @@
     },
     {
         "id": "entrance6@area.cnr.it",
+        "text": "6",
+        "category": "entrance",
+        "shape": "square",
         "position": {
             "x": 6055.3359375,
             "y": 2890.23876953125,
@@ -343,6 +382,7 @@
     {
         "id": "distributori_IIT@area.cnr.it",
         "icon": "local_cafe",
+        "category": "food_and_drinks",
         "position": {
             "x": 3344.6083984375,
             "y": 4100.62353515625,
@@ -354,6 +394,7 @@
     {
         "id": "ciclopi@area.cnr.it",
         "icon": "pedal_bike",
+        "category": "mobility",
         "position": {
             "x": 4602.17333984375,
             "y": 1986.600830078125,
@@ -364,6 +405,9 @@
     },
     {
         "id": "entrance15@area.cnr.it",
+        "text": "15",
+        "category": "entrance",
+        "shape": "square",
         "position": {
             "x": 3771.3623046875,
             "y": 5136.7939453125,
@@ -374,6 +418,9 @@
     },
     {
         "id": "entrance5@area.cnr.it",
+        "text": "5",
+        "category": "entrance",
+        "shape": "square",
         "position": {
             "x": 5227.59326171875,
             "y": 3359.465576171875,
@@ -384,6 +431,9 @@
     },
     {
         "id": "entrance4@area.cnr.it",
+        "text": "4",
+        "category": "entrance",
+        "shape": "square",
         "position": {
             "x": 3329.228271484375,
             "y": 3812.248291015625,
@@ -394,6 +444,9 @@
     },
     {
         "id": "entrance7@area.cnr.it",
+        "text": "7",
+        "category": "entrance",
+        "shape": "square",
         "position": {
             "x": 3424.97802734375,
             "y": 4233.95361328125,
@@ -427,6 +480,7 @@
     {
         "id": "bnl@area.cnr.it",
         "icon": "euro",
+        "category": "services",
         "position": {
             "x": 5003.11865234375,
             "y": 1625.0859375,
@@ -437,16 +491,22 @@
     },
     {
         "id": "parking_lot_1c@area.cnr.it",
+        "icon": "local_parking",
+        "shape": "square",
+        "category": "mobility",
         "position": {
             "x": 5022.3759765625,
             "y": 2225.973876953125,
             "layers": [
-                "3"
+                "T"
             ]
         }
     },
     {
         "id": "entrance17@area.cnr.it",
+        "text": "17",
+        "category": "entrance",
+        "shape": "square",
         "position": {
             "x": 2607.75390625,
             "y": 4973.9638671875,
@@ -462,12 +522,15 @@
             "x": 6599.88623046875,
             "y": 2229.898681640625,
             "layers": [
-                "3"
+                "T"
             ]
         }
     },
     {
         "id": "entrance2@area.cnr.it",
+        "text": "2",
+        "category": "entrance",
+        "shape": "square",
         "position": {
             "x": 3331.0244140625,
             "y": 2931.947265625,
@@ -501,6 +564,7 @@
     {
         "id": "distributori_IBF@area.cnr.it",
         "icon": "local_cafe",
+        "category": "food_and_drinks",
         "position": {
             "x": 5487.728515625,
             "y": 5109.7841796875,
@@ -511,6 +575,9 @@
     },
     {
         "id": "entrance11@area.cnr.it",
+        "text": "11",
+        "category": "entrance",
+        "shape": "square",
         "position": {
             "x": 6776.42529296875,
             "y": 4399.5888671875,
@@ -533,16 +600,20 @@
     {
         "id": "bar_ifc@area.cnr.it",
         "icon": "local_cafe",
+        "category": "food_and_drinks",
         "position": {
             "x": 5413.8203125,
             "y": 3439.371826171875,
             "layers": [
-                "3"
+                "T"
             ]
         }
     },
     {
         "id": "entrance3@area.cnr.it",
+        "text": "3",
+        "category": "entrance",
+        "shape": "square",
         "position": {
             "x": 2855.778564453125,
             "y": 3918.0947265625,
@@ -558,7 +629,7 @@
             "x": 3838.9541015625,
             "y": 3760.861083984375,
             "layers": [
-                "3"
+                "1"
             ]
         }
     },
@@ -586,6 +657,9 @@
     },
     {
         "id": "parking_lot_2a@area.cnr.it",
+        "icon": "local_parking",
+        "shape": "square",
+        "category": "mobility",
         "position": {
             "x": 3629.205322265625,
             "y": 2479.626953125,
@@ -630,11 +704,12 @@
     {
         "id": "rec_monasterio@area.cnr.it",
         "icon": "local_hospital",
+        "category": "emergency",
         "position": {
             "x": 5281.79833984375,
             "y": 3368.746826171875,
             "layers": [
-                "3"
+                "T"
             ]
         }
     },
@@ -663,6 +738,7 @@
     {
         "id": "edicola@area.cnr.it",
         "icon": "menu_book",
+        "category": "commercial",
         "position": {
             "x": 5215.02490234375,
             "y": 3518.84423828125,
@@ -685,6 +761,7 @@
     {
         "id": "atm_auditorium@area.cnr.it",
         "icon": "credit_card",
+        "category": "services",
         "position": {
             "x": 4144.0595703125,
             "y": 3455.388427734375,
@@ -695,6 +772,9 @@
     },
     {
         "id": "entrance1@area.cnr.it",
+        "text": "1",
+        "category": "entrance",
+        "shape": "square",
         "position": {
             "x": 4155.0283203125,
             "y": 3365.9169921875,
@@ -705,7 +785,7 @@
     },
     {
         "id": "serra@area.cnr.it",
-        "icon": "eco",
+        "icon": "local_florist",
         "position": {
             "x": 2257.330810546875,
             "y": 4695.21630859375,
@@ -717,11 +797,12 @@
     {
         "id": "mensa@area.cnr.it",
         "icon": "restaurant_menu",
+        "category": "food_and_drinks",
         "position": {
             "x": 3924.350606028356,
             "y": 2937.9507688866634,
             "layers": [
-                "3"
+                "T"
             ]
         }
     },
@@ -738,6 +819,7 @@
     },
     {
         "id": "exit@area.cnr.it",
+        "category": "mobility",
         "position": {
             "x": 5361.984375,
             "y": 1772.9947509765625,
@@ -749,6 +831,7 @@
     {
         "id": "atm_IFC@area.cnr.it",
         "icon": "credit_card",
+        "category": "services",
         "position": {
             "x": 5235.91064453125,
             "y": 3285.918701171875,
@@ -759,6 +842,9 @@
     },
     {
         "id": "parking_lot_5b@area.cnr.it",
+        "icon": "local_parking",
+        "shape": "square",
+        "category": "mobility",
         "position": {
             "x": 5791.021484375,
             "y": 5700.25244140625,
@@ -769,6 +855,9 @@
     },
     {
         "id": "entrance8@area.cnr.it",
+        "text": "8",
+        "category": "entrance",
+        "shape": "square",
         "position": {
             "x": 3771.3623046875,
             "y": 4233.95361328125,
@@ -779,6 +868,9 @@
     },
     {
         "id": "entrance18@area.cnr.it",
+        "text": "18",
+        "category": "entrance",
+        "shape": "square",
         "position": {
             "x": 2607.75390625,
             "y": 4399.5888671875,
@@ -789,6 +881,9 @@
     },
     {
         "id": "entrance9@area.cnr.it",
+        "text": "9",
+        "category": "entrance",
+        "shape": "square",
         "position": {
             "x": 5616.619140625,
             "y": 4233.95361328125,
@@ -810,6 +905,9 @@
     },
     {
         "id": "entrance13@area.cnr.it",
+        "text": "13",
+        "category": "entrance",
+        "shape": "square",
         "position": {
             "x": 5966.49267578125,
             "y": 5136.7939453125,

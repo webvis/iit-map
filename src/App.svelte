@@ -15,6 +15,7 @@
 	import SVGLayers from './core/SVGLayers.svelte'
 	import ResultsBox from './core/ResultsBox.svelte'
 	import Marker from './core/Marker.svelte'
+	import Mark from './core/Mark.svelte'
 
 	// application-specific code
 	import { rooms, pois, room_positions, people, search, getQualifica, getImmagine } from './storesCNR.js'
@@ -75,6 +76,15 @@
 
 	function handleSearch(e) {
 		$results = search(e.detail.query)
+	}
+
+	const category_colors = {
+		'food_and_drinks': '#f57f17',
+		'mobility': '#00b0ff',
+		'emergency': '#db4437',
+		'services': '#6b7de3',
+		'commercial': '#5491f5',
+		'entrance': '#f5f5f5'
 	}
 </script>
 
@@ -161,7 +171,15 @@
 	/>
 	<Layer name="pois">
 		{#each Array.from($pois.values()) as poi}
-			<Marker data={poi}/>
+			<Marker position={poi.position} on:click={() => select(poi.id) }>
+				<Mark
+					icon={poi.icon}
+					text={poi.text}
+					fg={poi.category == 'entrance' ? '#0d5784' : undefined}
+					bg={poi.category ? category_colors[poi.category] : undefined}
+					shape={poi.shape}
+				/>
+			</Marker>
 		{/each}
 	</Layer>
 </View>
