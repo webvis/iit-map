@@ -2,6 +2,7 @@
     {
         "id": "entrance1@area.cnr.it",
         "text": "1",
+        "icon": "login",
         "category": "entrance",
         "shape": "square",
         "position": {
@@ -15,6 +16,7 @@
     {
         "id": "entrance2@area.cnr.it",
         "text": "2",
+        "icon": "login",
         "category": "entrance",
         "shape": "square",
         "position": {
@@ -28,6 +30,7 @@
     {
         "id": "entrance3@area.cnr.it",
         "text": "3",
+        "icon": "login",
         "category": "entrance",
         "shape": "square",
         "position": {
@@ -41,6 +44,7 @@
     {
         "id": "entrance4@area.cnr.it",
         "text": "4",
+        "icon": "login",
         "category": "entrance",
         "shape": "square",
         "position": {
@@ -54,6 +58,7 @@
     {
         "id": "entrance5@area.cnr.it",
         "text": "5",
+        "icon": "login",
         "category": "entrance",
         "shape": "square",
         "position": {
@@ -67,6 +72,7 @@
     {
         "id": "entrance6@area.cnr.it",
         "text": "6",
+        "icon": "login",
         "category": "entrance",
         "shape": "square",
         "position": {
@@ -80,6 +86,7 @@
     {
         "id": "entrance6a@area.cnr.it",
         "text": "6a",
+        "icon": "login",
         "category": "entrance",
         "shape": "square",
         "position": {
@@ -93,6 +100,7 @@
     {
         "id": "entrance7@area.cnr.it",
         "text": "7",
+        "icon": "login",
         "category": "entrance",
         "shape": "square",
         "position": {
@@ -106,6 +114,7 @@
     {
         "id": "entrance8@area.cnr.it",
         "text": "8",
+        "icon": "login",
         "category": "entrance",
         "shape": "square",
         "position": {
@@ -119,6 +128,7 @@
     {
         "id": "entrance9@area.cnr.it",
         "text": "9",
+        "icon": "login",
         "category": "entrance",
         "shape": "square",
         "position": {
@@ -132,6 +142,7 @@
     {
         "id": "entrance10@area.cnr.it",
         "text": "10",
+        "icon": "login",
         "category": "entrance",
         "shape": "square",
         "position": {
@@ -145,6 +156,7 @@
     {
         "id": "entrance11@area.cnr.it",
         "text": "11",
+        "icon": "login",
         "category": "entrance",
         "shape": "square",
         "position": {
@@ -158,6 +170,7 @@
     {
         "id": "entrance12@area.cnr.it",
         "text": "12",
+        "icon": "login",
         "category": "entrance",
         "shape": "square",
         "position": {
@@ -171,6 +184,7 @@
     {
         "id": "entrance13@area.cnr.it",
         "text": "13",
+        "icon": "login",
         "category": "entrance",
         "shape": "square",
         "position": {
@@ -184,6 +198,7 @@
     {
         "id": "entrance14@area.cnr.it",
         "text": "14",
+        "icon": "login",
         "category": "entrance",
         "shape": "square",
         "position": {
@@ -197,6 +212,7 @@
     {
         "id": "entrance15@area.cnr.it",
         "text": "15",
+        "icon": "login",
         "category": "entrance",
         "shape": "square",
         "position": {
@@ -210,6 +226,7 @@
     {
         "id": "entrance16@area.cnr.it",
         "text": "16",
+        "icon": "login",
         "category": "entrance",
         "shape": "square",
         "position": {
@@ -223,6 +240,7 @@
     {
         "id": "entrance17@area.cnr.it",
         "text": "17",
+        "icon": "login",
         "category": "entrance",
         "shape": "square",
         "position": {
@@ -236,6 +254,7 @@
     {
         "id": "entrance18@area.cnr.it",
         "text": "18",
+        "icon": "login",
         "category": "entrance",
         "shape": "square",
         "position": {
@@ -249,6 +268,7 @@
     {
         "id": "entrance19@area.cnr.it",
         "text": "19",
+        "icon": "login",
         "category": "entrance",
         "shape": "square",
         "position": {
@@ -262,6 +282,7 @@
     {
         "id": "entrance20@area.cnr.it",
         "text": "20",
+        "icon": "login",
         "category": "entrance",
         "shape": "square",
         "position": {
@@ -275,6 +296,7 @@
     {
         "id": "entrance21@area.cnr.it",
         "text": "21",
+        "icon": "login",
         "category": "entrance",
         "shape": "square",
         "position": {
@@ -288,6 +310,7 @@
     {
         "id": "entrance22@area.cnr.it",
         "text": "22",
+        "icon": "login",
         "category": "entrance",
         "shape": "square",
         "position": {

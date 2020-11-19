@@ -22,9 +22,9 @@
         <rect width="124" height="124" x="-62" y="-62" rx="16" ry="16" fill={bg} stroke={fg} stroke-width="7.5"/>
     {/if}
 
-    {#if icon}
-        <text class="material-icons" fill={fg} transform="scale(3.5)" text-anchor="middle" dy=".5em">{icon}</text>
-    {:else if text}
+    {#if text}
         <text class="label" fill={fg} text-anchor="middle" dy=".4em">{text}</text>
+    {:else if icon}
+        <text class="material-icons" fill={fg} transform="scale(3.5)" text-anchor="middle" dy=".5em">{icon}</text>
     {/if}
 </g>
