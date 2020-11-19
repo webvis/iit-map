@@ -219,6 +219,10 @@
 			<hr/>
 			<RoomInfo/>
 		{/if}
+	{:else if $selection.type == 'poi'}
+		{#if $selection.category == 'entrance'}
+			<InfoBoxHeader title="Ingresso {$selection.text}" subtitle="Ingresso"/>
+		{/if}
 	{/if}
 </InfoBox>
 
