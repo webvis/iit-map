@@ -1,25 +1,77 @@
 [
     {
-        "id": "entrance10@area.cnr.it",
-        "text": "10",
+        "id": "entrance1@area.cnr.it",
+        "text": "1",
         "category": "entrance",
         "shape": "square",
         "position": {
-            "x": 5966.49267578125,
-            "y": 4233.95361328125,
+            "x": 4155.0283203125,
+            "y": 3365.9169921875,
             "layers": [
                 "T"
             ]
         }
     },
     {
-        "id": "entrance21@area.cnr.it",
-        "text": "21",
+        "id": "entrance2@area.cnr.it",
+        "text": "2",
         "category": "entrance",
         "shape": "square",
         "position": {
-            "x": 4581.79833984375,
-            "y": 4973.9638671875,
+            "x": 3331.0244140625,
+            "y": 2931.947265625,
+            "layers": [
+                "T"
+            ]
+        }
+    },
+    {
+        "id": "entrance3@area.cnr.it",
+        "text": "3",
+        "category": "entrance",
+        "shape": "square",
+        "position": {
+            "x": 2855.778564453125,
+            "y": 3918.0947265625,
+            "layers": [
+                "T"
+            ]
+        }
+    },
+    {
+        "id": "entrance4@area.cnr.it",
+        "text": "4",
+        "category": "entrance",
+        "shape": "square",
+        "position": {
+            "x": 3329.228271484375,
+            "y": 3812.248291015625,
+            "layers": [
+                "T"
+            ]
+        }
+    },
+    {
+        "id": "entrance5@area.cnr.it",
+        "text": "5",
+        "category": "entrance",
+        "shape": "square",
+        "position": {
+            "x": 5227.59326171875,
+            "y": 3359.465576171875,
+            "layers": [
+                "T"
+            ]
+        }
+    },
+    {
+        "id": "entrance6@area.cnr.it",
+        "text": "6",
+        "category": "entrance",
+        "shape": "square",
+        "position": {
+            "x": 6055.3359375,
+            "y": 2890.23876953125,
             "layers": [
                 "T"
             ]
@@ -39,12 +91,64 @@
         }
     },
     {
-        "id": "entrance19@area.cnr.it",
-        "text": "19",
+        "id": "entrance7@area.cnr.it",
+        "text": "7",
         "category": "entrance",
         "shape": "square",
         "position": {
-            "x": 4581.79833984375,
+            "x": 3424.97802734375,
+            "y": 4233.95361328125,
+            "layers": [
+                "T"
+            ]
+        }
+    },
+    {
+        "id": "entrance8@area.cnr.it",
+        "text": "8",
+        "category": "entrance",
+        "shape": "square",
+        "position": {
+            "x": 3771.3623046875,
+            "y": 4233.95361328125,
+            "layers": [
+                "T"
+            ]
+        }
+    },
+    {
+        "id": "entrance9@area.cnr.it",
+        "text": "9",
+        "category": "entrance",
+        "shape": "square",
+        "position": {
+            "x": 5616.619140625,
+            "y": 4233.95361328125,
+            "layers": [
+                "T"
+            ]
+        }
+    },
+    {
+        "id": "entrance10@area.cnr.it",
+        "text": "10",
+        "category": "entrance",
+        "shape": "square",
+        "position": {
+            "x": 5966.49267578125,
+            "y": 4233.95361328125,
+            "layers": [
+                "T"
+            ]
+        }
+    },
+    {
+        "id": "entrance11@area.cnr.it",
+        "text": "11",
+        "category": "entrance",
+        "shape": "square",
+        "position": {
+            "x": 6776.42529296875,
             "y": 4399.5888671875,
             "layers": [
                 "T"
@@ -65,6 +169,19 @@
         }
     },
     {
+        "id": "entrance13@area.cnr.it",
+        "text": "13",
+        "category": "entrance",
+        "shape": "square",
+        "position": {
+            "x": 5966.49267578125,
+            "y": 5136.7939453125,
+            "layers": [
+                "T"
+            ]
+        }
+    },
+    {
         "id": "entrance14@area.cnr.it",
         "text": "14",
         "category": "entrance",
@@ -72,58 +189,6 @@
         "position": {
             "x": 5616.619140625,
             "y": 5136.7939453125,
-            "layers": [
-                "T"
-            ]
-        }
-    },
-    {
-        "id": "entrance20@area.cnr.it",
-        "text": "20",
-        "category": "entrance",
-        "shape": "square",
-        "position": {
-            "x": 4804.2265625,
-            "y": 4399.5888671875,
-            "layers": [
-                "T"
-            ]
-        }
-    },
-    {
-        "id": "entrance16@area.cnr.it",
-        "text": "16",
-        "category": "entrance",
-        "shape": "square",
-        "position": {
-            "x": 3424.97802734375,
-            "y": 5136.7939453125,
-            "layers": [
-                "T"
-            ]
-        }
-    },
-    {
-        "id": "entrance22@area.cnr.it",
-        "text": "22",
-        "category": "entrance",
-        "shape": "square",
-        "position": {
-            "x": 4804.2265625,
-            "y": 4973.9638671875,
-            "layers": [
-                "T"
-            ]
-        }
-    },
-    {
-        "id": "entrance6@area.cnr.it",
-        "text": "6",
-        "category": "entrance",
-        "shape": "square",
-        "position": {
-            "x": 6055.3359375,
-            "y": 2890.23876953125,
             "layers": [
                 "T"
             ]
@@ -143,52 +208,15 @@
         }
     },
     {
-        "id": "entrance5@area.cnr.it",
-        "text": "5",
-        "category": "entrance",
-        "shape": "square",
-        "position": {
-            "x": 5227.59326171875,
-            "y": 3359.465576171875,
-            "layers": [
-                "T"
-            ]
-        }
-    },
-    {
-        "id": "entrance4@area.cnr.it",
-        "text": "4",
-        "category": "entrance",
-        "shape": "square",
-        "position": {
-            "x": 3329.228271484375,
-            "y": 3812.248291015625,
-            "layers": [
-                "T"
-            ]
-        }
-    },
-    {
-        "id": "entrance7@area.cnr.it",
-        "text": "7",
+        "id": "entrance16@area.cnr.it",
+        "text": "16",
         "category": "entrance",
         "shape": "square",
         "position": {
             "x": 3424.97802734375,
-            "y": 4233.95361328125,
+            "y": 5136.7939453125,
             "layers": [
                 "T"
-            ]
-        }
-    },
-    {
-        "id": "stairs2@area.cnr.it",
-        "icon": "stairs",
-        "position": {
-            "x": 3762.263427734375,
-            "y": 4077.687744140625,
-            "layers": [
-                "1"
             ]
         }
     },
@@ -200,71 +228,6 @@
         "position": {
             "x": 2607.75390625,
             "y": 4973.9638671875,
-            "layers": [
-                "T"
-            ]
-        }
-    },
-    {
-        "id": "entrance2@area.cnr.it",
-        "text": "2",
-        "category": "entrance",
-        "shape": "square",
-        "position": {
-            "x": 3331.0244140625,
-            "y": 2931.947265625,
-            "layers": [
-                "T"
-            ]
-        }
-    },
-    {
-        "id": "entrance11@area.cnr.it",
-        "text": "11",
-        "category": "entrance",
-        "shape": "square",
-        "position": {
-            "x": 6776.42529296875,
-            "y": 4399.5888671875,
-            "layers": [
-                "T"
-            ]
-        }
-    },
-    {
-        "id": "entrance3@area.cnr.it",
-        "text": "3",
-        "category": "entrance",
-        "shape": "square",
-        "position": {
-            "x": 2855.778564453125,
-            "y": 3918.0947265625,
-            "layers": [
-                "T"
-            ]
-        }
-    },
-    {
-        "id": "entrance1@area.cnr.it",
-        "text": "1",
-        "category": "entrance",
-        "shape": "square",
-        "position": {
-            "x": 4155.0283203125,
-            "y": 3365.9169921875,
-            "layers": [
-                "T"
-            ]
-        }
-    },
-    {
-        "id": "entrance8@area.cnr.it",
-        "text": "8",
-        "category": "entrance",
-        "shape": "square",
-        "position": {
-            "x": 3771.3623046875,
-            "y": 4233.95361328125,
             "layers": [
                 "T"
             ]
@@ -284,26 +247,52 @@
         }
     },
     {
-        "id": "entrance9@area.cnr.it",
-        "text": "9",
+        "id": "entrance19@area.cnr.it",
+        "text": "19",
         "category": "entrance",
         "shape": "square",
         "position": {
-            "x": 5616.619140625,
-            "y": 4233.95361328125,
+            "x": 4581.79833984375,
+            "y": 4399.5888671875,
             "layers": [
                 "T"
             ]
         }
     },
     {
-        "id": "entrance13@area.cnr.it",
-        "text": "13",
+        "id": "entrance20@area.cnr.it",
+        "text": "20",
         "category": "entrance",
         "shape": "square",
         "position": {
-            "x": 5966.49267578125,
-            "y": 5136.7939453125,
+            "x": 4804.2265625,
+            "y": 4399.5888671875,
+            "layers": [
+                "T"
+            ]
+        }
+    },
+    {
+        "id": "entrance21@area.cnr.it",
+        "text": "21",
+        "category": "entrance",
+        "shape": "square",
+        "position": {
+            "x": 4581.79833984375,
+            "y": 4973.9638671875,
+            "layers": [
+                "T"
+            ]
+        }
+    },
+    {
+        "id": "entrance22@area.cnr.it",
+        "text": "22",
+        "category": "entrance",
+        "shape": "square",
+        "position": {
+            "x": 4804.2265625,
+            "y": 4973.9638671875,
             "layers": [
                 "T"
             ]
