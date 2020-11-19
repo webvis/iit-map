@@ -1,7 +1,7 @@
 <script>
 	import * as d3 from 'd3'
 
-	import { layers, current_layer, selection } from './stores.js'
+	import { current_transform, layers, current_layer, selection } from './stores.js'
 	import { onMount } from 'svelte'
 
 	import Placemark from './Placemark.svelte'
@@ -10,9 +10,7 @@
 	export let placemark_icon // FIXME expose Placemark component
 	
 	let svg
-	let zoomable_group
 	let zoom_behavior
-	let current_zoom_transform = d3.zoomIdentity
 	let current = false
 	
 	onMount(() => {
@@ -58,21 +56,12 @@
 		d3.select(svg).call(zoom_behavior)
 
 		function handleZoom() {
-			current_zoom_transform = d3.event.transform
-			refreshZoom()
+			$current_transform = d3.event.transform
 		}
 
 		// focus to enable keyboard interaction
 		svg.focus()
 	})
-
-	function refreshZoom() {
-		d3.select(zoomable_group)
-			.attr('transform', current_zoom_transform)
-
-		d3.selectAll(zoomable_group.querySelectorAll('.noZoom'))
-			.attr('transform', `scale(${1/current_zoom_transform.k})`)
-	}
 
 	function scaleBy(k, duration) {
 		duration = duration === undefined ? 300 : duration
@@ -103,14 +92,8 @@
 		}
 	}
 
-	function handlePlacemarkReady() {
-		// this was used to scale the placemark to the current zoom,
-		// but since we update the zoom whenever there's a change of
-		// selection it is not needed anymore
-	}
-
 	function handleKeyUp(e) {
-		const delta = 500 / current_zoom_transform.k
+		const delta = 500 / $current_transform.k
 
 		// pan and zoom keyboard control
 		switch(e.key) {
@@ -148,10 +131,10 @@
 </style>
 
 <svg class="view" bind:this={svg} {viewBox} tabindex="0" on:keyup={handleKeyUp}>
-	<g bind:this={zoomable_group}>
+	<g transform={$current_transform}>
 		<slot></slot>
 		{#if $selection && $selection.position}
-			<Placemark on:ready={handlePlacemarkReady} icon={placemark_icon}/> <!-- the Placemark needs to be rescaled when placed -->
+			<Placemark icon={placemark_icon}/> <!-- the Placemark needs to be rescaled when placed -->
 		{/if}
 	</g>
 </svg>

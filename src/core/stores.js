@@ -1,9 +1,14 @@
-import { writable, readable, get } from 'svelte/store'
+import { writable, readable, get, derived } from 'svelte/store'
+
+import * as d3 from 'd3'
 
 export const layers = writable(null)
 export const current_layer = writable(null)
 export const selection = writable(null)
 export const results = writable([])
+export const current_transform = writable(d3.zoomIdentity)
+
+export const semantic_zoom = derived(current_transform, (x) => 1/x.k)
 
 const get_id_from_hash = () => window.location.hash.slice(1)
 
