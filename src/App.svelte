@@ -162,7 +162,7 @@
 
 <div class="wrapper">
 
-<View viewBox="1950 1400 5480 4770" placemark_icon={ $selection && $selection.icon ? $selection.icon : $selection && $selection.type == 'person' ? 'person' : 'meeting_room' }>
+<View viewBox="1950 1400 5480 4770" placemark_icon={ $selection && $selection.icon ? $selection.icon : $selection && $selection.type == 'person' ? 'person' : 'sensor_door' }>
 	<SVGLayers
 		path="data/cnr_flat.svg"
 		names="T 1 2"
@@ -218,6 +218,10 @@
 		{#if $selection.stanza}
 			<hr/>
 			<RoomInfo/>
+		{/if}
+	{:else if $selection.type == 'poi'}
+		{#if $selection.category == 'entrance'}
+			<InfoBoxHeader title="Ingresso {$selection.text}" subtitle="Ingresso"/>
 		{/if}
 	{/if}
 </InfoBox>

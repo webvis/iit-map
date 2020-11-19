@@ -1,5 +1,5 @@
 <script>
-    import { current_layer } from './stores.js'
+    import { current_layer, semantic_zoom } from './stores.js'
 
     export let position
 </script>
@@ -15,9 +15,7 @@
 </style>
 
 {#if position.layers.has($current_layer.name)}
-<g transform="translate({position.x},{position.y})" on:click>
-    <g class="noZoom selectable marker">
-        <slot></slot>
-    </g>
+<g class="selectable marker" transform="translate({position.x},{position.y}) scale({$semantic_zoom})" on:click>
+    <slot></slot>
 </g>
 {/if}
