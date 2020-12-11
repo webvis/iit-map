@@ -28,3 +28,16 @@ hr {
     margin: 0;
     width: 100%;
 }
+
+.region {
+    fill: white;
+    fill-opacity: 0;
+    stroke: none;
+    stroke-width: 16;
+}
+.region:target {
+    stroke: $mdc-theme-primary;
+}
+.region:not(.selectable) {
+    pointer-events: none;
+}

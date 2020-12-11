@@ -57,10 +57,22 @@
 
 		function handleZoom() {
 			$current_transform = d3.event.transform
+			updateLODElementsInSVG()
 		}
 
 		// focus to enable keyboard interaction
 		svg.focus()
+
+		// update LOD-sensitive elements that are defined inside the SVG
+		function updateLODElementsInSVG() {
+			svg.querySelectorAll('[data-scaleExtent]').forEach(elem => {
+				let scale_extent = JSON.parse(elem.getAttribute('data-scaleExtent')).map(d => d == 'Infinity' ? Infinity : d)
+				let lod_visible = $current_transform.k >= scale_extent[0] && $current_transform.k <= scale_extent[1]
+				elem.setAttribute('visibility', lod_visible ? 'visible' : 'hidden')
+			})
+		}
+
+		updateLODElementsInSVG()
 	})
 
 	function scaleBy(k, duration) {

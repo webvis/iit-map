@@ -13,16 +13,22 @@
    height="7293.75"
    width="9000"
    xml:space="preserve"
-   inkscape:version="1.0.1 (1.0.1+r73)"
+   inkscape:version="1.0.1 (0767f8302a, 2020-10-17)"
    version="1.1"
    id="svg3336"><style
      id="style6774"><![CDATA[
-.selectable { 
-    fill:magenta;
+.selectable {
+  fill:magenta;
 }
-.room { 
-    stroke:#757575;
-    stroke-width:4;
+.room {
+  stroke:#757575;
+  stroke-width:4;
+}
+.region {
+  fill: magenta;
+  fill-opacity: 0.1;
+  stroke: magenta;
+  stroke-width: 16;
 }
 ]]></style><metadata
      id="metadata3342"><rdf:RDF><cc:Work
@@ -93,20 +99,20 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1224"
-     inkscape:window-height="656"
+     inkscape:window-width="1848"
+     inkscape:window-height="1016"
      id="namedview3338"
      showgrid="false"
-     inkscape:zoom="0.4874269"
-     inkscape:cx="3156.7332"
-     inkscape:cy="3915.393"
-     inkscape:window-x="56"
+     inkscape:zoom="0.17233143"
+     inkscape:cx="4628.489"
+     inkscape:cy="4085.5846"
+     inkscape:window-x="72"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="3"
      inkscape:snap-intersection-paths="true"
      inkscape:snap-page="true"
-     inkscape:snap-global="true"
+     inkscape:snap-global="false"
      showguides="true"
      inkscape:guide-bbox="true"
      inkscape:document-rotation="0"><inkscape:grid
@@ -7939,4 +7945,64 @@
          inkscape:connector-curvature="0"
          id="ISTI-I87"
          d="m 2569.8213,4720.5387 0.046,-34.7338 106.0275,0.1413 -0.046,34.7325 z"
-         class="room  selectable" /></g></g></svg>
+         class="room  selectable" /></g></g><g
+     inkscape:groupmode="layer"
+     id="3"
+     class="layer"
+     inkscape:label="3"><text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:689.044px;line-height:1.25;font-family:Montserrat;-inkscape-font-specification:Montserrat;opacity:0.35;fill:#241f55;fill-opacity:1;stroke:none;stroke-width:1;"
+       x="3112.4077"
+       y="3580.2693"
+       id="text4188"
+       data-scaleExtent="[0,3]"><tspan
+         sodipodi:role="line"
+         id="tspan4186"
+         x="3112.4077"
+         y="3580.2693"
+         style="fill:#241f55;fill-opacity:1;stroke-width:1;">A</tspan></text><text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:689.044px;line-height:1.25;font-family:Montserrat;-inkscape-font-specification:Montserrat;opacity:0.35;fill:#241f55;fill-opacity:1;stroke:none;stroke-width:1;"
+       x="3289.3723"
+       y="4878.2373"
+       id="text4192"
+       data-scaleExtent="[0,3]"><tspan
+         sodipodi:role="line"
+         id="tspan4190"
+         x="3289.3723"
+         y="4878.2373"
+         style="fill:#241f55;fill-opacity:1;stroke-width:1;">B</tspan></text><text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:689.044px;line-height:1.25;font-family:Montserrat;-inkscape-font-specification:Montserrat;opacity:0.35;fill:#241f55;fill-opacity:1;stroke:none;stroke-width:1;"
+       x="5493.1646"
+       y="4878.2373"
+       id="text4196"
+       data-scaleExtent="[0,3]"><tspan
+         sodipodi:role="line"
+         id="tspan4194"
+         x="5493.1646"
+         y="4878.2373"
+         style="fill:#241f55;fill-opacity:1;stroke-width:1;">B</tspan></text><text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:689.044px;line-height:1.25;font-family:Montserrat;-inkscape-font-specification:Montserrat;opacity:0.35;fill:#241f55;fill-opacity:1;stroke:none;stroke-width:1;"
+       x="5511.0796"
+       y="3580.2693"
+       id="text4200"
+       data-scaleExtent="[0,3]"><tspan
+         sodipodi:role="line"
+         id="tspan4198"
+         x="5511.0796"
+         y="3580.2693"
+         style="fill:#241f55;fill-opacity:1;stroke-width:1;">C</tspan></text><path
+       id="edificio_A"
+       d="m 2499.7159,2711.8738 h 1781.065 v 1254.4598 h -1781.065 z"
+       class="region"
+       data-scaleExtent="[0,3]" /><path
+       id="edificio_C"
+       d="M 5090.6699 2711.873 L 5090.6699 3966.334 L 6871.7344 3966.334 L 6871.7344 3807.6035 L 6475.6523 2711.873 L 5090.6699 2711.873 z "
+       class="region"
+       data-scaleExtent="[0,3]" /><path
+       id="edificio_B"
+       d="M 2499.7159,3967.8103 H 6871.7344 V 5306.3339 H 2499.7159 Z"
+       class="region"
+       data-scaleExtent="[0,3]" /></g></svg>
