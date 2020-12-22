@@ -102,5 +102,5 @@ export function getQualifica(person) {
 }
 
 export function getImmagine(person) {
-    return `url('https://www.iit.cnr.it/sites/default/files/images/people/${person.immagine.replace("'",'')}')`
+    return `url('https://www.iit.cnr.it/wp-content/themes/cnr/foto_personali/${person.immagine.replace("'",'')}')`
 }
