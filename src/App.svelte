@@ -166,8 +166,8 @@
 <View viewBox="1950 1400 5480 4770" placemark_icon={ $selection && $selection.icon ? $selection.icon : $selection && $selection.type == 'person' ? 'person' : 'sensor_door' }>
 	<SVGLayers
 		path="data/cnr_flat.svg"
-		names="T 1 2"
-		mode="floor"
+		names="T 1 2 overlay"
+		modes="floor floor floor overlay"
 		postprocess={postprocessLayers}
 	/>
 	<Layer name="pois">

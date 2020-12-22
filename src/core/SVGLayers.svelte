@@ -4,9 +4,11 @@
 
 	export let path
 	export let names
-	export let mode
+	export let modes
 	export let preprocess = null
 	export let postprocess = null
+
+	$: modes_array = modes.split(' ')
 
     async function retrieveLayers() {
 		let parser = new DOMParser()
@@ -26,8 +28,8 @@
 	let layers = retrieveLayers()
 </script>
 
-{#each names.split(' ') as name}
-	<Layer name={name} type={mode}>
+{#each names.split(' ') as name, i}
+	<Layer name={name} type={modes_array[i]}>
 		{#await layers then ready_layers}
 			<InlineSVG node={ready_layers.get(name)}/>
 		{/await}
