@@ -41,9 +41,6 @@
 				select(id)
 			})
 		})
-
-		// start from third floor
-		selectLayer('3')
 	}
 
 	// FIXME to be moved in utils
