@@ -192,7 +192,7 @@
 
 <img src="assets/IIT+CNR-RGB-logos.svg" alt="IIT-CNR logo" class="logo"/>
 
-<footer>Made with <a href="https://github.com/webvis/iit-map">Map</a>, by HCT@IIT-CNR</footer>
+<footer><a href="https://www.iit.cnr.it/privacy-policy/">Privacy Policy</a> - Made with <a href="https://github.com/webvis/iit-map">Map</a>, by Human Centered Technologies Lab @IIT-CNR</footer>
 
 <OmniBox on:search={handleSearch}>
 	<ResultsBox>
