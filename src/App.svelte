@@ -3,7 +3,7 @@
 
 	import * as d3 from 'd3'
 
-	import { selection, select, selected_id, results, current_layer } from './core/stores.js'
+	import { selection, select, selected_id, results, current_layer, selectLayer } from './core/stores.js'
 
 	import View from './core/View.svelte'
 	import Layer from './core/Layer.svelte'
@@ -41,6 +41,9 @@
 				select(id)
 			})
 		})
+
+		// start from third floor
+		selectLayer('3')
 	}
 
 	// FIXME to be moved in utils
@@ -86,6 +89,7 @@
 		'commercial': '#5491f5',
 		'entrance': '#f5f5f5'
 	}
+
 </script>
 
 <style>
