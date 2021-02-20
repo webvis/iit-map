@@ -1,7 +1,7 @@
-# VISKEL
-### Visual Information-Seeking sKELeton application
+# anymapper
+### Visualize your data as a zoomable map
 
-*VISKEL* provides a skeleton UI for authoring visualization applications in [Svelte](https://svelte.dev/). It follows a literal interpretation of Ben Shneiderman's [Visual Information-Seeking Mantra](https://infovis-wiki.net/wiki/Visual_Information-Seeking_Mantra), leveraging a familiar, Google Maps-like user interface. (add support for Material Design)
+*anymapper* provides a collection of [Svelte](https://svelte.dev/) UI components. *anymapper* follows a literal interpretation of Ben Shneiderman's [Visual Information-Seeking Mantra](https://infovis-wiki.net/wiki/Visual_Information-Seeking_Mantra), providing a familiar, Google Maps-like user interface. (add support for Material Design)
 
 ## Get started
 
