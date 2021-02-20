@@ -1,5 +1,5 @@
 <script>
-    import { selection } from './core/stores.js'
+    import { selection } from 'anymapper'
 
     import { Content } from '@smui/card'
 

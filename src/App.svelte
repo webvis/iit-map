@@ -1,21 +1,8 @@
 <script>
-	import { onMount } from 'svelte'
-
 	import * as d3 from 'd3'
 
-	import { selection, select, selected_id, results, current_layer, selectLayer } from './core/stores.js'
-
-	import View from './core/View.svelte'
-	import Layer from './core/Layer.svelte'
-	import InfoBox from './core/InfoBox.svelte'
-    import InfoBoxHeader from './core/InfoBoxHeader.svelte'
-	import OmniBox from './core/OmniBox.svelte'
-	import FloorLayersCtrl from './core/FloorLayersCtrl.svelte'
-	import InlineSVG from './core/InlineSVG.svelte'
-	import SVGLayers from './core/SVGLayers.svelte'
-	import ResultsBox from './core/ResultsBox.svelte'
-	import Marker from './core/Marker.svelte'
-	import Mark from './core/Mark.svelte'
+	import { selection, select, selected_id, results } from 'anymapper'
+	import { View, Layer, InfoBox, InfoBoxHeader, OmniBox, FloorLayersCtrl, SVGLayers, ResultsBox, Marker, Mark } from 'anymapper'
 
 	// application-specific code
 	import { rooms, pois, room_positions, people, search, getQualifica, getImmagine } from './storesCNR.js'

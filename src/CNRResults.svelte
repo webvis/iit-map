@@ -1,5 +1,5 @@
 <script>
-    import { results } from './core/stores.js'
+    import { results } from 'anymapper'
     import { getQualifica } from './storesCNR.js'
     
     import List, {Item, Text, Graphic} from '@smui/list'

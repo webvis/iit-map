@@ -1,5 +1,5 @@
 <script>
-    import { selection } from './core/stores.js'
+    import { selection } from 'anymapper'
     import { getQualifica, getImmagine } from './storesCNR.js'
 
     import List, {Item, Graphic, Text, PrimaryText, SecondaryText} from '@smui/list'
