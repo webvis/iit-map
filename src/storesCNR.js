@@ -4,7 +4,7 @@ import lunr from 'lunr'
 import { readable, writable, derived, get } from 'svelte/store'
 
 export const people = readable(new Map(), function start(set) {
-    fetch('https://www.iit.cnr.it/expPeople.php')
+    fetch('https://intranet.iit.cnr.it/map.php')
         .then(async function (response) {
             let data = await response.json()
             set( new Map(data.map(d => {
