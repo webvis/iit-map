@@ -176,7 +176,7 @@
 
 <img src="assets/IIT+CNR-RGB-logos.svg" alt="IIT-CNR logo" class="logo"/>
 
-<footer><a href="https://www.iit.cnr.it/privacy-policy/">Privacy Policy</a> - Made with <a href="https://github.com/webvis/iit-map">MapVis</a>, by Human Centered Technologies Lab @IIT-CNR</footer>
+<footer><a href="https://www.iit.cnr.it/privacy-policy/">Privacy Policy</a> - Made with <a href="https://github.com/webvis/anymapper">anymapper</a>, by Human Centered Technologies Lab @IIT-CNR</footer>
 
 <OmniBox on:search={handleSearch}>
 	<ResultsBox>
