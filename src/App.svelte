@@ -2,7 +2,7 @@
 	import * as d3 from 'd3'
 
 	import { selection, select, selected_id, results } from 'anymapper'
-	import { View, Layer, InfoBox, InfoBoxHeader, OmniBox, FloorLayersCtrl, SVGLayers, ResultsBox, Marker, Mark } from 'anymapper'
+	import { View, Layer, InfoBox, InfoBoxHeader, OmniBox, FloorLayersCtrl, SVGLayers, ResultsBox, Marker, Mark, Depiction } from 'anymapper'
 
 	// application-specific code
 	import { rooms, pois, room_positions, people, search, getQualifica, getImmagine } from './storesCNR.js'
@@ -191,7 +191,8 @@
 		<hr/>
 		<RoomPeopleList/>
 	{:else if $selection.type == 'person'}
-		<InfoBoxHeader title="{$selection.nome} {$selection.cognome}" subtitle="{getQualifica($selection)}" depiction={getImmagine($selection)} depictionSize="contain"/>
+		<InfoBoxHeader title="{$selection.nome} {$selection.cognome}" subtitle="{getQualifica($selection)}"/>
+		<Depiction src={getImmagine($selection)} size="contain"/>
 		<PersonInfo/>
 	
 		{#if $selection.sede}
