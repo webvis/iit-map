@@ -47,8 +47,8 @@ export const rooms = derived(
 function lunr_index_map(index, m) {
     let docs = Array.from(m).map(d => d[1])
     docs.forEach(function (doc) {
-        this.add(doc)
-    }, index)
+        index.add(doc)
+    })
 }
 
 export const people_index = derived(people,
