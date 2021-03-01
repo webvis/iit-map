@@ -2,7 +2,7 @@
 	import * as d3 from 'd3'
 
 	import { selection, select, selected_id, results } from 'anymapper'
-	import { View, Layer, InfoBox, InfoBoxHeader, OmniBox, FloorLayersCtrl, SVGLayers, ResultsBox, Marker, Mark, Depiction } from 'anymapper'
+	import { View, Layer, InfoBox, InfoBoxHeader, OmniBox, FloorLayersCtrl, SVGLayers, ResultsBox, Marker, Mark, Depiction, Placemark } from 'anymapper'
 
 	// application-specific code
 	import { rooms, pois, room_positions, people, search, getQualifica, getImmagine } from './storesCNR.js'
@@ -150,7 +150,7 @@
 
 <div class="wrapper">
 
-<View viewBox="1950 1400 5480 4770" placemark_icon={ $selection && $selection.icon ? $selection.icon : $selection && $selection.type == 'person' ? 'person' : 'sensor_door' }>
+<View viewBox="1950 1400 5480 4770">
 	<SVGLayers
 		path="data/cnr_flat.svg"
 		names="T 1 2 overlay"
@@ -170,6 +170,7 @@
 			</Marker>
 		{/each}
 	</Layer>
+	<Placemark icon={$selection && $selection.icon ? $selection.icon : $selection && $selection.type == 'person' ? 'person' : 'sensor_door'}/>
 </View>
 
 <FloorLayersCtrl/>
