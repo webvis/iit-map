@@ -186,11 +186,14 @@
 </OmniBox>
 
 <InfoBox>
-	{#if $selection.type == 'room'}
+	{#if $selection.type == 'office'}
 		<InfoBoxHeader title="{$selection.stanza}" subtitle="Ufficio"/>
 		<RoomInfo/>
 		<hr/>
 		<RoomPeopleList/>
+	{:else if $selection.type == 'room'}
+		<InfoBoxHeader title="{$selection.id}" subtitle="Stanza"/>
+		<Depiction src="assets/room_photos/{$selection.id}.jpg"/>
 	{:else if $selection.type == 'person'}
 		<InfoBoxHeader title="{$selection.nome} {$selection.cognome}" subtitle="{getQualifica($selection)}"/>
 		<Depiction src={getImmagine($selection)} size="contain"/>
