@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    sodipodi:docname="cnr_flat.svg"
    viewBox="0 0 9000 7293.75"
    height="7293.75"
    width="9000"
    xml:space="preserve"
-   inkscape:version="1.0.1 (1.0.1+r74)"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
    version="1.1"
-   id="svg3336"><style
+   id="svg3336"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"><style
      id="style6774"><![CDATA[
 .selectable {
   fill:magenta;
@@ -33,7 +33,7 @@
 ]]></style><metadata
      id="metadata3342"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
      id="defs3340"><linearGradient
        inkscape:collect="always"
        id="linearGradient2736"><stop
@@ -99,23 +99,24 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1224"
-     inkscape:window-height="656"
+     inkscape:window-width="1172"
+     inkscape:window-height="698"
      id="namedview3338"
      showgrid="false"
-     inkscape:zoom="0.078065071"
-     inkscape:cx="3443.5507"
-     inkscape:cy="4058.0541"
-     inkscape:window-x="56"
-     inkscape:window-y="27"
+     inkscape:zoom="0.31226028"
+     inkscape:cx="3288.9229"
+     inkscape:cy="3304.9352"
+     inkscape:window-x="102"
+     inkscape:window-y="-6"
      inkscape:window-maximized="1"
-     inkscape:current-layer="3"
+     inkscape:current-layer="T"
      inkscape:snap-intersection-paths="true"
      inkscape:snap-page="true"
      inkscape:snap-global="false"
      showguides="true"
      inkscape:guide-bbox="true"
-     inkscape:document-rotation="0"><inkscape:grid
+     inkscape:document-rotation="0"
+     inkscape:pagecheckerboard="0"><inkscape:grid
        type="xygrid"
        id="grid2456" /></sodipodi:namedview><g
      id="T"
@@ -712,10 +713,9 @@
        height="123.26877"
        x="3172.5525"
        y="3795.1963" /><path
-       inkscape:connector-curvature="0"
-       style="fill:#f8ecd5;fill-opacity:1;stroke:#757575;stroke-width:3.2;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 2872.9805,3680.6211 v 59.9082 h 22.08 v 27.7812 h -22.08 v 46.8399 h 168.8847 v -134.5293 z"
-       id="rect4561" /><rect
+       id="A10"
+       class="room selectable" /><rect
        style="fill:#f8ecd5;fill-opacity:1;stroke:#757575;stroke-width:3.2;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect4566"
        width="168.80304"
@@ -7949,7 +7949,9 @@
      inkscape:groupmode="layer"
      id="overlay"
      class="layer"
-     inkscape:label="overlay"><g
+     inkscape:label="overlay"
+     style="display:inline"
+     sodipodi:insensitive="true"><g
        aria-label="A"
        id="text4188"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:689.044px;line-height:1.25;font-family:Montserrat;-inkscape-font-specification:Montserrat;opacity:0.25;fill:#241f55;fill-opacity:1;stroke:none;stroke-width:1"
@@ -7983,7 +7985,7 @@
        class="region"
        data-scaleExtent="[0,3]" /><path
        id="edificio_C"
-       d="M 5090.6699 2711.873 L 5090.6699 3966.334 L 6871.7344 3966.334 L 6871.7344 3807.6035 L 6475.6523 2711.873 L 5090.6699 2711.873 z "
+       d="M 5090.6699,2711.873 V 3966.334 H 6871.7344 V 3807.6035 L 6475.6523,2711.873 Z"
        class="region"
        data-scaleExtent="[0,3]" /><path
        id="edificio_B"
