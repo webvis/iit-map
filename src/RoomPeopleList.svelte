@@ -16,7 +16,7 @@
 	{#each $selection.people as person}
         <a href="#{person.email}">    
             <Item>
-                <Graphic style="background: url({getImmagine(person)}) rgb(221,221,221); background-position-x: center!important; background-size: cover!important; background-repeat: no-repeat!important;" />
+                <Graphic style="background: url({getImmagine(person)}), url(assets/default_person.png), rgb(245,245,245); background-position-x: center!important; background-size: cover!important; background-repeat: no-repeat!important;" />
                 <Text>
                     <PrimaryText>{person.nome} {person.cognome}</PrimaryText>
                     <SecondaryText>{getQualifica(person)}</SecondaryText>
