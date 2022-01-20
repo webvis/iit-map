@@ -188,6 +188,7 @@
 <InfoBox>
 	{#if $selection.type == 'office'}
 		<InfoBoxHeader title="{$selection.stanza}" subtitle="Ufficio"/>
+		<Depiction src="assets/room_photos/{$selection.id}.jpg"/>
 		<RoomInfo/>
 		<hr/>
 		<RoomPeopleList/>
