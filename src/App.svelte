@@ -188,16 +188,16 @@
 <InfoBox>
 	{#if $selection.type == 'office'}
 		<InfoBoxHeader title="{$selection.stanza}" subtitle="Ufficio"/>
-		<Depiction src="assets/room_photos/{$selection.id}.jpg"/>
+		<Depiction src="assets/room_photos/{$selection.id}.jpg" fallback="url(assets/room_photos/default_office.png)"/>
 		<RoomInfo/>
 		<hr/>
 		<RoomPeopleList/>
 	{:else if $selection.type == 'room'}
 		<InfoBoxHeader title="{$selection.id}" subtitle="Stanza"/>
-		<Depiction src="assets/room_photos/{$selection.id}.jpg"/>
+		<Depiction src="assets/room_photos/{$selection.id}.jpg" fallback="url(assets/room_photos/default_room.png)"/>
 	{:else if $selection.type == 'person'}
 		<InfoBoxHeader title="{$selection.nome} {$selection.cognome}" subtitle="{getQualifica($selection)}"/>
-		<Depiction src={getImmagine($selection)} size="contain"/>
+		<Depiction src={getImmagine($selection)} size="contain" fallback="url(assets/default_person.png)"/>
 		<PersonInfo/>
 	
 		{#if $selection.sede}
