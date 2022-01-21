@@ -11,7 +11,7 @@
             "layers": [
                 "T"
             ],
-            "scaleExtent": [0.6, "Infinity"]
+            "lodrange": [0.6, "Infinity"]
         }
     },
     {
@@ -26,7 +26,7 @@
             "layers": [
                 "T"
             ],
-            "scaleExtent": [0.6, "Infinity"]
+            "lodrange": [0.6, "Infinity"]
         }
     },
     {
@@ -41,7 +41,7 @@
             "layers": [
                 "T"
             ],
-            "scaleExtent": [0.6, "Infinity"]
+            "lodrange": [0.6, "Infinity"]
         }
     },
     {
@@ -56,7 +56,7 @@
             "layers": [
                 "T"
             ],
-            "scaleExtent": [0.6, "Infinity"]
+            "lodrange": [0.6, "Infinity"]
         }
     },
     {
@@ -71,7 +71,7 @@
             "layers": [
                 "T"
             ],
-            "scaleExtent": [0.6, "Infinity"]
+            "lodrange": [0.6, "Infinity"]
         }
     },
     {
@@ -86,7 +86,7 @@
             "layers": [
                 "T"
             ],
-            "scaleExtent": [0.6, "Infinity"]
+            "lodrange": [0.6, "Infinity"]
         }
     },
     {
@@ -101,7 +101,7 @@
             "layers": [
                 "T"
             ],
-            "scaleExtent": [0.6, "Infinity"]
+            "lodrange": [0.6, "Infinity"]
         }
     },
     {
@@ -116,7 +116,7 @@
             "layers": [
                 "T"
             ],
-            "scaleExtent": [0.6, "Infinity"]
+            "lodrange": [0.6, "Infinity"]
         }
     },
     {
@@ -131,7 +131,7 @@
             "layers": [
                 "T"
             ],
-            "scaleExtent": [0.6, "Infinity"]
+            "lodrange": [0.6, "Infinity"]
         }
     },
     {
@@ -146,7 +146,7 @@
             "layers": [
                 "T"
             ],
-            "scaleExtent": [0.6, "Infinity"]
+            "lodrange": [0.6, "Infinity"]
         }
     },
     {
@@ -161,7 +161,7 @@
             "layers": [
                 "T"
             ],
-            "scaleExtent": [0.6, "Infinity"]
+            "lodrange": [0.6, "Infinity"]
         }
     },
     {
@@ -176,7 +176,7 @@
             "layers": [
                 "T"
             ],
-            "scaleExtent": [0.6, "Infinity"]
+            "lodrange": [0.6, "Infinity"]
         }
     },
     {
@@ -191,7 +191,7 @@
             "layers": [
                 "T"
             ],
-            "scaleExtent": [0.6, "Infinity"]
+            "lodrange": [0.6, "Infinity"]
         }
     },
     {
@@ -206,7 +206,7 @@
             "layers": [
                 "T"
             ],
-            "scaleExtent": [0.6, "Infinity"]
+            "lodrange": [0.6, "Infinity"]
         }
     },
     {
@@ -221,7 +221,7 @@
             "layers": [
                 "T"
             ],
-            "scaleExtent": [0.6, "Infinity"]
+            "lodrange": [0.6, "Infinity"]
         }
     },
     {
@@ -236,7 +236,7 @@
             "layers": [
                 "T"
             ],
-            "scaleExtent": [0.6, "Infinity"]
+            "lodrange": [0.6, "Infinity"]
         }
     },
     {
@@ -251,7 +251,7 @@
             "layers": [
                 "T"
             ],
-            "scaleExtent": [0.6, "Infinity"]
+            "lodrange": [0.6, "Infinity"]
         }
     },
     {
@@ -266,7 +266,7 @@
             "layers": [
                 "T"
             ],
-            "scaleExtent": [0.6, "Infinity"]
+            "lodrange": [0.6, "Infinity"]
         }
     },
     {
@@ -281,7 +281,7 @@
             "layers": [
                 "T"
             ],
-            "scaleExtent": [0.6, "Infinity"]
+            "lodrange": [0.6, "Infinity"]
         }
     },
     {
@@ -296,7 +296,7 @@
             "layers": [
                 "T"
             ],
-            "scaleExtent": [0.6, "Infinity"]
+            "lodrange": [0.6, "Infinity"]
         }
     },
     {
@@ -311,7 +311,7 @@
             "layers": [
                 "T"
             ],
-            "scaleExtent": [0.6, "Infinity"]
+            "lodrange": [0.6, "Infinity"]
         }
     },
     {
@@ -326,7 +326,7 @@
             "layers": [
                 "T"
             ],
-            "scaleExtent": [0.6, "Infinity"]
+            "lodrange": [0.6, "Infinity"]
         }
     },
     {
@@ -341,7 +341,7 @@
             "layers": [
                 "T"
             ],
-            "scaleExtent": [0.6, "Infinity"]
+            "lodrange": [0.6, "Infinity"]
         }
     }
 ]
