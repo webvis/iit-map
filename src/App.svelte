@@ -170,7 +170,7 @@
 			</Marker>
 		{/each}
 	</Layer>
-	<Placemark icon={$selection && $selection.icon ? $selection.icon : $selection && $selection.type == 'person' ? 'person' : 'sensor_door'}/>
+	<Placemark icon={$selection && $selection.icon ? $selection.icon : $selection && $selection.type == 'person' ? 'person' : 'meeting_room'}/>
 </View>
 
 <FloorLayersCtrl/>
