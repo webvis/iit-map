@@ -343,5 +343,21 @@
             ],
             "lodrange": [0.6, "Infinity"]
         }
+    },
+    {
+        "id": "distributori_ingresso_7@area.cnr.it",
+        "icon": "local_cafe",
+        "category": "food_and_drinks",
+        "shape": "circle",
+        "title": "Distributori Automatici",
+        "subtitle": "Distributori Automatici Ingresso 7",
+        "position": {
+            "x": 3344.6083984375,
+            "y": 4100.62353515625,
+            "layers": [
+                "T"
+            ],
+            "lodrange": [0.6, "Infinity"]
+        }
     }
 ]

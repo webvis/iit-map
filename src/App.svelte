@@ -216,6 +216,8 @@
 	{:else if $selection.type == 'poi'}
 		{#if $selection.category == 'entrance'}
 			<InfoBoxHeader title="Ingresso {$selection.text}" subtitle="Ingresso"/>
+		{:else if $selection.title && $selection.subtitle}
+			<InfoBoxHeader title={$selection.title} subtitle={$selection.subtitle}/>
 		{/if}
 	{/if}
 </InfoBox>
