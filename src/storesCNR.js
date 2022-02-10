@@ -8,7 +8,7 @@ export const people = readable(new Map(), function start(set) {
         .then(async function (response) {
             let data = await response.json()
             set( new Map(data.map(d => {
-                let person = {...d, type: 'person'}
+                let person = {...d, type: 'person', interno: d.telefono ? d.telefono.substring(d.telefono.length - 4) : null}
                 if(get(room_positions).has(d.stanza)) { // WARNING possible timing issues
                     person.position = get(room_positions).get(d.stanza)
                 }
@@ -66,6 +66,7 @@ export const people_index = derived(people,
             this.field('nome')
             this.field('cognome')
             this.field('qualifica')
+            this.field('interno')
 
             lunr_index_map(this, $people)
         })
