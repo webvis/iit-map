@@ -350,10 +350,58 @@
         "category": "food_and_drinks",
         "shape": "circle",
         "title": "Distributori Automatici",
-        "subtitle": "Distributori Automatici Ingresso 7",
+        "subtitle": "Ristorazione",
         "position": {
             "x": 3344.6083984375,
             "y": 4100.62353515625,
+            "layers": [
+                "T"
+            ],
+            "lodrange": [0.6, "Infinity"]
+        }
+    },
+    {
+        "id": "bar_ifc@area.cnr.it",
+        "icon": "local_cafe",
+        "category": "food_and_drinks",
+        "shape": "circle",
+        "title": "Bar IFC",
+        "subtitle": "Ristorazione",
+        "position": {
+            "x": 5413.8203125,
+            "y": 3439.371826171875,
+            "layers": [
+                "T"
+            ],
+            "lodrange": [0.6, "Infinity"]
+        }
+    },
+    {
+        "id": "mensa@area.cnr.it",
+        "icon": "restaurant_menu",
+        "category": "food_and_drinks",
+        "shape": "circle",
+        "title": "Mensa",
+        "subtitle": "Ristorazione",
+        "position": {
+            "x": 3924.350606028356,
+            "y": 2937.9507688866634,
+            "layers": [
+                "T"
+            ],
+            "lodrange": [0.6, "Infinity"]
+        }
+    },
+    {
+        "id": "bar_mensa@area.cnr.it",
+        "icon": "local_cafe",
+        "category": "food_and_drinks",
+        "shape": "circle",
+        "title": "Bar Mensa",
+        "subtitle": "Ristorazione",
+        "position": {
+            "x": 4075.761474609375,
+            "y": 3081.060302734375,
             "layers": [
                 "T"
             ],

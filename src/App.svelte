@@ -124,6 +124,10 @@
 	:global(.room:hover) {
 		fill: orange;
 	}
+	:global(.building_label) {
+		fill: #757575;
+		pointer-events: none;
+	}
 
 	.logo {
 		position: fixed;
@@ -216,23 +220,10 @@
 	{:else if $selection.type == 'poi'}
 		{#if $selection.category == 'entrance'}
 			<InfoBoxHeader title="Ingresso {$selection.text}" subtitle="Ingresso"/>
-		{:else if $selection.title && $selection.subtitle}
-			<InfoBoxHeader title={$selection.title} subtitle={$selection.subtitle}/>
+		{:else if $selection.title}
+			<InfoBoxHeader title={$selection.title} subtitle={$selection.subtitle || ''}/>
 		{/if}
 	{/if}
 </InfoBox>
 
 </div>
-<!--
-<View viewBox="0 0 800 800">
-	<Layer name="T" type="floor">
-		<InlineSVG path='data/floor0.svg'/>
-	</Layer>
-	<Layer name="1" type="floor">
-		<InlineSVG path='data/floor1.svg'/>
-	</Layer>
-	<Layer name="2" type="floor">
-		<InlineSVG path='data/floor2.svg'/>
-	</Layer>
-</View>
--->
