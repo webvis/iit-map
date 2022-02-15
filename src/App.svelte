@@ -71,7 +71,8 @@
 		'emergency': '#db4437',
 		'services': '#6b7de3',
 		'commercial': '#5491f5',
-		'entrance': '#f5f5f5'
+		'entrance': '#f5f5f5',
+		'cultural': '#6c461f'
 	}
 
 </script>
@@ -223,6 +224,7 @@
 		{:else if $selection.title}
 			<InfoBoxHeader title={$selection.title} subtitle={$selection.subtitle || ''}/>
 		{/if}
+		<Depiction src="assets/room_photos/{$selection.id}.jpg" fallback="url(assets/default_poi.png)"/>
 	{/if}
 </InfoBox>
 
