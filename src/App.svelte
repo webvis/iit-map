@@ -1,7 +1,7 @@
 <script>
 	import * as d3 from 'd3'
 
-	import { selection, select, selected_id, results } from 'anymapper'
+	import { selection, select, selected_id, results, hovered_id, hover_enter, hover_leave } from 'anymapper'
 	import { View, Layer, InfoBox, InfoBoxHeader, OmniBox, FloorLayersCtrl, SVGLayers, ResultsBox, Marker, Mark, Depiction, Placemark } from 'anymapper'
 
 	// application-specific code
@@ -23,10 +23,19 @@
 			})
 			$room_positions = new_room_positions
 
-			d3.select(layer).selectAll('.selectable').on('click', function () {
-				let id = d3.select(this).attr('id')
-				select(id)
-			})
+			d3.select(layer).selectAll('.selectable')
+				.on('click', function () {
+					let id = d3.select(this).attr('id')
+					select(id)
+				})
+				.on('mouseenter', function () {
+					let id = d3.select(this).attr('id')
+					hover_enter(id)
+				})
+				.on('mouseleave', function () {
+					let id = d3.select(this).attr('id')
+					hover_leave(id)
+				})
 		})
 	}
 
@@ -122,7 +131,7 @@
 		stroke: #757575;
 		stroke-width: 3.2;
 	}
-	:global(.room:hover) {
+	:global(.room.hovered) {
 		fill: orange;
 	}
 	:global(.building_label) {
@@ -164,7 +173,11 @@
 	/>
 	<Layer name="pois">
 		{#each Array.from($pois.values()) as poi}
-			<Marker position={poi.position} on:click={() => select(poi.id) }>
+			<Marker
+				position={poi.position}
+				on:click={() => select(poi.id) }
+				on:mouseenter={() => hover_enter(poi.id)}
+				on:mouseleave={() => hover_leave(poi.id)}>
 				<Mark
 					icon={poi.icon}
 					text={poi.text}
