@@ -361,6 +361,22 @@
         }
     },
     {
+        "id": "distributori_ingresso_18@area.cnr.it",
+        "icon": "local_cafe",
+        "category": "food_and_drinks",
+        "shape": "circle",
+        "title": "Distributori Automatici",
+        "subtitle": "Ristorazione",
+        "position": {
+            "x": 2620,
+            "y": 4464,
+            "layers": [
+                "1"
+            ],
+            "lodrange": [0.7, "Infinity"]
+        }
+    },
+    {
         "id": "bar_ifc@area.cnr.it",
         "icon": "fastfood",
         "category": "food_and_drinks",
