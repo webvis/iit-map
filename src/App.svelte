@@ -180,7 +180,7 @@
 
 <FloorLayersCtrl/>
 
-<img src="assets/IIT+CNR-RGB-logos.svg" alt="IIT-CNR logo" class="logo"/>
+<img src="assets/IIT+CNR-RGB-logos.svg" alt="CNR-IIT logo" class="logo"/>
 
 <footer><a href="https://www.iit.cnr.it/privacy-policy/">Privacy</a> - <a href="credits">Credits</a> - Powered by <a href="https://github.com/webvis/anymapper">anymapper</a>, by <a href="//hct.iit.cnr.it/">HCT Lab</a> @<a href="//www.iit.cnr.it/">CNR-IIT</a></footer>
 

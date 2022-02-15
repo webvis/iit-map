@@ -357,12 +357,12 @@
             "layers": [
                 "T"
             ],
-            "lodrange": [0.6, "Infinity"]
+            "lodrange": [0.7, "Infinity"]
         }
     },
     {
         "id": "bar_ifc@area.cnr.it",
-        "icon": "local_cafe",
+        "icon": "fastfood",
         "category": "food_and_drinks",
         "shape": "circle",
         "title": "Bar IFC",
@@ -373,12 +373,12 @@
             "layers": [
                 "T"
             ],
-            "lodrange": [0.6, "Infinity"]
+            "lodrange": [0.7, "Infinity"]
         }
     },
     {
         "id": "mensa@area.cnr.it",
-        "icon": "restaurant_menu",
+        "icon": "restaurant",
         "category": "food_and_drinks",
         "shape": "circle",
         "title": "Mensa",
@@ -389,12 +389,12 @@
             "layers": [
                 "T"
             ],
-            "lodrange": [0.6, "Infinity"]
+            "lodrange": [0.7, "Infinity"]
         }
     },
     {
         "id": "bar_mensa@area.cnr.it",
-        "icon": "local_cafe",
+        "icon": "fastfood",
         "category": "food_and_drinks",
         "shape": "circle",
         "title": "Bar Mensa",
@@ -405,7 +405,7 @@
             "layers": [
                 "T"
             ],
-            "lodrange": [0.6, "Infinity"]
+            "lodrange": [0.7, "Infinity"]
         }
     },
     {
@@ -421,7 +421,7 @@
             "layers": [
                 "T"
             ],
-            "lodrange": [0.6, "Infinity"]
+            "lodrange": [0.5, "Infinity"]
         }
     },
     {
@@ -470,6 +470,86 @@
                 "1"
             ],
             "lodrange": [0.6, "Infinity"]
+        }
+    },
+    {
+        "id": "edicola@area.cnr.it",
+        "icon": "menu_book",
+        "category": "commercial",
+        "shape": "circle",
+        "title": "Edicola",
+        "subtitle": "",
+        "position": {
+            "x": 5215.02490234375,
+            "y": 3518.84423828125,
+            "layers": [
+                "T"
+            ],
+            "lodrange": [0.8, "Infinity"]
+        }
+    },
+    {
+        "id": "parking_lot_4b@area.cnr.it",
+        "icon": "local_parking",
+        "shape": "square",
+        "category": "mobility",
+        "title": "Parcheggio 4b",
+        "subtitle": "Parcheggi",
+        "position": {
+            "x": 3884.780029296875,
+            "y": 5700.25244140625,
+            "layers": [
+                "T"
+            ],
+            "lodrange": [0.5, "Infinity"]
+        }
+    },
+    {
+        "id": "parking_lot_1c@area.cnr.it",
+        "icon": "local_parking",
+        "shape": "square",
+        "category": "mobility",
+        "title": "Parcheggio 1c",
+        "subtitle": "Parcheggi",
+        "position": {
+            "x": 5022.3759765625,
+            "y": 2225.973876953125,
+            "layers": [
+                "T"
+            ],
+            "lodrange": [0.5, "Infinity"]
+        }
+    },
+    {
+        "id": "parking_lot_2a@area.cnr.it",
+        "icon": "local_parking",
+        "shape": "square",
+        "category": "mobility",
+        "title": "Parcheggio 2a",
+        "subtitle": "Parcheggi",
+        "position": {
+            "x": 3629.205322265625,
+            "y": 2479.626953125,
+            "layers": [
+                "T"
+            ],
+            "lodrange": [0.5, "Infinity"]
+        }
+    },
+    {
+        "id": "parking_lot_5b@area.cnr.it",
+        "icon": "local_parking",
+        "shape": "square",
+        "category": "mobility",
+        "title": "Parcheggio 5b",
+        "subtitle": "Parcheggi",
+        "position": {
+            "x": 5791.021484375,
+            "y": 5700.25244140625,
+            "layers": [
+                "T"
+            ],
+            "lodrange": [0.5, "Infinity"]
         }
     }
 ]
