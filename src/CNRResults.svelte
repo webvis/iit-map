@@ -1,5 +1,5 @@
 <script>
-    import { results, select } from 'anymapper'
+    import { results, select, hover_enter, hover_leave } from 'anymapper'
     import { getQualifica } from './storesCNR.js'
     
     import List, {Item, Text, Graphic} from '@smui/list'
@@ -28,12 +28,12 @@
                 <Text>{r.nome} {r.cognome} <span class="secondary">{getQualifica(r)}</span></Text>
             </Item>
         {:else if r.type == 'office'}
-            <Item on:SMUI:action={() => select(r.id)}>
+            <Item on:SMUI:action={() => select(r.id)} on:mouseenter={() => hover_enter(r.id)} on:mouseleave={() => hover_leave(r.id)}>
                 <Graphic class="material-icons">meeting_room</Graphic>
                 <Text>{r.id} <span class="secondary">Ufficio - Edificio {r.edificio}, Piano {r.piano}</span></Text>
             </Item>
         {:else if r.type == 'room'}
-            <Item on:SMUI:action={() => select(r.id)}>
+            <Item on:SMUI:action={() => select(r.id)} on:mouseenter={() => hover_enter(r.id)} on:mouseleave={() => hover_leave(r.id)}>
                 <Graphic class="material-icons">meeting_room</Graphic>
                 <Text>{r.id} <span class="secondary">Stanza</span></Text>
             </Item>
