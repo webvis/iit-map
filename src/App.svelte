@@ -135,7 +135,7 @@
 		fill: orange;
 	}
 	:global(.building_label) {
-		fill: #757575;
+		fill: #333;
 		pointer-events: none;
 	}
 
