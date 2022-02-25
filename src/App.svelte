@@ -134,6 +134,16 @@
 	:global(.room.hovered) {
 		fill: orange;
 	}
+
+	:global(.toilet) {
+		fill: #bcd0ea;
+		stroke: #757575;
+		stroke-width: 3.2;
+	}
+	:global(.toilet.hovered) {
+		fill: #9fbfe8;
+	}
+
 	:global(.building_label) {
 		fill: #333;
 		pointer-events: none;

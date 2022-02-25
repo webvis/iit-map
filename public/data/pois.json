@@ -567,5 +567,21 @@
             ],
             "lodrange": [0.5, "Infinity"]
         }
+    },
+    {
+        "id": "bagni_ingresso_4@area.cnr.it",
+        "icon": "wc",
+        "shape": "square",
+        "category": "services",
+        "title": "Bagni ingresso 4",
+        "subtitle": "Servizi",
+        "position": {
+            "x": 3494,
+            "y": 3728,
+            "layers": [
+                "T"
+            ],
+            "lodrange": [0.7, "Infinity"]
+        }
     }
 ]

@@ -20,10 +20,6 @@
 .selectable {
   fill:magenta;
 }
-.room {
-  stroke:#757575;
-  stroke-width:4;
-}
 .region {
   fill: magenta;
   fill-opacity: 0.1;
@@ -103,9 +99,9 @@
      inkscape:window-height="1016"
      id="namedview3338"
      showgrid="false"
-     inkscape:zoom="0.44160272"
-     inkscape:cx="3554.0995"
-     inkscape:cy="4165.5088"
+     inkscape:zoom="1.2490411"
+     inkscape:cx="3575.1426"
+     inkscape:cy="3820.1305"
      inkscape:window-x="56"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
@@ -921,20 +917,16 @@
        id="path5108"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccc" /><path
-       d="m 3477.64,3747.89 -0.02,-29.7463 31.575,-0.026 0.021,29.7512 z"
-       style="fill:#d5edec;fill-opacity:1;fill-rule:nonzero;stroke:#757575;stroke-width:3.2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="bagni_ingresso_4@area.cnr.it"
+       d="m 3540.3848,3704.9746 -48.0567,0.035 v 0 l -46.4531,0.035 0.041,57.8222 31.7344,-0.023 -0.01,-14.9512 31.5762,-0.022 0.01,14.9493 31.1992,-0.022 z"
+       sodipodi:nodetypes="ccccccccccc"
+       class="selectable toilet" /><path
+       d="m 3477.64,3747.89 -0.02,-29.7463 14.7207,-0.015 -0.013,-13.1196 0.013,13.1196 16.8543,-0.012 0.021,29.7512 z"
+       style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#757575;stroke-width:3.2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="path5110"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccccc" /><path
-       d="m 3477.65,3762.8425 -31.7338,0.022 -0.041,-57.8225 46.4525,-0.034 0.013,13.1212 -14.72,0.014 z"
-       style="fill:#d5edec;fill-opacity:1;fill-rule:nonzero;stroke:#757575;stroke-width:3.2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="path5112"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccccccc" /><path
-       d="m 3492.34,3718.1288 -0.013,-13.12 48.0587,-0.035 0.041,57.8225 -31.2,0.023 -0.032,-44.7013 -16.8588,0.013 z"
-       style="fill:#d5edec;fill-opacity:1;fill-rule:nonzero;stroke:#757575;stroke-width:3.2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="path5114"
-       inkscape:connector-curvature="0" /><path
+       sodipodi:nodetypes="cccccccc"
+       pointer-events="none" /><path
        d="m 4042.0725,3553.265 -0.054,-75.0625 86.1988,-0.062 0.055,75.0625 z"
        style="fill:#f8ecd5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1"
        id="path5116"
@@ -4801,8 +4793,8 @@
        id="rect1764"
        width="34.246136"
        height="58.117691"
-       x="3411.6699"
-       y="3704.7473" /><path
+       x="3411.6292"
+       y="3705.042" /><path
        style="fill:#999999;fill-opacity:1;stroke:#757575;stroke-width:3.2;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 3340.6719,3704.6953 v 44.4629 h 25.8437 v 29.0195 h 18.2891 v -29.0195 l 26.8653,0.052 v -44.4629 z"
        id="rect1766"
