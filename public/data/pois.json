@@ -569,11 +569,11 @@
         }
     },
     {
-        "id": "bagni_ingresso_4@area.cnr.it",
+        "id": "bagni_ingresso_4_piano_1@area.cnr.it",
         "icon": "wc",
         "shape": "square",
         "category": "services",
-        "title": "Bagni ingresso 4",
+        "title": "Bagni",
         "subtitle": "Servizi",
         "position": {
             "x": 3494,
@@ -581,7 +581,55 @@
             "layers": [
                 "T"
             ],
-            "lodrange": [0.7, "Infinity"]
+            "lodrange": [1.2, "Infinity"]
+        }
+    },
+    {
+        "id": "bagni_auditorium_dx@area.cnr.it",
+        "icon": "wc",
+        "shape": "square",
+        "category": "services",
+        "title": "Bagni",
+        "subtitle": "Servizi",
+        "position": {
+            "x": 3962,
+            "y": 3228,
+            "layers": [
+                "T"
+            ],
+            "lodrange": [1.2, "Infinity"]
+        }
+    },
+    {
+        "id": "bagni_auditorium_sx@area.cnr.it",
+        "icon": "wc",
+        "shape": "square",
+        "category": "services",
+        "title": "Bagni",
+        "subtitle": "Servizi",
+        "position": {
+            "x": 3962,
+            "y": 3516,
+            "layers": [
+                "T"
+            ],
+            "lodrange": [1.2, "Infinity"]
+        }
+    },
+    {
+        "id": "bagni_ingresso_3@area.cnr.it",
+        "icon": "wc",
+        "shape": "square",
+        "category": "services",
+        "title": "Bagni",
+        "subtitle": "Servizi",
+        "position": {
+            "x": 2782,
+            "y": 3310,
+            "layers": [
+                "T"
+            ],
+            "lodrange": [1.2, "Infinity"]
         }
     }
 ]
