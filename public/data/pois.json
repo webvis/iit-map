@@ -570,7 +570,8 @@
     },
     {
         "id": "bagni_ingresso_4_piano_1@area.cnr.it",
-        "icon": "wc",
+        "icon": "wc,accessible",
+        "icon_spacing": -4,
         "shape": "square",
         "category": "services",
         "title": "Bagni",
@@ -581,12 +582,13 @@
             "layers": [
                 "T"
             ],
-            "lodrange": [1.2, "Infinity"]
+            "lodrange": [2, "Infinity"]
         }
     },
     {
         "id": "bagni_auditorium_dx@area.cnr.it",
-        "icon": "wc",
+        "icon": "wc,accessible",
+        "icon_spacing": -4,
         "shape": "square",
         "category": "services",
         "title": "Bagni",
@@ -597,12 +599,13 @@
             "layers": [
                 "T"
             ],
-            "lodrange": [1.2, "Infinity"]
+            "lodrange": [2, "Infinity"]
         }
     },
     {
         "id": "bagni_auditorium_sx@area.cnr.it",
-        "icon": "wc",
+        "icon": "wc,accessible",
+        "icon_spacing": -4,
         "shape": "square",
         "category": "services",
         "title": "Bagni",
@@ -613,12 +616,13 @@
             "layers": [
                 "T"
             ],
-            "lodrange": [1.2, "Infinity"]
+            "lodrange": [2, "Infinity"]
         }
     },
     {
         "id": "bagni_ingresso_3@area.cnr.it",
-        "icon": "wc",
+        "icon": "wc,accessible",
+        "icon_spacing": -4,
         "shape": "square",
         "category": "services",
         "title": "Bagni",
@@ -629,7 +633,7 @@
             "layers": [
                 "T"
             ],
-            "lodrange": [1.2, "Infinity"]
+            "lodrange": [2, "Infinity"]
         }
     }
 ]

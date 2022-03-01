@@ -190,6 +190,7 @@
 				on:mouseleave={() => hover_leave(poi.id)}>
 				<Mark
 					icon={poi.icon}
+					icon_spacing={poi.icon_spacing}
 					text={poi.text}
 					fg={poi.category == 'entrance' ? '#0d5784' : undefined}
 					bg={poi.category ? category_colors[poi.category] : undefined}
