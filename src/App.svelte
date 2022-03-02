@@ -13,6 +13,8 @@
 	import CNRResults from './CNRResults.svelte'
 
 	import { Content } from '@smui/card'
+
+	import PathLine from './PathLine.svelte'
 	
 	function postprocessLayers(layers) {
 		let new_room_positions = new Map()
@@ -181,6 +183,10 @@
 		modes="floor floor floor overlay"
 		postprocess={postprocessLayers}
 	/>
+	<Layer name="directions">
+		<PathLine points={[{x:0, y:0}, {x:700, y:100}, {x:500,y:500}, {x:1000,y:500}]} fill="#BBB" stroke="gray"/>
+		<PathLine points={[{x:0, y:0}, {x:1000, y:0}, {x:1000,y:500}]}/>
+	</Layer>
 	<Layer name="pois">
 		{#each Array.from($pois.values()) as poi}
 			<Marker
