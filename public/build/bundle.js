@@ -35972,24 +35972,24 @@ var app = (function () {
     	const default_slot = create_slot(default_slot_template, ctx, /*$$scope*/ ctx[19], null);
 
     	let li_levels = [
-    		/*role*/ ctx[6] === "option"
-    		? {
-    				"aria-selected": /*selected*/ ctx[7] ? "true" : "false"
-    			}
-    		: {},
-    		/*props*/ ctx[12],
     		{
     			class: "\n      mdc-list-item\n      " + /*className*/ ctx[2] + "\n      " + (/*activated*/ ctx[5] ? "mdc-list-item--activated" : "") + "\n      " + (/*selected*/ ctx[7] ? "mdc-list-item--selected" : "") + "\n      " + (/*disabled*/ ctx[8] ? "mdc-list-item--disabled" : "") + "\n      " + (/*role*/ ctx[6] === "menuitem" && /*selected*/ ctx[7]
     			? "mdc-menu-item--selected"
     			: "") + "\n    "
     		},
     		{ role: /*role*/ ctx[6] },
+    		/*role*/ ctx[6] === "option"
+    		? {
+    				"aria-selected": /*selected*/ ctx[7] ? "true" : "false"
+    			}
+    		: {},
     		/*role*/ ctx[6] === "radio" || /*role*/ ctx[6] === "checkbox"
     		? {
     				"aria-checked": /*checked*/ ctx[10] ? "true" : "false"
     			}
     		: {},
-    		{ tabindex: /*tabindex*/ ctx[0] }
+    		{ tabindex: /*tabindex*/ ctx[0] },
+    		/*props*/ ctx[12]
     	];
 
     	let li_data = {};
@@ -36039,24 +36039,24 @@ var app = (function () {
     			}
 
     			set_attributes(li, li_data = get_spread_update(li_levels, [
-    				dirty & /*role, selected*/ 192 && (/*role*/ ctx[6] === "option"
-    				? {
-    						"aria-selected": /*selected*/ ctx[7] ? "true" : "false"
-    					}
-    				: {}),
-    				dirty & /*props*/ 4096 && /*props*/ ctx[12],
     				dirty & /*className, activated, selected, disabled, role*/ 484 && {
     					class: "\n      mdc-list-item\n      " + /*className*/ ctx[2] + "\n      " + (/*activated*/ ctx[5] ? "mdc-list-item--activated" : "") + "\n      " + (/*selected*/ ctx[7] ? "mdc-list-item--selected" : "") + "\n      " + (/*disabled*/ ctx[8] ? "mdc-list-item--disabled" : "") + "\n      " + (/*role*/ ctx[6] === "menuitem" && /*selected*/ ctx[7]
     					? "mdc-menu-item--selected"
     					: "") + "\n    "
     				},
     				dirty & /*role*/ 64 && { role: /*role*/ ctx[6] },
+    				dirty & /*role, selected*/ 192 && (/*role*/ ctx[6] === "option"
+    				? {
+    						"aria-selected": /*selected*/ ctx[7] ? "true" : "false"
+    					}
+    				: {}),
     				dirty & /*role, checked*/ 1088 && (/*role*/ ctx[6] === "radio" || /*role*/ ctx[6] === "checkbox"
     				? {
     						"aria-checked": /*checked*/ ctx[10] ? "true" : "false"
     					}
     				: {}),
-    				dirty & /*tabindex*/ 1 && { tabindex: /*tabindex*/ ctx[0] }
+    				dirty & /*tabindex*/ 1 && { tabindex: /*tabindex*/ ctx[0] },
+    				dirty & /*props*/ 4096 && /*props*/ ctx[12]
     			]));
 
     			if (useActions_action && is_function(useActions_action.update) && dirty & /*use*/ 2) useActions_action.update.call(null, /*use*/ ctx[1]);
@@ -36222,13 +36222,13 @@ var app = (function () {
     	const default_slot = create_slot(default_slot_template, ctx, /*$$scope*/ ctx[19], null);
 
     	let a_levels = [
-    		{ href: /*href*/ ctx[9] },
-    		/*props*/ ctx[12],
     		{
     			class: "\n      mdc-list-item\n      " + /*className*/ ctx[2] + "\n      " + (/*activated*/ ctx[5] ? "mdc-list-item--activated" : "") + "\n      " + (/*selected*/ ctx[7] ? "mdc-list-item--selected" : "") + "\n      " + (/*disabled*/ ctx[8] ? "mdc-list-item--disabled" : "") + "\n    "
     		},
+    		{ href: /*href*/ ctx[9] },
     		/*activated*/ ctx[5] ? { "aria-current": "page" } : {},
-    		{ tabindex: /*tabindex*/ ctx[0] }
+    		{ tabindex: /*tabindex*/ ctx[0] },
+    		/*props*/ ctx[12]
     	];
 
     	let a_data = {};
@@ -36278,13 +36278,13 @@ var app = (function () {
     			}
 
     			set_attributes(a, a_data = get_spread_update(a_levels, [
-    				dirty & /*href*/ 512 && { href: /*href*/ ctx[9] },
-    				dirty & /*props*/ 4096 && /*props*/ ctx[12],
     				dirty & /*className, activated, selected, disabled*/ 420 && {
     					class: "\n      mdc-list-item\n      " + /*className*/ ctx[2] + "\n      " + (/*activated*/ ctx[5] ? "mdc-list-item--activated" : "") + "\n      " + (/*selected*/ ctx[7] ? "mdc-list-item--selected" : "") + "\n      " + (/*disabled*/ ctx[8] ? "mdc-list-item--disabled" : "") + "\n    "
     				},
+    				dirty & /*href*/ 512 && { href: /*href*/ ctx[9] },
     				dirty & /*activated*/ 32 && (/*activated*/ ctx[5] ? { "aria-current": "page" } : {}),
-    				dirty & /*tabindex*/ 1 && { tabindex: /*tabindex*/ ctx[0] }
+    				dirty & /*tabindex*/ 1 && { tabindex: /*tabindex*/ ctx[0] },
+    				dirty & /*props*/ 4096 && /*props*/ ctx[12]
     			]));
 
     			if (useActions_action && is_function(useActions_action.update) && dirty & /*use*/ 2) useActions_action.update.call(null, /*use*/ ctx[1]);
@@ -38822,60 +38822,47 @@ var app = (function () {
 
     // (186:1) <Layer name="directions">
     function create_default_slot_7$1(ctx) {
-    	let pathline0;
-    	let t;
-    	let pathline1;
+    	let pathline;
     	let current;
 
-    	pathline0 = new PathLine({
+    	pathline = new PathLine({
     			props: {
     				points: [
-    					{ x: 0, y: 0 },
-    					{ x: 700, y: 100 },
-    					{ x: 500, y: 500 },
-    					{ x: 1000, y: 500 }
-    				],
-    				fill: "#BBB",
-    				stroke: "gray"
-    			},
-    			$$inline: true
-    		});
-
-    	pathline1 = new PathLine({
-    			props: {
-    				points: [{ x: 0, y: 0 }, { x: 1000, y: 0 }, { x: 1000, y: 500 }]
+    					{ x: 4155.0283203125, y: 3365.9169921875 },
+    					{ x: 4025.761474609375, y: 3365.9169921875 },
+    					{
+    						x: 4025.761474609375,
+    						y: 3081.060302734375
+    					},
+    					{
+    						x: 4075.761474609375,
+    						y: 3081.060302734375
+    					}
+    				]
     			},
     			$$inline: true
     		});
 
     	const block = {
     		c: function create() {
-    			create_component(pathline0.$$.fragment);
-    			t = space();
-    			create_component(pathline1.$$.fragment);
+    			create_component(pathline.$$.fragment);
     		},
     		m: function mount(target, anchor) {
-    			mount_component(pathline0, target, anchor);
-    			insert_dev(target, t, anchor);
-    			mount_component(pathline1, target, anchor);
+    			mount_component(pathline, target, anchor);
     			current = true;
     		},
     		p: noop,
     		i: function intro(local) {
     			if (current) return;
-    			transition_in(pathline0.$$.fragment, local);
-    			transition_in(pathline1.$$.fragment, local);
+    			transition_in(pathline.$$.fragment, local);
     			current = true;
     		},
     		o: function outro(local) {
-    			transition_out(pathline0.$$.fragment, local);
-    			transition_out(pathline1.$$.fragment, local);
+    			transition_out(pathline.$$.fragment, local);
     			current = false;
     		},
     		d: function destroy(detaching) {
-    			destroy_component(pathline0, detaching);
-    			if (detaching) detach_dev(t);
-    			destroy_component(pathline1, detaching);
+    			destroy_component(pathline, detaching);
     		}
     	};
 
@@ -38890,7 +38877,7 @@ var app = (function () {
     	return block;
     }
 
-    // (192:3) <Marker     position={poi.position}     on:click={() => select(poi.id) }     on:mouseenter={() => hover_enter(poi.id)}     on:mouseleave={() => hover_leave(poi.id)}>
+    // (191:3) <Marker     position={poi.position}     on:click={() => select(poi.id) }     on:mouseenter={() => hover_enter(poi.id)}     on:mouseleave={() => hover_leave(poi.id)}>
     function create_default_slot_6$1(ctx) {
     	let mark;
     	let t;
@@ -38958,14 +38945,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_6$1.name,
     		type: "slot",
-    		source: "(192:3) <Marker     position={poi.position}     on:click={() => select(poi.id) }     on:mouseenter={() => hover_enter(poi.id)}     on:mouseleave={() => hover_leave(poi.id)}>",
+    		source: "(191:3) <Marker     position={poi.position}     on:click={() => select(poi.id) }     on:mouseenter={() => hover_enter(poi.id)}     on:mouseleave={() => hover_leave(poi.id)}>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (191:2) {#each Array.from($pois.values()) as poi}
+    // (190:2) {#each Array.from($pois.values()) as poi}
     function create_each_block$5(ctx) {
     	let marker;
     	let current;
@@ -39032,14 +39019,14 @@ var app = (function () {
     		block,
     		id: create_each_block$5.name,
     		type: "each",
-    		source: "(191:2) {#each Array.from($pois.values()) as poi}",
+    		source: "(190:2) {#each Array.from($pois.values()) as poi}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (190:1) <Layer name="pois">
+    // (189:1) <Layer name="pois">
     function create_default_slot_5$1(ctx) {
     	let each_1_anchor;
     	let current;
@@ -39128,7 +39115,7 @@ var app = (function () {
     		block,
     		id: create_default_slot_5$1.name,
     		type: "slot",
-    		source: "(190:1) <Layer name=\\\"pois\\\">",
+    		source: "(189:1) <Layer name=\\\"pois\\\">",
     		ctx
     	});
 
@@ -39267,7 +39254,7 @@ var app = (function () {
     	return block;
     }
 
-    // (218:1) <ResultsBox>
+    // (217:1) <ResultsBox>
     function create_default_slot_3$3(ctx) {
     	let cnrresults;
     	let current;
@@ -39299,14 +39286,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_3$3.name,
     		type: "slot",
-    		source: "(218:1) <ResultsBox>",
+    		source: "(217:1) <ResultsBox>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (217:0) <OmniBox on:search={handleSearch}>
+    // (216:0) <OmniBox on:search={handleSearch}>
     function create_default_slot_2$3(ctx) {
     	let resultsbox;
     	let current;
@@ -39354,14 +39341,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_2$3.name,
     		type: "slot",
-    		source: "(217:0) <OmniBox on:search={handleSearch}>",
+    		source: "(216:0) <OmniBox on:search={handleSearch}>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (251:36) 
+    // (250:36) 
     function create_if_block_5(ctx) {
     	let current_block_type_index;
     	let if_block;
@@ -39467,14 +39454,14 @@ var app = (function () {
     		block,
     		id: create_if_block_5.name,
     		type: "if",
-    		source: "(251:36) ",
+    		source: "(250:36) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (233:39) 
+    // (232:39) 
     function create_if_block_2$3(ctx) {
     	let infoboxheader;
     	let t0;
@@ -39621,14 +39608,14 @@ var app = (function () {
     		block,
     		id: create_if_block_2$3.name,
     		type: "if",
-    		source: "(233:39) ",
+    		source: "(232:39) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (230:37) 
+    // (229:37) 
     function create_if_block_1$7(ctx) {
     	let infoboxheader;
     	let t;
@@ -39693,14 +39680,14 @@ var app = (function () {
     		block,
     		id: create_if_block_1$7.name,
     		type: "if",
-    		source: "(230:37) ",
+    		source: "(229:37) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (224:1) {#if $selection.type == 'office'}
+    // (223:1) {#if $selection.type == 'office'}
     function create_if_block$d(ctx) {
     	let infoboxheader;
     	let t0;
@@ -39743,7 +39730,7 @@ var app = (function () {
     			hr = element("hr");
     			t3 = space();
     			create_component(roompeoplelist.$$.fragment);
-    			add_location(hr, file$u, 227, 2, 5753);
+    			add_location(hr, file$u, 226, 2, 5779);
     		},
     		m: function mount(target, anchor) {
     			mount_component(infoboxheader, target, anchor);
@@ -39797,14 +39784,14 @@ var app = (function () {
     		block,
     		id: create_if_block$d.name,
     		type: "if",
-    		source: "(224:1) {#if $selection.type == 'office'}",
+    		source: "(223:1) {#if $selection.type == 'office'}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (254:29) 
+    // (253:29) 
     function create_if_block_7(ctx) {
     	let infoboxheader;
     	let current;
@@ -39849,14 +39836,14 @@ var app = (function () {
     		block,
     		id: create_if_block_7.name,
     		type: "if",
-    		source: "(254:29) ",
+    		source: "(253:29) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (252:2) {#if $selection.category == 'entrance'}
+    // (251:2) {#if $selection.category == 'entrance'}
     function create_if_block_6(ctx) {
     	let infoboxheader;
     	let current;
@@ -39900,14 +39887,14 @@ var app = (function () {
     		block,
     		id: create_if_block_6.name,
     		type: "if",
-    		source: "(252:2) {#if $selection.category == 'entrance'}",
+    		source: "(251:2) {#if $selection.category == 'entrance'}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (238:2) {#if $selection.sede}
+    // (237:2) {#if $selection.sede}
     function create_if_block_4(ctx) {
     	let hr;
     	let t;
@@ -39927,7 +39914,7 @@ var app = (function () {
     			hr = element("hr");
     			t = space();
     			create_component(content.$$.fragment);
-    			add_location(hr, file$u, 238, 3, 6281);
+    			add_location(hr, file$u, 237, 3, 6307);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, hr, anchor);
@@ -39964,14 +39951,14 @@ var app = (function () {
     		block,
     		id: create_if_block_4.name,
     		type: "if",
-    		source: "(238:2) {#if $selection.sede}",
+    		source: "(237:2) {#if $selection.sede}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (240:3) <Content>
+    // (239:3) <Content>
     function create_default_slot_1$4(ctx) {
     	let table;
     	let tr;
@@ -39992,10 +39979,10 @@ var app = (function () {
     			td0.textContent = "Sede";
     			td1 = element("td");
     			t1 = text(t1_value);
-    			add_location(td0, file$u, 241, 9, 6321);
-    			add_location(td1, file$u, 241, 22, 6334);
-    			add_location(tr, file$u, 241, 5, 6317);
-    			add_location(table, file$u, 240, 4, 6304);
+    			add_location(td0, file$u, 240, 9, 6347);
+    			add_location(td1, file$u, 240, 22, 6360);
+    			add_location(tr, file$u, 240, 5, 6343);
+    			add_location(table, file$u, 239, 4, 6330);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, table, anchor);
@@ -40018,14 +40005,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_1$4.name,
     		type: "slot",
-    		source: "(240:3) <Content>",
+    		source: "(239:3) <Content>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (247:2) {#if $selection.stanza}
+    // (246:2) {#if $selection.stanza}
     function create_if_block_3$1(ctx) {
     	let hr;
     	let t;
@@ -40038,7 +40025,7 @@ var app = (function () {
     			hr = element("hr");
     			t = space();
     			create_component(roominfo.$$.fragment);
-    			add_location(hr, file$u, 247, 3, 6519);
+    			add_location(hr, file$u, 246, 3, 6545);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, hr, anchor);
@@ -40066,14 +40053,14 @@ var app = (function () {
     		block,
     		id: create_if_block_3$1.name,
     		type: "if",
-    		source: "(247:2) {#if $selection.stanza}",
+    		source: "(246:2) {#if $selection.stanza}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (223:0) <InfoBox>
+    // (222:0) <InfoBox>
     function create_default_slot$9(ctx) {
     	let current_block_type_index;
     	let if_block;
@@ -40163,7 +40150,7 @@ var app = (function () {
     		block,
     		id: create_default_slot$9.name,
     		type: "slot",
-    		source: "(223:0) <InfoBox>",
+    		source: "(222:0) <InfoBox>",
     		ctx
     	});
 
@@ -40255,19 +40242,19 @@ var app = (function () {
     			if (img.src !== (img_src_value = "assets/IIT+CNR-RGB-logos.svg")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "CNR-IIT logo");
     			attr_dev(img, "class", "logo svelte-1agk2ux");
-    			add_location(img, file$u, 212, 0, 5076);
+    			add_location(img, file$u, 211, 0, 5102);
     			attr_dev(a0, "href", "https://www.iit.cnr.it/privacy-policy/");
-    			add_location(a0, file$u, 214, 8, 5159);
+    			add_location(a0, file$u, 213, 8, 5185);
     			attr_dev(a1, "href", "credits");
-    			add_location(a1, file$u, 214, 71, 5222);
+    			add_location(a1, file$u, 213, 71, 5248);
     			attr_dev(a2, "href", "https://github.com/webvis/anymapper");
-    			add_location(a2, file$u, 214, 114, 5265);
+    			add_location(a2, file$u, 213, 114, 5291);
     			attr_dev(a3, "href", "//hct.iit.cnr.it/");
-    			add_location(a3, file$u, 214, 178, 5329);
+    			add_location(a3, file$u, 213, 178, 5355);
     			attr_dev(a4, "href", "//www.iit.cnr.it/");
-    			add_location(a4, file$u, 214, 219, 5370);
+    			add_location(a4, file$u, 213, 219, 5396);
     			attr_dev(footer, "class", "svelte-1agk2ux");
-    			add_location(footer, file$u, 214, 0, 5151);
+    			add_location(footer, file$u, 213, 0, 5177);
     			attr_dev(div, "class", "wrapper svelte-1agk2ux");
     			add_location(div, file$u, 176, 0, 3982);
     		},

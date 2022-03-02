@@ -184,8 +184,7 @@
 		postprocess={postprocessLayers}
 	/>
 	<Layer name="directions">
-		<PathLine points={[{x:0, y:0}, {x:700, y:100}, {x:500,y:500}, {x:1000,y:500}]} fill="#BBB" stroke="gray"/>
-		<PathLine points={[{x:0, y:0}, {x:1000, y:0}, {x:1000,y:500}]}/>
+		<PathLine points={[{x: 4155.0283203125, y: 3365.9169921875}, {x: 4025.761474609375, y: 3365.9169921875}, {x: 4025.761474609375, y: 3081.060302734375}, {x: 4075.761474609375, y: 3081.060302734375}]}/>
 	</Layer>
 	<Layer name="pois">
 		{#each Array.from($pois.values()) as poi}
