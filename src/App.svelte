@@ -2,7 +2,7 @@
 	import * as d3 from 'd3'
 
 	import { selection, select, selected_id, results, hover_enter, hover_leave } from 'anymapper'
-	import { View, Layer, InfoBox, InfoBoxHeader, OmniBox, FloorLayersCtrl, SVGLayers, ResultsBox, Depiction, Placemark, Line } from 'anymapper'
+	import { View, Layer, InfoBox, InfoBoxHeader, OmniBox, FloorLayersCtrl, SVGLayers, ResultsBox, Depiction, Line } from 'anymapper'
 
 	// application-specific code
 	import { rooms, pois, room_positions, people, search, getQualifica, getImmagine } from './storesCNR.js'
@@ -15,6 +15,7 @@
 	import { Content } from '@smui/card'
 
 	import POI from './POI.svelte'
+	import Placemark from './Placemark.svelte'
 	
 	function postprocessLayers(layers) {
 		let new_room_positions = new Map()

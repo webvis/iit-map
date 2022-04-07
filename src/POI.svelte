@@ -30,9 +30,11 @@
         icon={data.icon}
         icon_spacing={data.icon_spacing}
         text={data.text}
-        fg={data.category == 'entrance' ? '#0d5784' : undefined}
-        bg={data.category ? category_colors[data.category] : undefined}
+        fg_color={data.category == 'entrance' ? '#0d5784' : undefined}
+        outline_color={data.category == 'entrance' ? '#0d5784' : undefined}
+        bg_color={data.category ? category_colors[data.category] : undefined}
         shape={data.shape}
+        shadow
     />
 </g>
 {/if}
