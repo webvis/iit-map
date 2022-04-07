@@ -1,8 +1,8 @@
 <script>
 	import * as d3 from 'd3'
 
-	import { selection, select, selected_id, results, hovered_id, hover_enter, hover_leave } from 'anymapper'
-	import { View, Layer, InfoBox, InfoBoxHeader, OmniBox, FloorLayersCtrl, SVGLayers, ResultsBox, Marker, Mark, Depiction, Placemark } from 'anymapper'
+	import { selection, select, selected_id, results, hover_enter, hover_leave } from 'anymapper'
+	import { View, Layer, InfoBox, InfoBoxHeader, OmniBox, FloorLayersCtrl, SVGLayers, ResultsBox, Depiction, Placemark, Line } from 'anymapper'
 
 	// application-specific code
 	import { rooms, pois, room_positions, people, search, getQualifica, getImmagine } from './storesCNR.js'
@@ -13,6 +13,8 @@
 	import CNRResults from './CNRResults.svelte'
 
 	import { Content } from '@smui/card'
+
+	import POI from './POI.svelte'
 	
 	function postprocessLayers(layers) {
 		let new_room_positions = new Map()
@@ -72,16 +74,6 @@
 
 	function handleSearch(e) {
 		$results = search(e.detail.query)
-	}
-
-	const category_colors = {
-		'food_and_drinks': '#f57f17',
-		'mobility': '#00b0ff',
-		'emergency': '#db4437',
-		'services': '#6b7de3',
-		'commercial': '#5491f5',
-		'entrance': '#f5f5f5',
-		'cultural': '#6c461f'
 	}
 
 </script>
@@ -181,22 +173,12 @@
 		modes="floor floor floor overlay"
 		postprocess={postprocessLayers}
 	/>
+	<Layer name="directions">
+		<Line points={[{x: 4155.0283203125, y: 3365.9169921875}, {x: 4025.761474609375, y: 3365.9169921875}, {x: 4025.761474609375, y: 3081.060302734375}, {x: 4075.761474609375, y: 3081.060302734375}]}/>
+	</Layer>
 	<Layer name="pois">
 		{#each Array.from($pois.values()) as poi}
-			<Marker
-				position={poi.position}
-				on:click={() => select(poi.id) }
-				on:mouseenter={() => hover_enter(poi.id)}
-				on:mouseleave={() => hover_leave(poi.id)}>
-				<Mark
-					icon={poi.icon}
-					icon_spacing={poi.icon_spacing}
-					text={poi.text}
-					fg={poi.category == 'entrance' ? '#0d5784' : undefined}
-					bg={poi.category ? category_colors[poi.category] : undefined}
-					shape={poi.shape}
-				/>
-			</Marker>
+			<POI data={poi}/>
 		{/each}
 	</Layer>
 	<Placemark icon={$selection && $selection.icon ? $selection.icon : $selection && $selection.type == 'person' ? 'person' : 'meeting_room'}/>
