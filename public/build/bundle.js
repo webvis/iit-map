@@ -20247,7 +20247,7 @@ var app = (function () {
     				shape: "pin",
     				scale: "1.25",
     				fg_color: "white",
-    				bg_color: "brown",
+    				bg_color: /*bg_color*/ ctx[3],
     				outline_color: "#6c0808"
     			}
     		});
@@ -20348,13 +20348,14 @@ var app = (function () {
     	let $zoom;
     	component_subscribe($$self, selection$1, $$value => $$invalidate(1, $selection = $$value));
     	component_subscribe($$self, zoom$1, $$value => $$invalidate(2, $zoom = $$value));
+    	let bg_color = window.getComputedStyle(document.documentElement).getPropertyValue("--primary-bg-color");
     	let { icon } = $$props;
 
     	$$self.$set = $$props => {
     		if ("icon" in $$props) $$invalidate(0, icon = $$props.icon);
     	};
 
-    	return [icon, $selection, $zoom];
+    	return [icon, $selection, $zoom, bg_color];
     }
 
     class Placemark extends SvelteComponent {
