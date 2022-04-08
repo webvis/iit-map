@@ -15,6 +15,7 @@
 	import { Content } from '@smui/card'
 
 	import POI from './POI.svelte'
+	import ResultPin from './ResultPin.svelte'
 	import Placemark from './Placemark.svelte'
 	
 	function postprocessLayers(layers) {
@@ -180,6 +181,11 @@
 	<Layer name="pois">
 		{#each Array.from($pois.values()) as poi}
 			<POI data={poi}/>
+		{/each}
+	</Layer>
+	<Layer name="search_results">
+		{#each $results as result}
+			<ResultPin data={result}/>
 		{/each}
 	</Layer>
 	<Placemark icon={$selection && $selection.icon ? $selection.icon : $selection && $selection.type == 'person' ? 'person' : 'meeting_room'}/>
