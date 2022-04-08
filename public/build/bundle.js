@@ -11813,7 +11813,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (30:4) {#if shadow}
+    // (31:4) {#if shadow}
     function create_if_block_5(ctx) {
     	let if_block_anchor;
 
@@ -11858,9 +11858,10 @@ var app = (function () {
     	};
     }
 
-    // (35:33) 
+    // (36:33) 
     function create_if_block_8(ctx) {
     	let path;
+    	let path_transform_value;
 
     	return {
     		c() {
@@ -11868,7 +11869,7 @@ var app = (function () {
     			attr(path, "opacity", "0.35");
     			attr(path, "stroke", "black");
     			attr(path, "stroke-width", /*actual_outline_width*/ ctx[12]);
-    			attr(path, "transform", "translate(0,2)");
+    			attr(path, "transform", path_transform_value = "translate(0," + /*shadow_offset*/ ctx[13] + ")");
     			attr(path, "d", PIN_D);
     		},
     		m(target, anchor) {
@@ -11878,6 +11879,10 @@ var app = (function () {
     			if (dirty & /*actual_outline_width*/ 4096) {
     				attr(path, "stroke-width", /*actual_outline_width*/ ctx[12]);
     			}
+
+    			if (dirty & /*shadow_offset*/ 8192 && path_transform_value !== (path_transform_value = "translate(0," + /*shadow_offset*/ ctx[13] + ")")) {
+    				attr(path, "transform", path_transform_value);
+    			}
     		},
     		d(detaching) {
     			if (detaching) detach(path);
@@ -11885,10 +11890,11 @@ var app = (function () {
     	};
     }
 
-    // (33:36) 
+    // (34:36) 
     function create_if_block_7(ctx) {
     	let rect;
     	let rect_x_value;
+    	let rect_y_value;
 
     	return {
     		c() {
@@ -11896,7 +11902,7 @@ var app = (function () {
     			attr(rect, "width", /*width*/ ctx[11]);
     			attr(rect, "height", "28");
     			attr(rect, "x", rect_x_value = -/*width*/ ctx[11] / 2);
-    			attr(rect, "y", "-12");
+    			attr(rect, "y", rect_y_value = -14 + /*shadow_offset*/ ctx[13]);
     			attr(rect, "rx", "4");
     			attr(rect, "ry", "4");
     			attr(rect, "opacity", "0.35");
@@ -11915,6 +11921,10 @@ var app = (function () {
     				attr(rect, "x", rect_x_value);
     			}
 
+    			if (dirty & /*shadow_offset*/ 8192 && rect_y_value !== (rect_y_value = -14 + /*shadow_offset*/ ctx[13])) {
+    				attr(rect, "y", rect_y_value);
+    			}
+
     			if (dirty & /*actual_outline_width*/ 4096) {
     				attr(rect, "stroke-width", /*actual_outline_width*/ ctx[12]);
     			}
@@ -11925,7 +11935,7 @@ var app = (function () {
     	};
     }
 
-    // (31:8) {#if shape == 'circle'}
+    // (32:8) {#if shape == 'circle'}
     function create_if_block_6(ctx) {
     	let circle;
 
@@ -11933,7 +11943,7 @@ var app = (function () {
     		c() {
     			circle = svg_element("circle");
     			attr(circle, "r", "14");
-    			attr(circle, "cy", "2");
+    			attr(circle, "cy", /*shadow_offset*/ ctx[13]);
     			attr(circle, "opacity", "0.35");
     			attr(circle, "stroke", "black");
     			attr(circle, "stroke-width", /*actual_outline_width*/ ctx[12]);
@@ -11942,6 +11952,10 @@ var app = (function () {
     			insert(target, circle, anchor);
     		},
     		p(ctx, dirty) {
+    			if (dirty & /*shadow_offset*/ 8192) {
+    				attr(circle, "cy", /*shadow_offset*/ ctx[13]);
+    			}
+
     			if (dirty & /*actual_outline_width*/ 4096) {
     				attr(circle, "stroke-width", /*actual_outline_width*/ ctx[12]);
     			}
@@ -11952,7 +11966,7 @@ var app = (function () {
     	};
     }
 
-    // (44:29) 
+    // (45:29) 
     function create_if_block_4(ctx) {
     	let path;
 
@@ -11986,7 +12000,7 @@ var app = (function () {
     	};
     }
 
-    // (42:32) 
+    // (43:32) 
     function create_if_block_3(ctx) {
     	let rect;
     	let rect_x_value;
@@ -12034,7 +12048,7 @@ var app = (function () {
     	};
     }
 
-    // (40:4) {#if shape == 'circle'}
+    // (41:4) {#if shape == 'circle'}
     function create_if_block_2(ctx) {
     	let circle;
 
@@ -12068,7 +12082,7 @@ var app = (function () {
     	};
     }
 
-    // (50:19) 
+    // (51:19) 
     function create_if_block_1$2(ctx) {
     	let text_1;
     	let text_1_class_value;
@@ -12156,7 +12170,7 @@ var app = (function () {
     	};
     }
 
-    // (48:4) {#if text}
+    // (49:4) {#if text}
     function create_if_block$6(ctx) {
     	let text_1;
     	let t;
@@ -12193,7 +12207,7 @@ var app = (function () {
     	};
     }
 
-    // (52:12) {#each icons as icon}
+    // (53:12) {#each icons as icon}
     function create_each_block$2(ctx) {
     	let tspan;
     	let t_value = /*icon*/ ctx[9] + "";
@@ -12338,7 +12352,7 @@ var app = (function () {
     		if ("fg_color" in $$props) $$invalidate(0, fg_color = $$props.fg_color);
     		if ("bg_color" in $$props) $$invalidate(1, bg_color = $$props.bg_color);
     		if ("outline_color" in $$props) $$invalidate(2, outline_color = $$props.outline_color);
-    		if ("outline_width" in $$props) $$invalidate(13, outline_width = $$props.outline_width);
+    		if ("outline_width" in $$props) $$invalidate(14, outline_width = $$props.outline_width);
     		if ("icon" in $$props) $$invalidate(9, icon = $$props.icon);
     		if ("icon_set" in $$props) $$invalidate(3, icon_set = $$props.icon_set);
     		if ("text" in $$props) $$invalidate(4, text = $$props.text);
@@ -12351,6 +12365,7 @@ var app = (function () {
     	let icons;
     	let width;
     	let actual_outline_width;
+    	let shadow_offset;
 
     	$$self.$$.update = () => {
     		if ($$self.$$.dirty & /*icon*/ 512) {
@@ -12361,8 +12376,12 @@ var app = (function () {
     			 $$invalidate(11, width = 8 - icon_spacing + Math.max(1, icons.length) * (20 + icon_spacing));
     		}
 
-    		if ($$self.$$.dirty & /*outline_width, scale*/ 8448) {
+    		if ($$self.$$.dirty & /*outline_width, scale*/ 16640) {
     			 $$invalidate(12, actual_outline_width = outline_width / scale);
+    		}
+
+    		if ($$self.$$.dirty & /*scale*/ 256) {
+    			 $$invalidate(13, shadow_offset = 2 / scale);
     		}
     	};
 
@@ -12380,6 +12399,7 @@ var app = (function () {
     		icons,
     		width,
     		actual_outline_width,
+    		shadow_offset,
     		outline_width
     	];
     }
@@ -12392,7 +12412,7 @@ var app = (function () {
     			fg_color: 0,
     			bg_color: 1,
     			outline_color: 2,
-    			outline_width: 13,
+    			outline_width: 14,
     			icon: 9,
     			icon_set: 3,
     			text: 4,
@@ -20074,12 +20094,12 @@ var app = (function () {
 
     	marker = new Marker({
     			props: {
-    				icon: /*data*/ ctx[0].type == "person" ? "person" : null,
     				fg_color: "white",
     				bg_color: "brown",
     				outline_color: "#6c0808",
-    				shape: "pin",
-    				scale: "0.5"
+    				shape: "circle",
+    				scale: "0.5",
+    				shadow: true
     			}
     		});
 
@@ -20102,10 +20122,6 @@ var app = (function () {
     			}
     		},
     		p(ctx, dirty) {
-    			const marker_changes = {};
-    			if (dirty & /*data*/ 1) marker_changes.icon = /*data*/ ctx[0].type == "person" ? "person" : null;
-    			marker.$set(marker_changes);
-
     			if (!current || dirty & /*data, $zoom*/ 5 && g_transform_value !== (g_transform_value = "translate(" + /*data*/ ctx[0].position.x + "," + /*data*/ ctx[0].position.y + ") scale(" + 1 / /*$zoom*/ ctx[2] + ")")) {
     				attr(g, "transform", g_transform_value);
     			}

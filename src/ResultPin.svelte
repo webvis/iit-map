@@ -16,12 +16,12 @@
     opacity={opaque ? 1 : 0.5}
     on:click={() => select(data.type == 'person' ? data.email : data.id)}>
     <Marker
-        icon={data.type == 'person' ? 'person' : null}
         fg_color="white"
         bg_color="brown"
         outline_color="#6c0808"
-        shape="pin"
+        shape="circle"
         scale="0.5"
+        shadow
     />
 </g>
 {/if}
