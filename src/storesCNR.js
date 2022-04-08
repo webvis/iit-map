@@ -3,17 +3,11 @@ import lunr from 'lunr'
 
 import { readable, writable, derived, get } from 'svelte/store'
 
-export const people = readable(new Map(), function start(set) {
+export const people_raw = readable(new Array(), function start(set) {
     fetch('https://intranet.iit.cnr.it/map.php')
         .then(async function (response) {
             let data = await response.json()
-            set( new Map(data.map(d => {
-                let person = {...d, type: 'person', interno: d.telefono ? d.telefono.substring(d.telefono.length - 4) : null}
-                if(get(room_positions).has(d.stanza)) { // WARNING possible timing issues
-                    person.position = get(room_positions).get(d.stanza)
-                }
-                return [d.email, person]
-            })) )
+            set( data )
         })
 })
 
@@ -26,6 +20,18 @@ export const pois = readable(new Map(), function start(set) {
 })
 
 export const room_positions = writable(new Map())
+
+export const people = derived(
+    [people_raw, room_positions],
+    ([$people_raw, $room_positions]) => {
+        return new Map($people_raw.map(d => {
+            let person = {...d, type: 'person', interno: d.telefono ? d.telefono.substring(d.telefono.length - 4) : null}
+            if($room_positions.has(d.stanza)) {
+                person.position = $room_positions.get(d.stanza)
+            }
+            return [d.email, person]
+        }))
+})
 
 export const rooms = derived(
 	[people, room_positions, pois],
