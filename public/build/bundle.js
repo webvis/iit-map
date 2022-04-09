@@ -11809,11 +11809,11 @@ var app = (function () {
 
     function get_each_context$2(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[9] = list[i];
+    	child_ctx[8] = list[i];
     	return child_ctx;
     }
 
-    // (31:4) {#if shadow}
+    // (32:4) {#if shadow}
     function create_if_block_5(ctx) {
     	let if_block_anchor;
 
@@ -11858,7 +11858,7 @@ var app = (function () {
     	};
     }
 
-    // (36:33) 
+    // (37:33) 
     function create_if_block_8(ctx) {
     	let path;
     	let path_transform_value;
@@ -11868,7 +11868,7 @@ var app = (function () {
     			path = svg_element("path");
     			attr(path, "opacity", "0.35");
     			attr(path, "stroke", "black");
-    			attr(path, "stroke-width", /*actual_outline_width*/ ctx[12]);
+    			attr(path, "stroke-width", /*actual_outline_width*/ ctx[10]);
     			attr(path, "transform", path_transform_value = "translate(0," + /*shadow_offset*/ ctx[13] + ")");
     			attr(path, "d", PIN_D);
     		},
@@ -11876,8 +11876,8 @@ var app = (function () {
     			insert(target, path, anchor);
     		},
     		p(ctx, dirty) {
-    			if (dirty & /*actual_outline_width*/ 4096) {
-    				attr(path, "stroke-width", /*actual_outline_width*/ ctx[12]);
+    			if (dirty & /*actual_outline_width*/ 1024) {
+    				attr(path, "stroke-width", /*actual_outline_width*/ ctx[10]);
     			}
 
     			if (dirty & /*shadow_offset*/ 8192 && path_transform_value !== (path_transform_value = "translate(0," + /*shadow_offset*/ ctx[13] + ")")) {
@@ -11890,7 +11890,7 @@ var app = (function () {
     	};
     }
 
-    // (34:36) 
+    // (35:36) 
     function create_if_block_7(ctx) {
     	let rect;
     	let rect_x_value;
@@ -11899,25 +11899,25 @@ var app = (function () {
     	return {
     		c() {
     			rect = svg_element("rect");
-    			attr(rect, "width", /*width*/ ctx[11]);
+    			attr(rect, "width", /*width*/ ctx[12]);
     			attr(rect, "height", "28");
-    			attr(rect, "x", rect_x_value = -/*width*/ ctx[11] / 2);
+    			attr(rect, "x", rect_x_value = -/*width*/ ctx[12] / 2);
     			attr(rect, "y", rect_y_value = -14 + /*shadow_offset*/ ctx[13]);
     			attr(rect, "rx", "4");
     			attr(rect, "ry", "4");
     			attr(rect, "opacity", "0.35");
     			attr(rect, "stroke", "black");
-    			attr(rect, "stroke-width", /*actual_outline_width*/ ctx[12]);
+    			attr(rect, "stroke-width", /*actual_outline_width*/ ctx[10]);
     		},
     		m(target, anchor) {
     			insert(target, rect, anchor);
     		},
     		p(ctx, dirty) {
-    			if (dirty & /*width*/ 2048) {
-    				attr(rect, "width", /*width*/ ctx[11]);
+    			if (dirty & /*width*/ 4096) {
+    				attr(rect, "width", /*width*/ ctx[12]);
     			}
 
-    			if (dirty & /*width*/ 2048 && rect_x_value !== (rect_x_value = -/*width*/ ctx[11] / 2)) {
+    			if (dirty & /*width*/ 4096 && rect_x_value !== (rect_x_value = -/*width*/ ctx[12] / 2)) {
     				attr(rect, "x", rect_x_value);
     			}
 
@@ -11925,8 +11925,8 @@ var app = (function () {
     				attr(rect, "y", rect_y_value);
     			}
 
-    			if (dirty & /*actual_outline_width*/ 4096) {
-    				attr(rect, "stroke-width", /*actual_outline_width*/ ctx[12]);
+    			if (dirty & /*actual_outline_width*/ 1024) {
+    				attr(rect, "stroke-width", /*actual_outline_width*/ ctx[10]);
     			}
     		},
     		d(detaching) {
@@ -11935,7 +11935,7 @@ var app = (function () {
     	};
     }
 
-    // (32:8) {#if shape == 'circle'}
+    // (33:8) {#if shape == 'circle'}
     function create_if_block_6(ctx) {
     	let circle;
 
@@ -11946,7 +11946,7 @@ var app = (function () {
     			attr(circle, "cy", /*shadow_offset*/ ctx[13]);
     			attr(circle, "opacity", "0.35");
     			attr(circle, "stroke", "black");
-    			attr(circle, "stroke-width", /*actual_outline_width*/ ctx[12]);
+    			attr(circle, "stroke-width", /*actual_outline_width*/ ctx[10]);
     		},
     		m(target, anchor) {
     			insert(target, circle, anchor);
@@ -11956,8 +11956,8 @@ var app = (function () {
     				attr(circle, "cy", /*shadow_offset*/ ctx[13]);
     			}
 
-    			if (dirty & /*actual_outline_width*/ 4096) {
-    				attr(circle, "stroke-width", /*actual_outline_width*/ ctx[12]);
+    			if (dirty & /*actual_outline_width*/ 1024) {
+    				attr(circle, "stroke-width", /*actual_outline_width*/ ctx[10]);
     			}
     		},
     		d(detaching) {
@@ -11966,7 +11966,7 @@ var app = (function () {
     	};
     }
 
-    // (45:29) 
+    // (46:29) 
     function create_if_block_4(ctx) {
     	let path;
 
@@ -11975,7 +11975,7 @@ var app = (function () {
     			path = svg_element("path");
     			attr(path, "fill", /*bg_color*/ ctx[1]);
     			attr(path, "stroke", /*outline_color*/ ctx[2]);
-    			attr(path, "stroke-width", /*actual_outline_width*/ ctx[12]);
+    			attr(path, "stroke-width", /*actual_outline_width*/ ctx[10]);
     			attr(path, "d", PIN_D);
     		},
     		m(target, anchor) {
@@ -11990,8 +11990,8 @@ var app = (function () {
     				attr(path, "stroke", /*outline_color*/ ctx[2]);
     			}
 
-    			if (dirty & /*actual_outline_width*/ 4096) {
-    				attr(path, "stroke-width", /*actual_outline_width*/ ctx[12]);
+    			if (dirty & /*actual_outline_width*/ 1024) {
+    				attr(path, "stroke-width", /*actual_outline_width*/ ctx[10]);
     			}
     		},
     		d(detaching) {
@@ -12000,7 +12000,7 @@ var app = (function () {
     	};
     }
 
-    // (43:32) 
+    // (44:32) 
     function create_if_block_3(ctx) {
     	let rect;
     	let rect_x_value;
@@ -12008,25 +12008,25 @@ var app = (function () {
     	return {
     		c() {
     			rect = svg_element("rect");
-    			attr(rect, "width", /*width*/ ctx[11]);
+    			attr(rect, "width", /*width*/ ctx[12]);
     			attr(rect, "height", "28");
-    			attr(rect, "x", rect_x_value = -/*width*/ ctx[11] / 2);
+    			attr(rect, "x", rect_x_value = -/*width*/ ctx[12] / 2);
     			attr(rect, "y", "-14");
     			attr(rect, "rx", "4");
     			attr(rect, "ry", "4");
     			attr(rect, "fill", /*bg_color*/ ctx[1]);
     			attr(rect, "stroke", /*outline_color*/ ctx[2]);
-    			attr(rect, "stroke-width", /*actual_outline_width*/ ctx[12]);
+    			attr(rect, "stroke-width", /*actual_outline_width*/ ctx[10]);
     		},
     		m(target, anchor) {
     			insert(target, rect, anchor);
     		},
     		p(ctx, dirty) {
-    			if (dirty & /*width*/ 2048) {
-    				attr(rect, "width", /*width*/ ctx[11]);
+    			if (dirty & /*width*/ 4096) {
+    				attr(rect, "width", /*width*/ ctx[12]);
     			}
 
-    			if (dirty & /*width*/ 2048 && rect_x_value !== (rect_x_value = -/*width*/ ctx[11] / 2)) {
+    			if (dirty & /*width*/ 4096 && rect_x_value !== (rect_x_value = -/*width*/ ctx[12] / 2)) {
     				attr(rect, "x", rect_x_value);
     			}
 
@@ -12038,8 +12038,8 @@ var app = (function () {
     				attr(rect, "stroke", /*outline_color*/ ctx[2]);
     			}
 
-    			if (dirty & /*actual_outline_width*/ 4096) {
-    				attr(rect, "stroke-width", /*actual_outline_width*/ ctx[12]);
+    			if (dirty & /*actual_outline_width*/ 1024) {
+    				attr(rect, "stroke-width", /*actual_outline_width*/ ctx[10]);
     			}
     		},
     		d(detaching) {
@@ -12048,7 +12048,7 @@ var app = (function () {
     	};
     }
 
-    // (41:4) {#if shape == 'circle'}
+    // (42:4) {#if shape == 'circle'}
     function create_if_block_2(ctx) {
     	let circle;
 
@@ -12058,7 +12058,7 @@ var app = (function () {
     			attr(circle, "r", "14");
     			attr(circle, "fill", /*bg_color*/ ctx[1]);
     			attr(circle, "stroke", /*outline_color*/ ctx[2]);
-    			attr(circle, "stroke-width", /*actual_outline_width*/ ctx[12]);
+    			attr(circle, "stroke-width", /*actual_outline_width*/ ctx[10]);
     		},
     		m(target, anchor) {
     			insert(target, circle, anchor);
@@ -12072,8 +12072,8 @@ var app = (function () {
     				attr(circle, "stroke", /*outline_color*/ ctx[2]);
     			}
 
-    			if (dirty & /*actual_outline_width*/ 4096) {
-    				attr(circle, "stroke-width", /*actual_outline_width*/ ctx[12]);
+    			if (dirty & /*actual_outline_width*/ 1024) {
+    				attr(circle, "stroke-width", /*actual_outline_width*/ ctx[10]);
     			}
     		},
     		d(detaching) {
@@ -12082,13 +12082,13 @@ var app = (function () {
     	};
     }
 
-    // (51:19) 
+    // (52:19) 
     function create_if_block_1$2(ctx) {
     	let text_1;
     	let text_1_class_value;
     	let text_1_dx_value;
     	let text_1_y_value;
-    	let each_value = /*icons*/ ctx[10];
+    	let each_value = /*icons*/ ctx[9];
     	let each_blocks = [];
 
     	for (let i = 0; i < each_value.length; i += 1) {
@@ -12108,9 +12108,9 @@ var app = (function () {
     			attr(text_1, "transform", "scale(0.8)");
     			attr(text_1, "text-anchor", "middle");
     			attr(text_1, "dy", ".5em");
-    			attr(text_1, "dx", text_1_dx_value = "" + (/*icon_spacing*/ ctx[7] / 2 + "px"));
+    			attr(text_1, "dx", text_1_dx_value = "" + (/*actual_icon_spacing*/ ctx[11] / 2 + "px"));
     			attr(text_1, "y", text_1_y_value = /*shape*/ ctx[5] == "pin" ? -47 : 0);
-    			set_style(text_1, "letter-spacing", /*icon_spacing*/ ctx[7] + "px");
+    			set_style(text_1, "letter-spacing", /*actual_icon_spacing*/ ctx[11] + "px");
     		},
     		m(target, anchor) {
     			insert(target, text_1, anchor);
@@ -12120,8 +12120,8 @@ var app = (function () {
     			}
     		},
     		p(ctx, dirty) {
-    			if (dirty & /*icons*/ 1024) {
-    				each_value = /*icons*/ ctx[10];
+    			if (dirty & /*icons*/ 512) {
+    				each_value = /*icons*/ ctx[9];
     				let i;
 
     				for (i = 0; i < each_value.length; i += 1) {
@@ -12151,7 +12151,7 @@ var app = (function () {
     				attr(text_1, "fill", /*fg_color*/ ctx[0]);
     			}
 
-    			if (dirty & /*icon_spacing*/ 128 && text_1_dx_value !== (text_1_dx_value = "" + (/*icon_spacing*/ ctx[7] / 2 + "px"))) {
+    			if (dirty & /*actual_icon_spacing*/ 2048 && text_1_dx_value !== (text_1_dx_value = "" + (/*actual_icon_spacing*/ ctx[11] / 2 + "px"))) {
     				attr(text_1, "dx", text_1_dx_value);
     			}
 
@@ -12159,8 +12159,8 @@ var app = (function () {
     				attr(text_1, "y", text_1_y_value);
     			}
 
-    			if (dirty & /*icon_spacing*/ 128) {
-    				set_style(text_1, "letter-spacing", /*icon_spacing*/ ctx[7] + "px");
+    			if (dirty & /*actual_icon_spacing*/ 2048) {
+    				set_style(text_1, "letter-spacing", /*actual_icon_spacing*/ ctx[11] + "px");
     			}
     		},
     		d(detaching) {
@@ -12170,7 +12170,7 @@ var app = (function () {
     	};
     }
 
-    // (49:4) {#if text}
+    // (50:4) {#if text}
     function create_if_block$6(ctx) {
     	let text_1;
     	let t;
@@ -12207,10 +12207,10 @@ var app = (function () {
     	};
     }
 
-    // (53:12) {#each icons as icon}
+    // (54:12) {#each icons as icon}
     function create_each_block$2(ctx) {
     	let tspan;
-    	let t_value = /*icon*/ ctx[9] + "";
+    	let t_value = /*icon*/ ctx[8] + "";
     	let t;
 
     	return {
@@ -12223,7 +12223,7 @@ var app = (function () {
     			append(tspan, t);
     		},
     		p(ctx, dirty) {
-    			if (dirty & /*icons*/ 1024 && t_value !== (t_value = /*icon*/ ctx[9] + "")) set_data(t, t_value);
+    			if (dirty & /*icons*/ 512 && t_value !== (t_value = /*icon*/ ctx[8] + "")) set_data(t, t_value);
     		},
     		d(detaching) {
     			if (detaching) detach(tspan);
@@ -12249,7 +12249,7 @@ var app = (function () {
 
     	function select_block_type_2(ctx, dirty) {
     		if (/*text*/ ctx[4]) return create_if_block$6;
-    		if (/*icon*/ ctx[9]) return create_if_block_1$2;
+    		if (/*icon*/ ctx[8]) return create_if_block_1$2;
     	}
 
     	let current_block_type_1 = select_block_type_2(ctx);
@@ -12264,7 +12264,7 @@ var app = (function () {
     			if_block1_anchor = empty();
     			if (if_block2) if_block2.c();
     			attr(g, "class", "mark");
-    			attr(g, "transform", g_transform_value = "scale(" + /*scale*/ ctx[8] + ")");
+    			attr(g, "transform", g_transform_value = "scale(" + /*scale*/ ctx[7] + ")");
     		},
     		m(target, anchor) {
     			insert(target, g, anchor);
@@ -12312,7 +12312,7 @@ var app = (function () {
     				}
     			}
 
-    			if (dirty & /*scale*/ 256 && g_transform_value !== (g_transform_value = "scale(" + /*scale*/ ctx[8] + ")")) {
+    			if (dirty & /*scale*/ 128 && g_transform_value !== (g_transform_value = "scale(" + /*scale*/ ctx[7] + ")")) {
     				attr(g, "transform", g_transform_value);
     			}
     		},
@@ -12345,7 +12345,7 @@ var app = (function () {
     	let { text = null } = $$props;
     	let { shape = "circle" } = $$props;
     	let { shadow = false } = $$props;
-    	let { icon_spacing = 0 } = $$props;
+    	let { icon_spacing } = $$props;
     	let { scale = 1 } = $$props;
 
     	$$self.$set = $$props => {
@@ -12353,34 +12353,39 @@ var app = (function () {
     		if ("bg_color" in $$props) $$invalidate(1, bg_color = $$props.bg_color);
     		if ("outline_color" in $$props) $$invalidate(2, outline_color = $$props.outline_color);
     		if ("outline_width" in $$props) $$invalidate(14, outline_width = $$props.outline_width);
-    		if ("icon" in $$props) $$invalidate(9, icon = $$props.icon);
+    		if ("icon" in $$props) $$invalidate(8, icon = $$props.icon);
     		if ("icon_set" in $$props) $$invalidate(3, icon_set = $$props.icon_set);
     		if ("text" in $$props) $$invalidate(4, text = $$props.text);
     		if ("shape" in $$props) $$invalidate(5, shape = $$props.shape);
     		if ("shadow" in $$props) $$invalidate(6, shadow = $$props.shadow);
-    		if ("icon_spacing" in $$props) $$invalidate(7, icon_spacing = $$props.icon_spacing);
-    		if ("scale" in $$props) $$invalidate(8, scale = $$props.scale);
+    		if ("icon_spacing" in $$props) $$invalidate(15, icon_spacing = $$props.icon_spacing);
+    		if ("scale" in $$props) $$invalidate(7, scale = $$props.scale);
     	};
 
     	let icons;
-    	let width;
     	let actual_outline_width;
+    	let actual_icon_spacing;
+    	let width;
     	let shadow_offset;
 
     	$$self.$$.update = () => {
-    		if ($$self.$$.dirty & /*icon*/ 512) {
-    			 $$invalidate(10, icons = icon === null ? [] : icon.split(","));
+    		if ($$self.$$.dirty & /*icon*/ 256) {
+    			 $$invalidate(9, icons = icon === null ? [] : icon.split(","));
     		}
 
-    		if ($$self.$$.dirty & /*icon_spacing, icons*/ 1152) {
-    			 $$invalidate(11, width = 8 - icon_spacing + Math.max(1, icons.length) * (20 + icon_spacing));
+    		if ($$self.$$.dirty & /*outline_width, scale*/ 16512) {
+    			 $$invalidate(10, actual_outline_width = outline_width / scale);
     		}
 
-    		if ($$self.$$.dirty & /*outline_width, scale*/ 16640) {
-    			 $$invalidate(12, actual_outline_width = outline_width / scale);
+    		if ($$self.$$.dirty & /*icon_spacing*/ 32768) {
+    			 $$invalidate(11, actual_icon_spacing = icon_spacing ? icon_spacing : 0);
     		}
 
-    		if ($$self.$$.dirty & /*scale*/ 256) {
+    		if ($$self.$$.dirty & /*actual_icon_spacing, icons*/ 2560) {
+    			 $$invalidate(12, width = 8 - actual_icon_spacing + Math.max(1, icons.length) * (20 + actual_icon_spacing));
+    		}
+
+    		if ($$self.$$.dirty & /*scale*/ 128) {
     			 $$invalidate(13, shadow_offset = 2 / scale);
     		}
     	};
@@ -12393,14 +12398,15 @@ var app = (function () {
     		text,
     		shape,
     		shadow,
-    		icon_spacing,
     		scale,
     		icon,
     		icons,
-    		width,
     		actual_outline_width,
+    		actual_icon_spacing,
+    		width,
     		shadow_offset,
-    		outline_width
+    		outline_width,
+    		icon_spacing
     	];
     }
 
@@ -12413,13 +12419,13 @@ var app = (function () {
     			bg_color: 1,
     			outline_color: 2,
     			outline_width: 14,
-    			icon: 9,
+    			icon: 8,
     			icon_set: 3,
     			text: 4,
     			shape: 5,
     			shadow: 6,
-    			icon_spacing: 7,
-    			scale: 8
+    			icon_spacing: 15,
+    			scale: 7
     		});
     	}
     }
@@ -20244,6 +20250,7 @@ var app = (function () {
     	marker = new Marker({
     			props: {
     				icon: /*icon*/ ctx[0],
+    				icon_spacing: /*$selection*/ ctx[1].icon_spacing,
     				shape: "pin",
     				scale: "1.25",
     				fg_color: "white",
@@ -20266,6 +20273,7 @@ var app = (function () {
     		p(ctx, dirty) {
     			const marker_changes = {};
     			if (dirty & /*icon*/ 1) marker_changes.icon = /*icon*/ ctx[0];
+    			if (dirty & /*$selection*/ 2) marker_changes.icon_spacing = /*$selection*/ ctx[1].icon_spacing;
     			marker.$set(marker_changes);
 
     			if (!current || dirty & /*$selection, $zoom*/ 6 && g_transform_value !== (g_transform_value = "translate(" + /*$selection*/ ctx[1].position.x + " " + /*$selection*/ ctx[1].position.y + ") scale(" + 1 / /*$zoom*/ ctx[2] + ")")) {
