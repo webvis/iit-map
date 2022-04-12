@@ -11813,7 +11813,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (32:4) {#if shadow}
+    // (35:4) {#if shadow}
     function create_if_block_5(ctx) {
     	let if_block_anchor;
 
@@ -11858,7 +11858,7 @@ var app = (function () {
     	};
     }
 
-    // (37:33) 
+    // (40:33) 
     function create_if_block_8(ctx) {
     	let path;
     	let path_transform_value;
@@ -11890,7 +11890,7 @@ var app = (function () {
     	};
     }
 
-    // (35:36) 
+    // (38:36) 
     function create_if_block_7(ctx) {
     	let rect;
     	let rect_x_value;
@@ -11935,7 +11935,7 @@ var app = (function () {
     	};
     }
 
-    // (33:8) {#if shape == 'circle'}
+    // (36:8) {#if shape == 'circle'}
     function create_if_block_6(ctx) {
     	let circle;
 
@@ -11966,7 +11966,7 @@ var app = (function () {
     	};
     }
 
-    // (46:29) 
+    // (49:29) 
     function create_if_block_4(ctx) {
     	let path;
 
@@ -12000,7 +12000,7 @@ var app = (function () {
     	};
     }
 
-    // (44:32) 
+    // (47:32) 
     function create_if_block_3(ctx) {
     	let rect;
     	let rect_x_value;
@@ -12048,7 +12048,7 @@ var app = (function () {
     	};
     }
 
-    // (42:4) {#if shape == 'circle'}
+    // (45:4) {#if shape == 'circle'}
     function create_if_block_2(ctx) {
     	let circle;
 
@@ -12082,7 +12082,7 @@ var app = (function () {
     	};
     }
 
-    // (52:19) 
+    // (55:19) 
     function create_if_block_1$2(ctx) {
     	let text_1;
     	let text_1_class_value;
@@ -12103,7 +12103,7 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			attr(text_1, "class", text_1_class_value = "material-icons" + (/*icon_set*/ ctx[3] ? "-" + /*icon_set*/ ctx[3] : "") + " svelte-1kleyk");
+    			attr(text_1, "class", text_1_class_value = "material-icons" + (/*icon_set*/ ctx[3] ? "-" + /*icon_set*/ ctx[3] : "") + " svelte-tanwa7");
     			attr(text_1, "fill", /*fg_color*/ ctx[0]);
     			attr(text_1, "transform", "scale(0.8)");
     			attr(text_1, "text-anchor", "middle");
@@ -12143,7 +12143,7 @@ var app = (function () {
     				each_blocks.length = each_value.length;
     			}
 
-    			if (dirty & /*icon_set*/ 8 && text_1_class_value !== (text_1_class_value = "material-icons" + (/*icon_set*/ ctx[3] ? "-" + /*icon_set*/ ctx[3] : "") + " svelte-1kleyk")) {
+    			if (dirty & /*icon_set*/ 8 && text_1_class_value !== (text_1_class_value = "material-icons" + (/*icon_set*/ ctx[3] ? "-" + /*icon_set*/ ctx[3] : "") + " svelte-tanwa7")) {
     				attr(text_1, "class", text_1_class_value);
     			}
 
@@ -12170,7 +12170,7 @@ var app = (function () {
     	};
     }
 
-    // (50:4) {#if text}
+    // (53:4) {#if text}
     function create_if_block$6(ctx) {
     	let text_1;
     	let t;
@@ -12180,7 +12180,7 @@ var app = (function () {
     		c() {
     			text_1 = svg_element("text");
     			t = text(/*text*/ ctx[4]);
-    			attr(text_1, "class", "label svelte-1kleyk");
+    			attr(text_1, "class", "label svelte-tanwa7");
     			attr(text_1, "fill", /*fg_color*/ ctx[0]);
     			attr(text_1, "text-anchor", "middle");
     			attr(text_1, "dy", ".35em");
@@ -12207,7 +12207,7 @@ var app = (function () {
     	};
     }
 
-    // (54:12) {#each icons as icon}
+    // (57:12) {#each icons as icon}
     function create_each_block$2(ctx) {
     	let tspan;
     	let t_value = /*icon*/ ctx[8] + "";
