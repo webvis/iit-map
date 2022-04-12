@@ -2,7 +2,7 @@
 	import * as d3 from 'd3'
 
 	import { selection, select, selected_id, results, hover_enter, hover_leave } from 'anymapper'
-	import { View, Layer, InfoBox, InfoBoxHeader, OmniBox, FloorLayersCtrl, SVGLayers, ResultsBox, Depiction, Line } from 'anymapper'
+	import { View, Layer, InfoBox, InfoBoxHeader, OmniBox, FloorLayersCtrl, SVGLayers, ResultsBox, Depiction } from 'anymapper'
 
 	// application-specific code
 	import { rooms, pois, room_positions, people, search, getQualifica, getImmagine } from './storesCNR.js'
@@ -15,7 +15,6 @@
 	import { Content } from '@smui/card'
 
 	import POI from './POI.svelte'
-	import ResultPin from './ResultPin.svelte'
 	import Placemark from './Placemark.svelte'
 	
 	function postprocessLayers(layers) {
@@ -175,17 +174,9 @@
 		modes="floor floor floor overlay"
 		postprocess={postprocessLayers}
 	/>
-	<Layer name="directions">
-		<Line points={[{x: 4155.0283203125, y: 3365.9169921875}, {x: 4025.761474609375, y: 3365.9169921875}, {x: 4025.761474609375, y: 3081.060302734375}, {x: 4075.761474609375, y: 3081.060302734375}]}/>
-	</Layer>
 	<Layer name="pois">
 		{#each Array.from($pois.values()) as poi}
 			<POI data={poi}/>
-		{/each}
-	</Layer>
-	<Layer name="search_results">
-		{#each $results as result}
-			<ResultPin data={result}/>
 		{/each}
 	</Layer>
 	<Placemark icon={$selection && $selection.icon ? $selection.icon : $selection && $selection.type == 'person' ? 'person' : 'meeting_room'}/>
