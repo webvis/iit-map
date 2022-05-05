@@ -3,7 +3,7 @@
     import { Marker } from 'anymapper'
 
     let bg_color = window.getComputedStyle(document.documentElement).getPropertyValue('--primary-bg-color')
-    
+    // "#6c0808"
     export let icon
 </script>
 
@@ -19,7 +19,8 @@
         scale="1.25"
         fg_color="white"
         {bg_color}
-        outline_color="#6c0808"
+        outline_color={bg_color}
+        outline_brightness="0.5"
     />
 </g>
 {/if}

@@ -1,7 +1,7 @@
 <script>
 	import * as d3 from 'd3'
 
-	import { selection, select, selected_id, results, hover_enter, hover_leave } from 'anymapper'
+	import { selection, select, selected_id, results, hover_enter, hover_leave, zoom, hovered_id } from 'anymapper'
 	import { View, Layer, InfoBox, InfoBoxHeader, OmniBox, FloorLayersCtrl, SVGLayers, ResultsBox, Depiction, Line } from 'anymapper'
 
 	// application-specific code
@@ -17,6 +17,7 @@
 	import POI from './POI.svelte'
 	import ResultPin from './ResultPin.svelte'
 	import Placemark from './Placemark.svelte'
+	import Tooltip from './Tooltip.svelte'
 	
 	function postprocessLayers(layers) {
 		let new_room_positions = new Map()
@@ -70,8 +71,20 @@
 		else
 			$selection = null
 	}
+	let hovered
+	function updateHovered(_) {
+		if($rooms.has($hovered_id))
+			hovered = $rooms.get($hovered_id)
+		else if($people.has($hovered_id))
+			hovered = $people.get($hovered_id)
+		else if($pois.has($hovered_id))
+			hovered = $pois.get($hovered_id)
+		else
+			hovered = null
+	}
 
 	selected_id.subscribe(updateSelection)
+	hovered_id.subscribe(updateHovered)
 	rooms.subscribe(updateSelection)
 
 	function handleSearch(e) {
@@ -187,6 +200,19 @@
 		{#each $results as result}
 			<ResultPin data={result}/>
 		{/each}
+	</Layer>
+	<Layer name="tooltips">
+		{#if $selection && $selection.position}
+			<g transform="translate({$selection.position.x} {$selection.position.y}) scale({1/$zoom})">
+				<Tooltip>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<div>Wa</div>
+						<div>Wa</div>
+						<div>Wa</div>
+					</div>
+				</Tooltip>
+			</g>
+		{/if}
 	</Layer>
 	<Placemark icon={$selection && $selection.icon ? $selection.icon : $selection && $selection.type == 'person' ? 'person' : 'meeting_room'}/>
 </View>
