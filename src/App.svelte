@@ -2,7 +2,7 @@
 	import * as d3 from 'd3'
 
 	import { selection, select, selected_id, results, hover_enter, hover_leave } from 'anymapper'
-	import { View, Layer, InfoBox, InfoBoxHeader, OmniBox, FloorLayersCtrl, SVGLayers, ResultsBox, Depiction, Line } from 'anymapper'
+	import { View, Layer, InfoBox, InfoBoxHeader, OmniBox, FloorLayersCtrl, SVGLayers, ResultsBox, Depiction } from 'anymapper'
 
 	// application-specific code
 	import { rooms, pois, room_positions, people, search, getQualifica, getImmagine } from './storesCNR.js'
@@ -11,11 +11,11 @@
 	import PersonInfo from './PersonInfo.svelte'
 	import RoomPeopleList from './RoomPeopleList.svelte'
 	import CNRResults from './CNRResults.svelte'
+	import Actions from './Actions.svelte'
 
 	import { Content } from '@smui/card'
 
 	import POI from './POI.svelte'
-	import ResultPin from './ResultPin.svelte'
 	import Placemark from './Placemark.svelte'
 	
 	function postprocessLayers(layers) {
@@ -175,17 +175,9 @@
 		modes="floor floor floor overlay"
 		postprocess={postprocessLayers}
 	/>
-	<Layer name="directions">
-		<Line points={[{x: 4155.0283203125, y: 3365.9169921875}, {x: 4025.761474609375, y: 3365.9169921875}, {x: 4025.761474609375, y: 3081.060302734375}, {x: 4075.761474609375, y: 3081.060302734375}]}/>
-	</Layer>
 	<Layer name="pois">
 		{#each Array.from($pois.values()) as poi}
 			<POI data={poi}/>
-		{/each}
-	</Layer>
-	<Layer name="search_results">
-		{#each $results as result}
-			<ResultPin data={result}/>
 		{/each}
 	</Layer>
 	<Placemark icon={$selection && $selection.icon ? $selection.icon : $selection && $selection.type == 'person' ? 'person' : 'meeting_room'}/>
@@ -207,15 +199,18 @@
 	{#if $selection.type == 'office'}
 		<InfoBoxHeader title="{$selection.stanza}" subtitle="Ufficio"/>
 		<Depiction src="assets/room_photos/{$selection.id}.jpg" fallback="url(assets/room_photos/default_office.png)"/>
+		<Actions/>
 		<RoomInfo/>
 		<hr/>
 		<RoomPeopleList/>
 	{:else if $selection.type == 'room'}
 		<InfoBoxHeader title="{$selection.id}" subtitle="Stanza"/>
 		<Depiction src="assets/room_photos/{$selection.id}.jpg" fallback="url(assets/room_photos/default_room.png)"/>
+		<Actions/>
 	{:else if $selection.type == 'person'}
 		<InfoBoxHeader title="{$selection.nome} {$selection.cognome}" subtitle="{getQualifica($selection)}"/>
 		<Depiction src={getImmagine($selection)} size="contain" fallback="url(assets/default_person.png)"/>
+		<Actions/>
 		<PersonInfo/>
 	
 		{#if $selection.sede}
@@ -238,6 +233,7 @@
 			<InfoBoxHeader title={$selection.title} subtitle={$selection.subtitle || ''}/>
 		{/if}
 		<Depiction src="assets/room_photos/{$selection.id}.jpg" fallback="url(assets/default_poi.png)"/>
+		<Actions/>
 	{/if}
 </InfoBox>
 

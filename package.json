@@ -16,7 +16,7 @@
     "rollup-plugin-terser": "^7.0.2",
     "sass": "^1.26.12",
     "svelte": "^3.0.0",
-    "svelte-material-ui": "^1.0.0"
+    "svelte-material-ui": "^3.0.0"
   },
   "dependencies": {
     "anymapper": "^0.17.6",
