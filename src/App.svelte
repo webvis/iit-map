@@ -200,6 +200,7 @@
 		<InfoBoxHeader title="{$selection.stanza}" subtitle="Ufficio"/>
 		<Depiction src="assets/room_photos/{$selection.id}.jpg" fallback="url(assets/room_photos/default_office.png)"/>
 		<Actions/>
+		<hr/>
 		<RoomInfo/>
 		<hr/>
 		<RoomPeopleList/>
@@ -211,6 +212,7 @@
 		<InfoBoxHeader title="{$selection.nome} {$selection.cognome}" subtitle="{getQualifica($selection)}"/>
 		<Depiction src={getImmagine($selection)} size="contain" fallback="url(assets/default_person.png)"/>
 		<Actions/>
+		<hr/>
 		<PersonInfo/>
 	
 		{#if $selection.sede}
