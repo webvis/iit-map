@@ -29,8 +29,8 @@
       on:click={() => {
         if (chip == 'Share') {
           navigator.share({
-            title: 'Share',
-            text: 'Share',
+            title: 'Share location',
+            text: '',
             url: window.location
           })
         } else if (chip == 'Share by email') {
