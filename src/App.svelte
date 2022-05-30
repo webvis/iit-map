@@ -207,12 +207,14 @@
 		<RoomPeopleList/>
 	{:else if $selection.type == 'room'}
 		<InfoBoxHeader title="{$selection.id}" subtitle="Stanza"/>
+		<Actions screen="narrow"/>
 		<Depiction src="assets/room_photos/{$selection.id}.jpg" fallback="url(assets/room_photos/default_room.png)"/>
-		<Actions/>
+		<Actions screen="wide"/>
 	{:else if $selection.type == 'person'}
 		<InfoBoxHeader title="{$selection.nome} {$selection.cognome}" subtitle="{getQualifica($selection)}"/>
+		<Actions screen="narrow"/>
 		<Depiction src={getImmagine($selection)} size="contain" fallback="url(assets/default_person.png)"/>
-		<Actions/>
+		<Actions screen="wide"/>
 		<hr/>
 		<PersonInfo/>
 	
@@ -235,8 +237,9 @@
 		{:else if $selection.title}
 			<InfoBoxHeader title={$selection.title} subtitle={$selection.subtitle || ''}/>
 		{/if}
+		<Actions screen="narrow"/>
 		<Depiction src="assets/room_photos/{$selection.id}.jpg" fallback="url(assets/default_poi.png)"/>
-		<Actions/>
+		<Actions screen="wide"/>
 	{/if}
 </InfoBox>
 
