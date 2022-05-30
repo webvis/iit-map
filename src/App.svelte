@@ -161,7 +161,7 @@
 	}
 
 	:global(:root) {
-		--infobox-header-height: 86px;
+		--infobox-header-height: 200px;
 		--omnibox-margin: 10px;
 	}
 </style>
@@ -198,8 +198,9 @@
 <InfoBox>
 	{#if $selection.type == 'office'}
 		<InfoBoxHeader title="{$selection.stanza}" subtitle="Ufficio"/>
+		<Actions screen="narrow"/>
 		<Depiction src="assets/room_photos/{$selection.id}.jpg" fallback="url(assets/room_photos/default_office.png)"/>
-		<Actions/>
+		<Actions screen="wide"/>
 		<hr/>
 		<RoomInfo/>
 		<hr/>
