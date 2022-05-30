@@ -1,7 +1,7 @@
 <script>
     import Chip, { Set, LeadingIcon, Text } from '@smui/chips'
 
-    $: chips = (navigator.share ? ['Share'] : []).concat(['Share by email'])
+    $: chips = (navigator.share ? ['Share'] : []).concat(['Copy link','Share by email'])
 </script>
 
 <style>
@@ -30,9 +30,11 @@
         if (chip == 'Share') {
           navigator.share({
             title: 'Share location',
-            text: '',
+            text: 'IIT map location',
             url: window.location
           })
+        } else if (chip == 'Copy link') {
+          navigator.clipboard.writeText(window.location)
         } else if (chip == 'Share by email') {
           window.location.href = 'mailto:?body=' + window.location
         }
@@ -41,6 +43,8 @@
       <LeadingIcon class="material-icons">
         {#if chip == 'Share'}
           share
+        {:else if chip == 'Copy link'}
+          link
         {:else}
           mail
         {/if}

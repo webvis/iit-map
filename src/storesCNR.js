@@ -19,6 +19,22 @@ export const pois = readable(new Map(), function start(set) {
         })
 })
 
+export const pois_index = derived(pois,
+	($pois) => {
+        let index = lunr(function () {
+            this.pipeline.remove(lunr.stemmer)
+            this.searchPipeline.remove(lunr.stemmer)
+
+            this.ref('id')
+            this.field('id')
+            this.field('text')
+
+            lunr_index_map(this, $pois)
+        })
+        return index
+    }
+)
+
 export const room_positions = writable(new Map())
 
 export const people = derived(
@@ -107,8 +123,9 @@ export function search(query) {
     
     let resulting_people = get(people_index).search(`${actual_query}`).map(d => get(people).get(d.ref))
     let resulting_rooms = get(rooms_index).search(`${actual_query}`).map(d => get(rooms).get(d.ref))
+    let resulting_pois = get(pois_index).search(`${actual_query}`).map(d => get(rooms).get(d.ref))
     
-    return resulting_people.concat(resulting_rooms)
+    return resulting_people.concat(resulting_rooms.concat(resulting_pois))
 }
 
 export function getQualifica(person) {
