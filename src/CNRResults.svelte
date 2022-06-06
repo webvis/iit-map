@@ -37,6 +37,11 @@
                 <Graphic class="material-icons">meeting_room</Graphic>
                 <Text>{r.id} <span class="secondary">Stanza</span></Text>
             </Item>
+        {:else if r.type == 'poi'}
+            <Item on:SMUI:action={() => select(r.id)} on:mouseenter={() => hover_enter(r.id)} on:mouseleave={() => hover_leave(r.id)}>
+                <Graphic class="material-icons">place</Graphic>
+                <Text>{r.title}</Text>
+            </Item>
         {/if}
     {/each}
 </List>

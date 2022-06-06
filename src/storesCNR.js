@@ -27,7 +27,8 @@ export const pois_index = derived(pois,
 
             this.ref('id')
             this.field('id')
-            this.field('text')
+            this.field('title')
+            this.field('subtitle')
 
             lunr_index_map(this, $pois)
         })
@@ -123,9 +124,11 @@ export function search(query) {
     
     let resulting_people = get(people_index).search(`${actual_query}`).map(d => get(people).get(d.ref))
     let resulting_rooms = get(rooms_index).search(`${actual_query}`).map(d => get(rooms).get(d.ref))
-    let resulting_pois = get(pois_index).search(`${actual_query}`).map(d => get(rooms).get(d.ref))
+    let resulting_pois = get(pois_index).search(`${actual_query}`).map(d => get(pois).get(d.ref))
+
+    let results = resulting_people.concat(resulting_rooms.concat(resulting_pois))
     
-    return resulting_people.concat(resulting_rooms.concat(resulting_pois))
+    return results
 }
 
 export function getQualifica(person) {

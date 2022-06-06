@@ -232,11 +232,7 @@
 			<RoomInfo/>
 		{/if}
 	{:else if $selection.type == 'poi'}
-		{#if $selection.category == 'entrance'}
-			<InfoBoxHeader title="Ingresso {$selection.text}" subtitle="Ingresso"/>
-		{:else if $selection.title}
-			<InfoBoxHeader title={$selection.title} subtitle={$selection.subtitle || ''}/>
-		{/if}
+		<InfoBoxHeader title={$selection.title} subtitle={$selection.subtitle || ''}/>
 		<Actions screen="narrow"/>
 		<Depiction src="assets/room_photos/{$selection.id}.jpg" fallback="url(assets/default_poi.png)"/>
 		<Actions screen="wide"/>

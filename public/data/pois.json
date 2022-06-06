@@ -2,6 +2,8 @@
     {
         "id": "entrance1@area.cnr.it",
         "text": "1",
+        "title": "Ingresso 1",
+        "subtitle": "Ingresso",
         "icon": "login",
         "category": "entrance",
         "shape": "square",
@@ -17,6 +19,8 @@
     {
         "id": "entrance2@area.cnr.it",
         "text": "2",
+        "title": "Ingresso 2",
+        "subtitle": "Ingresso",
         "icon": "login",
         "category": "entrance",
         "shape": "square",
@@ -32,6 +36,8 @@
     {
         "id": "entrance3@area.cnr.it",
         "text": "3",
+        "title": "Ingresso 3",
+        "subtitle": "Ingresso",
         "icon": "login",
         "category": "entrance",
         "shape": "square",
@@ -47,6 +53,8 @@
     {
         "id": "entrance4@area.cnr.it",
         "text": "4",
+        "title": "Ingresso 4",
+        "subtitle": "Ingresso",
         "icon": "login",
         "category": "entrance",
         "shape": "square",
@@ -62,6 +70,8 @@
     {
         "id": "entrance5@area.cnr.it",
         "text": "5",
+        "title": "Ingresso 5",
+        "subtitle": "Ingresso",
         "icon": "login",
         "category": "entrance",
         "shape": "square",
@@ -77,6 +87,8 @@
     {
         "id": "entrance6@area.cnr.it",
         "text": "6",
+        "title": "Ingresso 6",
+        "subtitle": "Ingresso",
         "icon": "login",
         "category": "entrance",
         "shape": "square",
@@ -92,6 +104,8 @@
     {
         "id": "entrance6a@area.cnr.it",
         "text": "6a",
+        "title": "Ingresso 6a",
+        "subtitle": "Ingresso",
         "icon": "login",
         "category": "entrance",
         "shape": "square",
@@ -107,6 +121,8 @@
     {
         "id": "entrance7@area.cnr.it",
         "text": "7",
+        "title": "Ingresso 7",
+        "subtitle": "Ingresso",
         "icon": "login",
         "category": "entrance",
         "shape": "square",
@@ -122,6 +138,8 @@
     {
         "id": "entrance8@area.cnr.it",
         "text": "8",
+        "title": "Ingresso 8",
+        "subtitle": "Ingresso",
         "icon": "login",
         "category": "entrance",
         "shape": "square",
@@ -137,6 +155,8 @@
     {
         "id": "entrance9@area.cnr.it",
         "text": "9",
+        "title": "Ingresso 9",
+        "subtitle": "Ingresso",
         "icon": "login",
         "category": "entrance",
         "shape": "square",
@@ -152,6 +172,8 @@
     {
         "id": "entrance10@area.cnr.it",
         "text": "10",
+        "title": "Ingresso 10",
+        "subtitle": "Ingresso",
         "icon": "login",
         "category": "entrance",
         "shape": "square",
@@ -167,6 +189,8 @@
     {
         "id": "entrance11@area.cnr.it",
         "text": "11",
+        "title": "Ingresso 11",
+        "subtitle": "Ingresso",
         "icon": "login",
         "category": "entrance",
         "shape": "square",
@@ -182,6 +206,8 @@
     {
         "id": "entrance12@area.cnr.it",
         "text": "12",
+        "title": "Ingresso 12",
+        "subtitle": "Ingresso",
         "icon": "login",
         "category": "entrance",
         "shape": "square",
@@ -197,6 +223,8 @@
     {
         "id": "entrance13@area.cnr.it",
         "text": "13",
+        "title": "Ingresso 13",
+        "subtitle": "Ingresso",
         "icon": "login",
         "category": "entrance",
         "shape": "square",
@@ -212,6 +240,8 @@
     {
         "id": "entrance14@area.cnr.it",
         "text": "14",
+        "title": "Ingresso 14",
+        "subtitle": "Ingresso",
         "icon": "login",
         "category": "entrance",
         "shape": "square",
@@ -227,6 +257,8 @@
     {
         "id": "entrance15@area.cnr.it",
         "text": "15",
+        "title": "Ingresso 15",
+        "subtitle": "Ingresso",
         "icon": "login",
         "category": "entrance",
         "shape": "square",
@@ -242,6 +274,8 @@
     {
         "id": "entrance16@area.cnr.it",
         "text": "16",
+        "title": "Ingresso 16",
+        "subtitle": "Ingresso",
         "icon": "login",
         "category": "entrance",
         "shape": "square",
@@ -257,6 +291,8 @@
     {
         "id": "entrance17@area.cnr.it",
         "text": "17",
+        "title": "Ingresso 17",
+        "subtitle": "Ingresso",
         "icon": "login",
         "category": "entrance",
         "shape": "square",
@@ -272,6 +308,8 @@
     {
         "id": "entrance18@area.cnr.it",
         "text": "18",
+        "title": "Ingresso 18",
+        "subtitle": "Ingresso",
         "icon": "login",
         "category": "entrance",
         "shape": "square",
@@ -287,6 +325,8 @@
     {
         "id": "entrance19@area.cnr.it",
         "text": "19",
+        "title": "Ingresso 19",
+        "subtitle": "Ingresso",
         "icon": "login",
         "category": "entrance",
         "shape": "square",
@@ -302,6 +342,8 @@
     {
         "id": "entrance20@area.cnr.it",
         "text": "20",
+        "title": "Ingresso 20",
+        "subtitle": "Ingresso",
         "icon": "login",
         "category": "entrance",
         "shape": "square",
@@ -317,6 +359,8 @@
     {
         "id": "entrance21@area.cnr.it",
         "text": "21",
+        "title": "Ingresso 21",
+        "subtitle": "Ingresso",
         "icon": "login",
         "category": "entrance",
         "shape": "square",
@@ -332,6 +376,8 @@
     {
         "id": "entrance22@area.cnr.it",
         "text": "22",
+        "title": "Ingresso 22",
+        "subtitle": "Ingresso",
         "icon": "login",
         "category": "entrance",
         "shape": "square",
@@ -510,7 +556,7 @@
         "shape": "square",
         "category": "mobility",
         "title": "Parcheggio 4b",
-        "subtitle": "Parcheggi",
+        "subtitle": "Area parcheggi",
         "position": {
             "x": 3884.780029296875,
             "y": 5700.25244140625,
@@ -526,7 +572,7 @@
         "shape": "square",
         "category": "mobility",
         "title": "Parcheggio 1c",
-        "subtitle": "Parcheggi",
+        "subtitle": "Area parcheggi",
         "position": {
             "x": 5022.3759765625,
             "y": 2225.973876953125,
@@ -542,7 +588,7 @@
         "shape": "square",
         "category": "mobility",
         "title": "Parcheggio 2a",
-        "subtitle": "Parcheggi",
+        "subtitle": "Area parcheggi",
         "position": {
             "x": 3629.205322265625,
             "y": 2479.626953125,
@@ -558,7 +604,7 @@
         "shape": "square",
         "category": "mobility",
         "title": "Parcheggio 5b",
-        "subtitle": "Parcheggi",
+        "subtitle": "Area parcheggi",
         "position": {
             "x": 5791.021484375,
             "y": 5700.25244140625,
