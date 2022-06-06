@@ -11,6 +11,7 @@
 	import PersonInfo from './PersonInfo.svelte'
 	import RoomPeopleList from './RoomPeopleList.svelte'
 	import CNRResults from './CNRResults.svelte'
+	import Actions from './Actions.svelte'
 
 	import { Content } from '@smui/card'
 
@@ -160,7 +161,7 @@
 	}
 
 	:global(:root) {
-		--infobox-header-height: 86px;
+		--infobox-header-height: 200px;
 		--omnibox-margin: 10px;
 	}
 </style>
@@ -197,16 +198,24 @@
 <InfoBox>
 	{#if $selection.type == 'office'}
 		<InfoBoxHeader title="{$selection.stanza}" subtitle="Ufficio"/>
+		<Actions screen="narrow"/>
 		<Depiction src="assets/room_photos/{$selection.id}.jpg" fallback="url(assets/room_photos/default_office.png)"/>
+		<Actions screen="wide"/>
+		<hr/>
 		<RoomInfo/>
 		<hr/>
 		<RoomPeopleList/>
 	{:else if $selection.type == 'room'}
 		<InfoBoxHeader title="{$selection.id}" subtitle="Stanza"/>
+		<Actions screen="narrow"/>
 		<Depiction src="assets/room_photos/{$selection.id}.jpg" fallback="url(assets/room_photos/default_room.png)"/>
+		<Actions screen="wide"/>
 	{:else if $selection.type == 'person'}
 		<InfoBoxHeader title="{$selection.nome} {$selection.cognome}" subtitle="{getQualifica($selection)}"/>
+		<Actions screen="narrow"/>
 		<Depiction src={getImmagine($selection)} size="contain" fallback="url(assets/default_person.png)"/>
+		<Actions screen="wide"/>
+		<hr/>
 		<PersonInfo/>
 	
 		{#if $selection.sede}
@@ -223,12 +232,10 @@
 			<RoomInfo/>
 		{/if}
 	{:else if $selection.type == 'poi'}
-		{#if $selection.category == 'entrance'}
-			<InfoBoxHeader title="Ingresso {$selection.text}" subtitle="Ingresso"/>
-		{:else if $selection.title}
-			<InfoBoxHeader title={$selection.title} subtitle={$selection.subtitle || ''}/>
-		{/if}
+		<InfoBoxHeader title={$selection.title} subtitle={$selection.subtitle || ''}/>
+		<Actions screen="narrow"/>
 		<Depiction src="assets/room_photos/{$selection.id}.jpg" fallback="url(assets/default_poi.png)"/>
+		<Actions screen="wide"/>
 	{/if}
 </InfoBox>
 
