@@ -483,7 +483,7 @@
             "layers": [
                 "T"
             ],
-            "lodrange": [0.02, "Infinity"]
+            "lodrange": [0.05, "Infinity"]
         }
     },
     {
@@ -563,7 +563,7 @@
             "layers": [
                 "T"
             ],
-            "lodrange": [0.02, "Infinity"]
+            "lodrange": [0.05, "Infinity"]
         }
     },
     {
@@ -579,7 +579,7 @@
             "layers": [
                 "T"
             ],
-            "lodrange": [0.02, "Infinity"]
+            "lodrange": [0.05, "Infinity"]
         }
     },
     {
@@ -595,7 +595,7 @@
             "layers": [
                 "T"
             ],
-            "lodrange": [0.02, "Infinity"]
+            "lodrange": [0.05, "Infinity"]
         }
     },
     {
@@ -611,7 +611,7 @@
             "layers": [
                 "T"
             ],
-            "lodrange": [0.02, "Infinity"]
+            "lodrange": [0.05, "Infinity"]
         }
     },
     {
