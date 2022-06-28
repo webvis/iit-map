@@ -13,7 +13,7 @@
             "layers": [
                 "T"
             ],
-            "lodrange": [0.6, "Infinity"]
+            "lodrange": [0.12, "Infinity"]
         }
     },
     {
@@ -30,7 +30,7 @@
             "layers": [
                 "T"
             ],
-            "lodrange": [0.6, "Infinity"]
+            "lodrange": [0.12, "Infinity"]
         }
     },
     {
@@ -47,7 +47,7 @@
             "layers": [
                 "T"
             ],
-            "lodrange": [0.6, "Infinity"]
+            "lodrange": [0.12, "Infinity"]
         }
     },
     {
@@ -64,7 +64,7 @@
             "layers": [
                 "T"
             ],
-            "lodrange": [0.6, "Infinity"]
+            "lodrange": [0.12, "Infinity"]
         }
     },
     {
@@ -81,7 +81,7 @@
             "layers": [
                 "T"
             ],
-            "lodrange": [0.6, "Infinity"]
+            "lodrange": [0.12, "Infinity"]
         }
     },
     {
@@ -98,7 +98,7 @@
             "layers": [
                 "T"
             ],
-            "lodrange": [0.6, "Infinity"]
+            "lodrange": [0.12, "Infinity"]
         }
     },
     {
@@ -115,7 +115,7 @@
             "layers": [
                 "T"
             ],
-            "lodrange": [0.6, "Infinity"]
+            "lodrange": [0.12, "Infinity"]
         }
     },
     {
@@ -132,7 +132,7 @@
             "layers": [
                 "T"
             ],
-            "lodrange": [0.6, "Infinity"]
+            "lodrange": [0.12, "Infinity"]
         }
     },
     {
@@ -149,7 +149,7 @@
             "layers": [
                 "T"
             ],
-            "lodrange": [0.6, "Infinity"]
+            "lodrange": [0.12, "Infinity"]
         }
     },
     {
@@ -166,7 +166,7 @@
             "layers": [
                 "T"
             ],
-            "lodrange": [0.6, "Infinity"]
+            "lodrange": [0.12, "Infinity"]
         }
     },
     {
@@ -183,7 +183,7 @@
             "layers": [
                 "T"
             ],
-            "lodrange": [0.6, "Infinity"]
+            "lodrange": [0.12, "Infinity"]
         }
     },
     {
@@ -200,7 +200,7 @@
             "layers": [
                 "T"
             ],
-            "lodrange": [0.6, "Infinity"]
+            "lodrange": [0.12, "Infinity"]
         }
     },
     {
@@ -217,7 +217,7 @@
             "layers": [
                 "T"
             ],
-            "lodrange": [0.6, "Infinity"]
+            "lodrange": [0.12, "Infinity"]
         }
     },
     {
@@ -234,7 +234,7 @@
             "layers": [
                 "T"
             ],
-            "lodrange": [0.6, "Infinity"]
+            "lodrange": [0.12, "Infinity"]
         }
     },
     {
@@ -251,7 +251,7 @@
             "layers": [
                 "T"
             ],
-            "lodrange": [0.6, "Infinity"]
+            "lodrange": [0.12, "Infinity"]
         }
     },
     {
@@ -268,7 +268,7 @@
             "layers": [
                 "T"
             ],
-            "lodrange": [0.6, "Infinity"]
+            "lodrange": [0.12, "Infinity"]
         }
     },
     {
@@ -285,7 +285,7 @@
             "layers": [
                 "T"
             ],
-            "lodrange": [0.6, "Infinity"]
+            "lodrange": [0.12, "Infinity"]
         }
     },
     {
@@ -302,7 +302,7 @@
             "layers": [
                 "T"
             ],
-            "lodrange": [0.6, "Infinity"]
+            "lodrange": [0.12, "Infinity"]
         }
     },
     {
@@ -319,7 +319,7 @@
             "layers": [
                 "T"
             ],
-            "lodrange": [0.6, "Infinity"]
+            "lodrange": [0.12, "Infinity"]
         }
     },
     {
@@ -336,7 +336,7 @@
             "layers": [
                 "T"
             ],
-            "lodrange": [0.6, "Infinity"]
+            "lodrange": [0.12, "Infinity"]
         }
     },
     {
@@ -353,7 +353,7 @@
             "layers": [
                 "T"
             ],
-            "lodrange": [0.6, "Infinity"]
+            "lodrange": [0.12, "Infinity"]
         }
     },
     {
@@ -370,7 +370,7 @@
             "layers": [
                 "T"
             ],
-            "lodrange": [0.6, "Infinity"]
+            "lodrange": [0.12, "Infinity"]
         }
     },
     {
@@ -387,7 +387,7 @@
             "layers": [
                 "T"
             ],
-            "lodrange": [0.6, "Infinity"]
+            "lodrange": [0.12, "Infinity"]
         }
     },
     {
@@ -403,7 +403,7 @@
             "layers": [
                 "T"
             ],
-            "lodrange": [0.7, "Infinity"]
+            "lodrange": [0.14, "Infinity"]
         }
     },
     {
@@ -419,7 +419,7 @@
             "layers": [
                 "1"
             ],
-            "lodrange": [0.7, "Infinity"]
+            "lodrange": [0.14, "Infinity"]
         }
     },
     {
@@ -435,7 +435,7 @@
             "layers": [
                 "T"
             ],
-            "lodrange": [0.7, "Infinity"]
+            "lodrange": [0.14, "Infinity"]
         }
     },
     {
@@ -451,7 +451,7 @@
             "layers": [
                 "T"
             ],
-            "lodrange": [0.7, "Infinity"]
+            "lodrange": [0.14, "Infinity"]
         }
     },
     {
@@ -467,7 +467,7 @@
             "layers": [
                 "T"
             ],
-            "lodrange": [0.7, "Infinity"]
+            "lodrange": [0.14, "Infinity"]
         }
     },
     {
@@ -483,7 +483,7 @@
             "layers": [
                 "T"
             ],
-            "lodrange": [0.5, "Infinity"]
+            "lodrange": [0.1, "Infinity"]
         }
     },
     {
@@ -499,7 +499,7 @@
             "layers": [
                 "1"
             ],
-            "lodrange": [0.6, "Infinity"]
+            "lodrange": [0.12, "Infinity"]
         }
     },
     {
@@ -515,7 +515,7 @@
             "layers": [
                 "1"
             ],
-            "lodrange": [0.6, "Infinity"]
+            "lodrange": [0.12, "Infinity"]
         }
     },
     {
@@ -531,7 +531,7 @@
             "layers": [
                 "1"
             ],
-            "lodrange": [0.6, "Infinity"]
+            "lodrange": [0.12, "Infinity"]
         }
     },
     {
@@ -547,7 +547,7 @@
             "layers": [
                 "T"
             ],
-            "lodrange": [0.8, "Infinity"]
+            "lodrange": [0.16, "Infinity"]
         }
     },
     {
@@ -563,7 +563,7 @@
             "layers": [
                 "T"
             ],
-            "lodrange": [0.5, "Infinity"]
+            "lodrange": [0.1, "Infinity"]
         }
     },
     {
@@ -579,7 +579,7 @@
             "layers": [
                 "T"
             ],
-            "lodrange": [0.5, "Infinity"]
+            "lodrange": [0.1, "Infinity"]
         }
     },
     {
@@ -595,7 +595,7 @@
             "layers": [
                 "T"
             ],
-            "lodrange": [0.5, "Infinity"]
+            "lodrange": [0.1, "Infinity"]
         }
     },
     {
@@ -611,7 +611,7 @@
             "layers": [
                 "T"
             ],
-            "lodrange": [0.5, "Infinity"]
+            "lodrange": [0.1, "Infinity"]
         }
     },
     {
@@ -628,7 +628,7 @@
             "layers": [
                 "T"
             ],
-            "lodrange": [2, "Infinity"]
+            "lodrange": [0.4, "Infinity"]
         }
     },
     {
@@ -645,7 +645,7 @@
             "layers": [
                 "T"
             ],
-            "lodrange": [2, "Infinity"]
+            "lodrange": [0.4, "Infinity"]
         }
     },
     {
@@ -662,7 +662,7 @@
             "layers": [
                 "T"
             ],
-            "lodrange": [2, "Infinity"]
+            "lodrange": [0.4, "Infinity"]
         }
     },
     {
@@ -679,7 +679,7 @@
             "layers": [
                 "T"
             ],
-            "lodrange": [2, "Infinity"]
+            "lodrange": [0.4, "Infinity"]
         }
     }
 ]
