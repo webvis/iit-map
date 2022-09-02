@@ -168,7 +168,7 @@
 
 <div class="wrapper">
 
-<View viewBox="1950 1400 5480 4770">
+<View viewBox="1950 1400 5480 4770" scaleExtent="0.5 8" translateExtent="-1050 -1600 10430 9170">
 	<SVGLayers
 		path="data/cnr_flat.svg"
 		names="T 1 2 overlay"

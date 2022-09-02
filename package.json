@@ -19,7 +19,7 @@
     "svelte-material-ui": "^3.0.0"
   },
   "dependencies": {
-    "anymapper": "^0.17.6",
+    "anymapper": "^0.20.0",
     "d3": "^5.16.0",
     "d3-array": "^2.4.0",
     "lunr": "^2.3.9",
