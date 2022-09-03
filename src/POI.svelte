@@ -1,5 +1,5 @@
 <script>
-    import { zoom, current_layer, is_position_in_layer, user_transform, is_position_in_lod } from 'anymapper'
+    import { zoom, current_layer, is_position_in_layer, is_position_in_lod } from 'anymapper'
     import { select, hover_enter, hover_leave } from 'anymapper'
     import { Marker } from 'anymapper'
 
@@ -15,7 +15,7 @@
 		'cultural': '#6c461f'
 	}
 
-    $: visible = is_position_in_layer(data.position, $current_layer) && is_position_in_lod(data.position, $user_transform.k)
+    $: visible = is_position_in_layer(data.position, $current_layer) && is_position_in_lod(data.position, $zoom)
 </script>
 
 <style>

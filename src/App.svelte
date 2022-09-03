@@ -10,13 +10,16 @@
 	import RoomInfo from './RoomInfo.svelte'
 	import PersonInfo from './PersonInfo.svelte'
 	import RoomPeopleList from './RoomPeopleList.svelte'
-	import CNRResults from './CNRResults.svelte'
+	import ResultsCNR from './ResultsCNR.svelte'
 	import Actions from './Actions.svelte'
 
 	import { Content } from '@smui/card'
 
 	import POI from './POI.svelte'
 	import Placemark from './Placemark.svelte'
+
+	let omnibox
+	let results_box
 	
 	function postprocessLayers(layers) {
 		let new_room_positions = new Map()
@@ -189,9 +192,9 @@
 
 <footer><a href="https://www.iit.cnr.it/privacy-policy/">Privacy</a> - <a href="credits">Credits</a> - Powered by <a href="https://github.com/webvis/anymapper">anymapper</a>, by <a href="//hct.iit.cnr.it/">HCT Lab</a> @<a href="//www.iit.cnr.it/">CNR-IIT</a></footer>
 
-<OmniBox on:search={handleSearch}>
-	<ResultsBox>
-		<CNRResults/>
+<OmniBox on:search={handleSearch} bind:this={omnibox} on:cursorexit={ () => results_box.focus() }>
+	<ResultsBox bind:this={results_box} on:cursorexit={ () => omnibox.focus() }>
+		<ResultsCNR/>
 	</ResultsBox>
 </OmniBox>
 
