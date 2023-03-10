@@ -487,6 +487,22 @@
         }
     },
     {
+        "id": "Aula40@area.cnr.it",
+        "icon": "mic",
+        "category": "cultural",
+        "shape": "circle",
+        "title": "Aula 40",
+        "subtitle": "Sala riunioni",
+        "position": {
+            "x": 4015,
+            "y": 2855,
+            "layers": [
+                "1"
+            ],
+            "lodrange": [0.12, "Infinity"]
+        }
+    },
+    {
         "id": "biblioteca_IIT@area.cnr.it",
         "icon": "local_library",
         "category": "cultural",
