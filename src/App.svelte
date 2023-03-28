@@ -26,7 +26,8 @@
 		layers.forEach((layer, layer_id) => {
 			d3.select(layer).selectAll('.selectable').each(function () {
 				let id = d3.select(this).attr('id')
-				new_room_positions.set( id, {...centroid(this), layers: new Set([layer_id])} )
+				let label = this.getAttributeNS('http://www.inkscape.org/namespaces/inkscape', 'label')
+				new_room_positions.set( id, {...centroid(this), label: label, layers: new Set([layer_id])} )
 			})
 			$room_positions = new_room_positions
 
@@ -209,7 +210,7 @@
 		<hr/>
 		<RoomPeopleList/>
 	{:else if $selection.type == 'room'}
-		<InfoBoxHeader title="{$selection.id}" subtitle="Stanza"/>
+		<InfoBoxHeader title="{$selection.label || $selection.id}" subtitle="Stanza"/>
 		<Actions screen="narrow"/>
 		<Depiction src="assets/room_photos/{$selection.id}.jpg" fallback="url(assets/room_photos/default_room.png)"/>
 		<Actions screen="wide"/>

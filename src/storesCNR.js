@@ -66,7 +66,7 @@ export const rooms = derived(
             }
             else {
                 // add a new room
-                room_data.set(id, {id, position: d, type: 'room'})
+                room_data.set(id, {id, label: d.label, position: d, type: 'room'})
             }
         })
 
@@ -108,6 +108,7 @@ export const rooms_index = derived(rooms,
 
             this.ref('id')
             this.field('id')
+            this.field('label')
 
             lunr_index_map(this, $rooms)
         })

@@ -29,7 +29,7 @@
     {:else if r.type == 'room'}
         <Item class="cnr-result-item" on:SMUI:action={() => select(r.id)} on:mouseenter={() => hover_enter(r.id)} on:mouseleave={() => hover_leave(r.id)}>
             <Graphic class="material-icons">meeting_room</Graphic>
-            <Text>{r.id} <span class="secondary">Stanza</span></Text>
+            <Text>{r.label || r.id} <span class="secondary">Stanza</span></Text>
         </Item>
     {:else if r.type == 'poi'}
         <Item class="cnr-result-item" on:SMUI:action={() => select(r.id)} on:mouseenter={() => hover_enter(r.id)} on:mouseleave={() => hover_leave(r.id)}>
